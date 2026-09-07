@@ -1,0 +1,307 @@
+{
+  "checkedAt": "2026-09-06",
+  "policy": "Dated evidence is a snapshot, not proof of live incumbency. Announced appointments are kept separate from assumed offices. Portrait candidates are not displayed until identity and rights are checked.",
+  "records": [
+    {
+      "id": "in-army-northern",
+      "name": "Lt Gen Pratik Sharma",
+      "asOf": "2026-03-27",
+      "url": "https://newsonair.gov.in/northern-command-to-confer-92-awards-on-soldiers-in-udhampur-tomorrow/",
+      "title": "Northern Command investiture ceremony at Udhampur",
+      "publisher": "Akashvani",
+      "kind": "official",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-army-western",
+      "name": "Lt Gen Pushpendra Pal Singh",
+      "asOf": "2026-04-01",
+      "assumedOffice": "2026-04-01",
+      "prid": 2247806
+    },
+    {
+      "id": "in-army-eastern",
+      "name": "Lt Gen VMB Krishnan",
+      "asOf": "2026-04-01",
+      "assumedOffice": "2026-04-01",
+      "prid": 2247791
+    },
+    {
+      "id": "in-army-southern",
+      "name": "Lt Gen Rajesh Pushkar",
+      "asOf": "2026-07-01",
+      "assumedOffice": "2026-07-01",
+      "prid": 2279816
+    },
+    {
+      "id": "in-army-south-western",
+      "name": "Lt Gen Mohit Malhotra",
+      "asOf": "2026-07-01",
+      "assumedOffice": "2026-07-01",
+      "prid": 2279817
+    },
+    {
+      "id": "in-army-central",
+      "name": "Lt Gen Anindya Sengupta",
+      "asOf": "2026-08-30",
+      "prid": 2304645,
+      "evidenceKind": "dated-observation",
+      "note": "An announced successor must not replace the incumbent before assumption of office is evidenced."
+    },
+    {
+      "id": "in-army-training",
+      "name": "Lt Gen SP Singh",
+      "asOf": "2026-09-01",
+      "url": "https://www.tribuneindia.com/news/india/army-names-new-chiefs-for-central-command-artrac/",
+      "title": "Army names new Chiefs for Central Command, ARTRAC",
+      "publisher": "The Tribune",
+      "kind": "reference",
+      "evidenceKind": "dated-observation",
+      "note": "Secondary report; primary appointment notice and unambiguous portrait remain to be obtained."
+    },
+    {
+      "id": "in-navy-western",
+      "name": "Vice Admiral Sanjay Vatsayan",
+      "asOf": "2026-05-30",
+      "assumedOffice": "2026-05-30",
+      "prid": 2267084
+    },
+    {
+      "id": "in-navy-eastern",
+      "name": "Vice Admiral Sanjay Bhalla",
+      "asOf": "2026-07-11",
+      "prid": 2283586,
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-navy-southern",
+      "name": "Vice Admiral Sameer Saxena",
+      "asOf": "2025-10-31",
+      "assumedOffice": "2025-10-31",
+      "prid": 2184727
+    },
+    {
+      "id": "in-joint-andaman-nicobar",
+      "name": "Vice Admiral Vineet McCarty",
+      "asOf": "2026-06-01",
+      "assumedOffice": "2026-06-01",
+      "prid": 2267569
+    },
+    {
+      "id": "in-airforce-western",
+      "name": "Air Marshal George Thomas",
+      "asOf": "2026-05-01",
+      "assumedOffice": "2026-05-01",
+      "url": "https://media.bharat-rakshak.com/indianairforce/database/20118",
+      "title": "Service record: Air Marshal George Thomas",
+      "publisher": "Bharat Rakshak",
+      "kind": "reference",
+      "evidenceKind": "appointment",
+      "note": "Appointment chronology from specialist reference; IAF-sourced official portrait separately identifies his Western Air Command role."
+    },
+    {
+      "id": "in-airforce-eastern",
+      "name": "Air Marshal Inderpal Singh Walia",
+      "asOf": "2026-02-01",
+      "assumedOffice": "2026-02-01",
+      "prid": 2221521
+    },
+    {
+      "id": "in-airforce-central",
+      "name": "Air Marshal Tarun Chaudhry",
+      "asOf": "2026-06-01",
+      "assumedOffice": "2026-06-01",
+      "prid": 2267533
+    },
+    {
+      "id": "in-airforce-south-western",
+      "name": "Air Marshal PV Shivanand",
+      "asOf": "2026-07-01",
+      "assumedOffice": "2026-07-01",
+      "prid": 2280104
+    },
+    {
+      "id": "in-airforce-southern",
+      "name": "Air Marshal Jasvir Singh Mann",
+      "asOf": "2026-07-01",
+      "assumedOffice": "2026-07-01",
+      "prid": 2280093
+    },
+    {
+      "id": "in-airforce-training",
+      "name": "Air Marshal Seethepalli Shrinivas",
+      "asOf": "2026-01-01",
+      "assumedOffice": "2026-01-01",
+      "prid": 2210485
+    },
+    {
+      "id": "in-airforce-maintenance",
+      "name": "Air Marshal Yalla Umesh",
+      "asOf": "2026-04-11",
+      "prid": 2251177,
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-kerala",
+      "name": "Major General Arun CG",
+      "role": "Additional Director General",
+      "asOf": null,
+      "url": "https://ncc.kerala.gov.in/",
+      "title": "NCC Kerala and Lakshadweep: directorate leadership",
+      "publisher": "NCC Kerala and Lakshadweep",
+      "kind": "official",
+      "evidenceKind": "undated-profile"
+    },
+    {
+      "id": "in-ncc-karnataka-goa",
+      "name": "Air Commodore Kamal Chadha",
+      "role": "Deputy Director General",
+      "asOf": "2026-07-10",
+      "url": "https://dip.goa.gov.in/cm-address-ncc-meeting-held-recently/",
+      "title": "Chief Minister attends NCC meeting",
+      "publisher": "Government of Goa",
+      "kind": "official",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-gujarat",
+      "name": "Major General Bimal Monga",
+      "role": "Additional Director General",
+      "asOf": "2026-06-19",
+      "prid": 2275160,
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-maharashtra",
+      "name": "Major General Vivek Tyagi",
+      "role": "Additional Director General",
+      "asOf": "2026-05-01",
+      "prid": 2257363,
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-mp-cg",
+      "name": "Major General JP Singh",
+      "role": "Additional Director General",
+      "asOf": "2026-04-30",
+      "prid": 2257057,
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-uttarakhand",
+      "name": "Major General Sameer Bhalla",
+      "role": "Additional Director General",
+      "asOf": "2026-02-03",
+      "url": "https://governoruk.gov.in/03-02-2026-the-governor-felicitated-ncc-cadets-from-uttarakhand-who-participated-in-the-republic-day-parade-during-a-felicitation-ceremony-organised-at-lok-bhavan/",
+      "title": "Governor felicitates Uttarakhand NCC Republic Day contingent",
+      "publisher": "Lok Bhavan Uttarakhand",
+      "kind": "official",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-west-bengal",
+      "name": "Major General APS Chahal",
+      "role": "Additional Director General",
+      "asOf": "2026-07-14",
+      "url": "https://www.sikkim.gov.in/media/press-release/press-info?id=165371&name=Press+release+from+Lokbhavan",
+      "title": "Governor honours NCC cadets and meets directorate leadership",
+      "publisher": "Government of Sikkim",
+      "kind": "official",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-jammu-kashmir",
+      "name": "Major General Anupinder Bevli",
+      "role": "Additional Director General",
+      "asOf": "2025-05-28",
+      "url": "https://ladakh.gov.in/major-general-anupinder-bevli-vsm-visits-kargil-ushers-new-era-for-ncc-in-ladakh/",
+      "title": "Major General Anupinder Bevli visits Kargil",
+      "publisher": "Administration of Ladakh",
+      "kind": "official",
+      "evidenceKind": "dated-observation",
+      "note": "Older official record; subsequent leadership verification remains open."
+    },
+    {
+      "id": "in-ncc-north-east",
+      "name": "Major General Anurag Vij",
+      "role": "Additional Director General",
+      "asOf": "2026-07-01",
+      "url": "https://www.sentinelassam.com/amp/story/north-east-india-news/tripura-news/major-general-anurag-vij-highlights-nccs-expanding-northeast-footprint-and-youth-development-push",
+      "title": "NCC North Eastern Region youth development update",
+      "publisher": "The Sentinel",
+      "kind": "reference",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-uttar-pradesh",
+      "name": "Major General Gaurav Gautam",
+      "role": "Additional Director General",
+      "asOf": "2026-05-07",
+      "url": "https://timesofindia.indiatimes.com/city/allahabad/maj-gen-gautam-intera-ncc-cadets/articleshow/130868313.cms",
+      "title": "Major General Gautam interacts with NCC cadets",
+      "publisher": "The Times of India",
+      "kind": "reference",
+      "evidenceKind": "dated-observation"
+    },
+    {
+      "id": "in-ncc-bihar",
+      "name": "Major General Ravinder Singh",
+      "role": "Additional Director General",
+      "asOf": null,
+      "url": "https://nccdtebj.in/",
+      "title": "NCC Bihar and Jharkhand directorate leadership",
+      "publisher": "NCC Bihar and Jharkhand Directorate",
+      "kind": "official",
+      "evidenceKind": "undated-profile"
+    },
+    {
+      "id": "in-ncc-telangana",
+      "name": "Air Commodore Narsingh Sailani",
+      "role": "Deputy Director General",
+      "asOf": null,
+      "url": "https://www.deccanchronicle.com/southern-states/andhra-pradesh/separate-ncc-directorate-for-ap-likely-within-three-months-1982838",
+      "title": "Separate NCC Directorate for Andhra Pradesh expected within three months",
+      "publisher": "Deccan Chronicle",
+      "kind": "reference",
+      "evidenceKind": "undated-profile",
+      "note": "Combined AP and Telangana directorate remains documented during the transition; exact publication date to be confirmed."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "in-ncc-punjab",
+      "reason": "Bharat Mehtani moved to Karnataka and Kerala Sub Area in May 2026. Do not present him or predecessor JS Cheema as current. Successor not verified.",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2266627"
+    },
+    {
+      "id": "in-ncc-delhi",
+      "reason": "Government directory leaves ADG name blank. College reports conflict between Ravinder Kumar and Ravinder Singh; older DU profile names Rajat Kumar Mathur. Identity remains unresolved.",
+      "url": "https://ncc.delhi.gov.in/who-is-who"
+    },
+    {
+      "id": "in-ncc-rajasthan",
+      "reason": "Public government report names Sampath Kumar Anand as DDG, but rank, appointment and portrait need corroboration.",
+      "url": "https://rajkaj.rajasthan.gov.in/reports/PAR-Report-of-offices-by-appointing-dept.php?deptid=3000271&type=2"
+    },
+    {
+      "id": "in-ncc-odisha",
+      "reason": "Candidate Commodore Mahesh Rahangdale appears in a 2024 handover report; current tenure and portrait not yet verified.",
+      "url": "https://aroundodisha.com/wp-content/uploads/2024/10/AROUNDODISHA-31-10-2024-.pdf"
+    },
+    {
+      "id": "in-ncc-tamil-nadu",
+      "reason": "Candidate Commodore Nambiath Sudeep is identified by an affiliated institution; directorate appointment and portrait rights need corroboration.",
+      "url": "https://hit.edu.in/ncc.html"
+    },
+    {
+      "id": "in-ncc-andhra-pradesh",
+      "reason": "Creation approved; operational headquarters and leader not verified. Do not geocode the suggested future headquarters.",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272881"
+    },
+    {
+      "id": "in-ncc-jharkhand",
+      "reason": "Creation approved; operational headquarters and leader not verified.",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272881"
+    }
+  ]
+}

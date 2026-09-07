@@ -1,0 +1,893 @@
+{
+  "checkedAt": "2026-09-07",
+  "records": [
+    {
+      "organizationId": "in-army-northern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-northern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-northern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-western",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-western",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-western",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-eastern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-eastern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-eastern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-southern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-southern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-southern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-south-western",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-south-western",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-south-western",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-central",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-central",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-central",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-training",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-training",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-army-training",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 4. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-western",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-western",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-western",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-eastern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-eastern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-eastern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-southern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-southern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-navy-southern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 7. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-western",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-western",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-western",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-eastern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-eastern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-eastern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-central",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-central",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-central",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-south-western",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-south-western",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-south-western",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-southern",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-southern",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-southern",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-training",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-training",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-training",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-maintenance",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-maintenance",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-airforce-maintenance",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-handbook-commands-2025"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared each command name and headquarters city with the NCC service handbook, printed page 10. This is public administrative geography, not operational location evidence."
+    },
+    {
+      "organizationId": "in-ncc-telangana",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-telangana",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-telangana",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-bihar",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-bihar",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-bihar",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-delhi",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-delhi",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-delhi",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-gujarat",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-gujarat",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-gujarat",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-jammu-kashmir",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-jammu-kashmir",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-jammu-kashmir",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-karnataka-goa",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-karnataka-goa",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-karnataka-goa",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-kerala",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-kerala",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-kerala",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-mp-cg",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-mp-cg",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-mp-cg",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-maharashtra",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-maharashtra",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-maharashtra",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-north-east",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-north-east",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-north-east",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-odisha",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-odisha",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-odisha",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-punjab",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-punjab",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-punjab",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-rajasthan",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-rajasthan",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-rajasthan",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-tamil-nadu",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-tamil-nadu",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-tamil-nadu",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttarakhand",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttarakhand",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttarakhand",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttar-pradesh",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttar-pradesh",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-uttar-pradesh",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-west-bengal",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-west-bengal",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["ncc-directories"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-west-bengal",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-directories", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Manually compared the directorate name and city against Appendix A of the March 2025 hiring circular. Public DGNCC document hosted by a third-party mirror; newer reorganization reviewed separately."
+    },
+    {
+      "organizationId": "in-ncc-andhra-pradesh",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-reorganization"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-ncc-andhra-pradesh",
+      "field": "headquarters",
+      "status": "unverified",
+      "sourceIds": ["ncc-reorganization"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-ncc-andhra-pradesh",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-reorganization", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-ncc-jharkhand",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["ncc-reorganization"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-ncc-jharkhand",
+      "field": "headquarters",
+      "status": "unverified",
+      "sourceIds": ["ncc-reorganization"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-ncc-jharkhand",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["ncc-reorganization", "ncc-overview"],
+      "checkedAt": "2026-09-07",
+      "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+    },
+    {
+      "organizationId": "in-joint-andaman-nicobar",
+      "field": "identity",
+      "status": "supported",
+      "sourceIds": ["leadership-in-joint-andaman-nicobar"],
+      "checkedAt": "2026-09-07",
+      "note": "The June 2026 appointment release explicitly identifies the tri-service command and Sri Vijaya Puram. Navy-mode placement is a presentation association, not a naval parent claim."
+    },
+    {
+      "organizationId": "in-joint-andaman-nicobar",
+      "field": "headquarters",
+      "status": "supported",
+      "sourceIds": ["leadership-in-joint-andaman-nicobar"],
+      "checkedAt": "2026-09-07",
+      "note": "The June 2026 appointment release explicitly identifies the tri-service command and Sri Vijaya Puram. Navy-mode placement is a presentation association, not a naval parent claim."
+    },
+    {
+      "organizationId": "in-joint-andaman-nicobar",
+      "field": "parent",
+      "status": "supported",
+      "sourceIds": ["leadership-in-joint-andaman-nicobar"],
+      "checkedAt": "2026-09-07",
+      "note": "The June 2026 appointment release explicitly identifies the tri-service command and Sri Vijaya Puram. Navy-mode placement is a presentation association, not a naval parent claim."
+    }
+  ]
+}

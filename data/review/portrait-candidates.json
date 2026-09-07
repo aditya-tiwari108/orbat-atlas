@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-07",
+  "candidates": [
+    {
+      "organizationId": "in-ncc-kerala",
+      "subject": "Major General Arun CG",
+      "url": "https://ncc.kerala.gov.in/images/2026/06/12/minimal-profile-photo-instagram-post.png",
+      "sourceUrl": "https://ncc.kerala.gov.in/",
+      "identityStatus": "verified",
+      "publicationStatus": "permission-required",
+      "rightsUrl": "https://ncc.kerala.gov.in/index.php/en/copyright-policy"
+    },
+    {
+      "organizationId": "in-airforce-western",
+      "subject": "Air Marshal George Thomas",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_Marshal_George_Thomas.jpg",
+      "publicationStatus": "license-and-visual-review-pending"
+    },
+    {
+      "organizationId": "in-army-central",
+      "subject": "Lt Gen Anindya Sengupta",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lt_Gen_Anindya_Sengupta.jpg",
+      "publicationStatus": "included-with-CC-BY-4.0-attribution",
+      "identityStatus": "verified"
+    }
+  ]
+}

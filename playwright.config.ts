@@ -1,0 +1,3 @@
+import {defineConfig} from '@playwright/test';
+import {existsSync} from 'node:fs';
+export default defineConfig({testDir:'./e2e',fullyParallel:false,workers:1,timeout:30000,use:{baseURL:process.env.ATLAS_TEST_URL||'http://localhost:4173',viewport:{width:1440,height:900},headless:true,launchOptions:{executablePath:process.env.CHROME_PATH||(existsSync('/usr/bin/google-chrome')?'/usr/bin/google-chrome':undefined),args:['--no-sandbox','--enable-unsafe-swiftshader']},trace:'retain-on-failure'},webServer:process.env.ATLAS_TEST_URL?undefined:{command:'npm run preview -- --host 127.0.0.1 --port 4173',url:'http://127.0.0.1:4173',reuseExistingServer:!process.env.CI},reporter:[['list'],['json',{outputFile:'test-results/results.json'}]]});
