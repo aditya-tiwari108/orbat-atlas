@@ -18,7 +18,7 @@ All 37 command/directorate entries have field-level review records for identity,
   - Blocked CARTO requests preserve the local outline and organization markers; Retry recovers.
   - Missing portrait fallback and keyboard Escape from the search dialog.
 
-Manual desktop/mobile screenshots were reviewed. These checks found and corrected the MapLibre 6 worker URL, the lazy CSS container height, overlapping national labels and mobile camera padding. Production browser verification follows deployment; it is not implied by this local result.
+Manual desktop/mobile screenshots were reviewed. These checks found and corrected the MapLibre 6 worker URL, the lazy CSS container height, overlapping national labels and mobile camera padding. The same six Playwright scenarios also passed against https://orbat-atlas.vercel.app on 8 September 2026. The deployment was public, and no production browser errors were reported. GitHub CI passed for the published revision.
 
 ## Design checkpoint
 

@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 test('national overview and keyboard search reach an unmapped division and support Back',async({page})=>{
- await page.goto('/');await expect(page.locator('.map-organization')).toHaveCount(6);await expect(page.locator('.dossier')).toHaveCount(0);
+ await page.goto('/');await expect(page.locator('.map-organization')).toHaveCount(6);await expect(page.locator('.command-label:not(.quiet-label)')).toHaveCount(6);await expect(page.locator('.dossier')).toHaveCount(0);
  await page.keyboard.press('Control+k');await page.getByRole('combobox').fill('XII Corps');await page.keyboard.press('Enter');
  await expect(page.locator('#dossier-title')).toHaveText('XII Corps');await page.getByRole('button',{name:'Organization tree',exact:true}).click();
  await page.locator('.dossier .tree-connector .organization-row').filter({hasText:'11 Infantry Division'}).click();

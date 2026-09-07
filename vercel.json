@@ -9,5 +9,5 @@
       {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
     ]}
   ],
-  "rewrites": [{"source": "/((?!assets/|portraits/|insignia/|geography/|data-coverage.md).*)", "destination": "/index.html"}]
+  "rewrites": [{"source": "/((?!assets/|portraits/|insignia/|geography/|data-coverage.md|favicon.svg).*)", "destination": "/index.html"}]
 }

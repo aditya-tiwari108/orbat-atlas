@@ -1,5 +1,7 @@
 # ORBAT Atlas
 
+[Open the live atlas](https://orbat-atlas.vercel.app) · [Public dataset](https://github.com/aditya-tiwari108/orbat-atlas/tree/main/data)
+
 A map-first explorer of publicly documented Indian Army, Navy, Air Force and NCC organizations. Built with React, TypeScript, MapLibre and CARTO vector basemaps.
 
 ## Run locally
@@ -50,3 +52,5 @@ To add a country, add a dataset and source registry, register it in `catalog.ts`
 Vercel configuration is included. Set `VITE_CARTO_API_KEY` for Production and Preview in the Vercel project before building. It is a browser basemap key: its value is delivered to the browser to authorize tile requests, while `.env.local` is never committed. Restrict usage in the provider account where supported. No database, login, server-side secret or live tracking service is required.
 
 See [contribution guidance](CONTRIBUTING.md) and [attribution](ATTRIBUTION.md).
+
+Production is deployed through the Vercel CLI. The attempted GitHub integration did not connect, so pushes currently run validation without automatically publishing a new deployment. Use `npx vercel deploy --prod` from the linked project to publish a tested update.

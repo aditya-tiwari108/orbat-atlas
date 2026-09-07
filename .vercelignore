@@ -6,3 +6,6 @@ design
 .codex
 .agents
 .openai
+work
+test-results
+playwright-report

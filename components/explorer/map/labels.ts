@@ -29,14 +29,20 @@ export function chooseLabelSide(
       right: left + width,
       bottom: point.y + height / 2,
     };
+    // Compare text extents rather than the HQ point and button padding.
+    const textRect = {
+      ...rect,
+      left: rect.left + (side === 'east' ? 28 : 0),
+      right: rect.right - (side === 'west' ? 28 : 0),
+    };
     if (
       rect.left >= 12 &&
       rect.right <= viewport.width - 12 &&
       rect.top >= 130 &&
       rect.bottom <= viewport.height - 35 &&
-      !occupied.some((other) => collides(rect, other))
+      !occupied.some((other) => collides(textRect, other))
     )
-      return { side, rect };
+      return { side, rect: textRect };
   }
   return null;
 }
