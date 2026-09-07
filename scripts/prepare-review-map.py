@@ -1,12 +1,16 @@
 """Editable geography for design review, not an application renderer."""
-import json,math,pathlib
+import argparse,json,pathlib
 from shapely.geometry import shape,box
 from shapely.ops import transform,unary_union
 from pyproj import Transformer
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('world_geojson',help='Natural Earth admin-0 GeoJSON')
+parser.add_argument('soi_projection',help='Survey of India Outline_of_India.prj')
+args=parser.parse_args()
 india=shape(json.load(open('public/geography/india-soi-overview.geojson'))['features'][0]['geometry'])
-world=json.load(open('/tmp/orbat-audit/world.geojson'))
+world=json.load(open(args.world_geojson))
 # Lambert projection supplied by SOI, recentered for the review canvas.
-prj=pathlib.Path('/tmp/orbat-audit/soi/Outline_of_India.prj').read_text();tr=Transformer.from_crs('EPSG:4326',prj,always_xy=True)
+prj=pathlib.Path(args.soi_projection).read_text();tr=Transformer.from_crs('EPSG:4326',prj,always_xy=True)
 center=tr.transform(80,23);scale=.000215
 
 def xy(lon,lat):
