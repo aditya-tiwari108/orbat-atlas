@@ -69,3 +69,56 @@ void test('country outline replaces conflicting borders and respects national so
   );
   assert.ok(fallbackStyle(config).sources['country-outline']);
 });
+
+void test('detail layers have a stable transition band and never suppress command HQs', async () => {
+  const { detailAtZoom, mapOrganizations } =
+    await import('../components/explorer/map/visibility');
+  const { organizations } = await import('../data/catalog');
+  assert.equal(detailAtZoom(6.3, 0), 1);
+  assert.equal(detailAtZoom(6.0, 1), 1);
+  assert.equal(detailAtZoom(5.7, 1), 0);
+  assert.equal(detailAtZoom(7.5, 2), 2);
+  for (const service of ['army', 'navy', 'airforce', 'ncc']) {
+    const nodes = organizations.filter((o) => o.service === service);
+    const overview = mapOrganizations(nodes, null, 0);
+    for (const detail of [1, 2] as const) {
+      const detailed = mapOrganizations(nodes, null, detail);
+      assert.ok(overview.every((o) => detailed.includes(o)));
+      assert.ok(detailed.every((o) => o.level !== 'asset'));
+    }
+  }
+});
+
+void test('NCC regions cover each state once, preserve disputed areas and match sourced records', async () => {
+  const { readFileSync } = await import('node:fs');
+  const { organizations } = await import('../data/catalog');
+  const geo: {
+    features: Array<{
+      properties: {
+        organizationId?: string;
+        states?: string[];
+        unassigned?: boolean;
+      };
+    }>;
+  } = JSON.parse(
+    readFileSync('public/geography/india-ncc-regions.geojson', 'utf8'),
+  );
+  const regions = geo.features.filter((f) => f.properties.organizationId);
+  assert.equal(regions.length, 17);
+  const states = regions.flatMap((f) => f.properties.states || []);
+  assert.equal(states.length, 36);
+  assert.equal(new Set(states).size, 36);
+  assert.equal(geo.features.filter((f) => f.properties.unassigned).length, 4);
+  for (const feature of regions) {
+    const org = organizations.find(
+      (o) => o.id === feature.properties.organizationId,
+    )!;
+    assert.equal(org.level, 'directorate');
+    assert.notEqual(org.status, 'newly-approved');
+    assert.equal(org.evidence?.coverage?.status, 'supported');
+    assert.equal(org.geographicCoverage?.bounds?.length, 4);
+    assert.ok(
+      org.geographicCoverage?.sourceIds.includes('soi-abdb-states-2025'),
+    );
+  }
+});

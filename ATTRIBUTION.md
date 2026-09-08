@@ -3,6 +3,7 @@
 ## Cartography
 
 - India outline: [Survey of India](https://surveyofindia.gov.in/pages/outline-maps-of-india), source scale 1:16 million. Generalized for national overview; not a precise local boundary layer.
+- NCC administrative regions: [Survey of India ABDB](https://surveyofindia.gov.in/pages/administrative-boundary-data-base-abdb-), 2025 state edition (metadata published 6 May 2026), 1:50,000 source, generalized to 250 metres. Copyright Survey of India; used with attribution. Directorate remit is sourced separately in the dataset. Four source-designated interstate disputed features remain unassigned.
 - Vector basemap: [CARTO](https://carto.com/attributions), based on [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Attribution remains visible on the map.
 - Portable review-map context: Natural Earth 1:110m public-domain country polygons, clipped against the Survey of India outline for the design overview.
 

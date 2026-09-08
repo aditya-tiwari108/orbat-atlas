@@ -252,15 +252,23 @@ export default function Explorer() {
             Organization labels
           </label>
           <p>
-            Headquarters are city-level points. Command areas are only shown
-            when published geography supports them.
+            {service === 'ncc'
+              ? 'Directorate regions follow published state and union-territory administration. Select a region or its headquarters name to explore.'
+              : 'Headquarters are city-level points. Command areas are only shown when published geography supports them.'}
           </p>
           <p>
-            India outline: Survey of India, 1:16 million. Hidden at close zoom
-            to respect its scale.
+            {service === 'ncc'
+              ? 'Regions: Survey of India ABDB states, 2025 edition, generalized to 250 metres. Interstate disputed areas remain unassigned. Headquarters markers indicate cities.'
+              : 'India outline: Survey of India, 1:16 million. Hidden at close zoom to respect its scale.'}
           </p>
-          <a href={country.outlineSource} target="_blank" rel="noreferrer">
-            Outline source ↗
+          <a
+            href={
+              country.regions?.[service]?.sourceUrl || country.outlineSource
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            Geography source ↗
           </a>
         </section>
       )}

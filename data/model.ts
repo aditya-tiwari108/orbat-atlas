@@ -75,6 +75,7 @@ export interface Organization {
     sourceIds: string[];
     description: string;
     geometryPath?: string;
+    bounds?: [number, number, number, number];
     asOf?: string;
   };
   evidence?: Partial<

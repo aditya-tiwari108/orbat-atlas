@@ -54,3 +54,15 @@ Vercel configuration is included. Set `VITE_CARTO_API_KEY` for Production and Pr
 See [contribution guidance](CONTRIBUTING.md) and [attribution](ATTRIBUTION.md).
 
 Production is deployed through the Vercel CLI. The attempted GitHub integration did not connect, so pushes currently run validation without automatically publishing a new deployment. Use `npx vercel deploy --prod` from the linked project to publish a tested update.
+
+### NCC regions
+
+NCC mode joins the 17 documented directorate remits to Survey of India's 2025 ABDB state/UT boundaries. Karnataka & Goa is a single combined region; selecting it reveals six group headquarters. Group boundaries are not inferred. Four disputed interstate polygons from the source remain neutral. The layer is generalized by 250 metres and stops at zoom 10; headquarters and the organizational tree remain accessible.
+
+To regenerate the region file, download the state archive from [SOI ABDB](https://surveyofindia.gov.in/pages/administrative-boundary-data-base-abdb-), extract `State Boundary.shp` and its companion files, install `pyshp`, `shapely` and `pyproj` in a Python environment, then run:
+
+```sh
+python scripts/prepare-ncc-regions.py /path/to/extracted/state-directory
+```
+
+The script validates the 36 state/UT assignments, preserves source-designated disputed areas, and writes GeoJSON plus sourced coverage/bounds into the dataset. See [Karnataka & Goa's field audit](docs/ncc-karnataka-goa-audit.md) for dated unit evidence and unresolved records.

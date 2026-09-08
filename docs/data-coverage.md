@@ -1,4 +1,4 @@
-# Data coverage review — 7 September 2026
+# Data coverage review — 8 September 2026
 
 This report describes a sourced snapshot and its remaining gaps, not a complete or live order of battle. Manual field review and structural validation serve different purposes. The user authorized implementation on 7 September 2026. Remaining factual gaps are explicit; publication requires implementation verification.
 
@@ -68,13 +68,14 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 - Removed four permanent fleet-parent claims inferred from a 2025 exercise. Those ships remain unlocated Navy assets.
 - Added field evidence, separate assumption dates, portrait attribution, image focal points and explicit verification gaps.
 
-## Remaining work before publication
+## Remaining data work
 
 - Resolve remaining leader identities and assumption dates where reliable evidence exists.
 - Complete portrait searches and visual/license checks. Kerala’s identified website portrait explicitly requires permission; it is not included in public assets.
 - Corroborate current corps/division parents and expand subordinate coverage. Existing uncertain relationships must be displayed as reported associations, not current command facts.
 - Source authentic formation insignia and published geographic coverage. Do not derive territorial polygons from headquarters points.
-- Verify the MapLibre/CARTO implementation across all modes, interactions and accessibility before publishing.
+- Karnataka & Goa: all six groups and nineteen sourced units added; further unit and leadership coverage remains partial. See ncc-karnataka-goa-audit.md.
+- NCC administrative regions: 17 mapped directorate remits use separately sourced SOI ABDB state geometry; operational transitions remain explicit.
 
 ## Record-specific gaps
 
@@ -158,106 +159,89 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 
 - Assumption-of-office date not independently verified.
 - Leadership relies on a secondary source; primary confirmation remains open.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Bihar & Jharkhand Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Delhi Directorate (ncc)
 
 - Government directory leaves ADG name blank. College reports conflict between Ravinder Kumar and Ravinder Singh; older DU profile names Rajat Kumar Mathur. Identity remains unresolved.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Gujarat, Dadra & Nagar Haveli, Daman & Diu Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Jammu, Kashmir & Ladakh Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Karnataka & Goa Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Kerala & Lakshadweep Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 - Identified portrait at ncc.kerala.gov.in requires permission under the site copyright policy; no publishable alternative has been confirmed.
 
 ### Madhya Pradesh & Chhattisgarh Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Maharashtra Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### North Eastern Region Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
 - Leadership relies on a secondary source; primary confirmation remains open.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Odisha Directorate (ncc)
 
 - Candidate Commodore Mahesh Rahangdale appears in a 2024 handover report; current tenure and portrait not yet verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Punjab, Haryana, Himachal Pradesh & Chandigarh Directorate (ncc)
 
 - Bharat Mehtani moved to Karnataka and Kerala Sub Area in May 2026. Do not present him or predecessor JS Cheema as current. Successor not verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Rajasthan Directorate (ncc)
 
 - Public government report names Sampath Kumar Anand as DDG, but rank, appointment and portrait need corroboration.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Tamil Nadu, Puducherry & Andaman Nicobar Directorate (ncc)
 
 - Candidate Commodore Nambiath Sudeep is identified by an affiliated institution; directorate appointment and portrait rights need corroboration.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Uttarakhand Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Uttar Pradesh Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
 - Leadership relies on a secondary source; primary confirmation remains open.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### West Bengal & Sikkim Directorate (ncc)
 
 - Assumption-of-office date not independently verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Andhra Pradesh Directorate (ncc)

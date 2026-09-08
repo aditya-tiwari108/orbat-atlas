@@ -9,7 +9,9 @@ import type { Organization, Service } from '../../data/model';
 import type { CountryPresentation } from '../../data/country-config';
 import { militarySymbol } from './symbology';
 import { cartoRequest, decorateStyle, fallbackStyle } from './map/style';
-import { chooseLabelSide, type LabelRect } from './map/labels';
+import { connectRegions } from './map/regions';
+import { placeLabel, type LabelRect } from './map/labels';
+import { detailAtZoom, mapOrganizations, type Detail } from './map/visibility';
 interface Props {
   country: CountryPresentation;
   nodes: Organization[];
@@ -41,19 +43,30 @@ export default function MapView({
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<LibreMap | null>(null);
-  const markers = useRef<Marker[]>([]);
+  const markers = useRef(
+    new Map<
+      string,
+      {
+        marker: Marker;
+        signature: string;
+        org: Organization;
+        el: HTMLButtonElement;
+        command: boolean;
+      }
+    >(),
+  );
   const [ready, setReady] = useState(false);
   const [error, setError] = useState('');
   const [fatal, setFatal] = useState(false);
   const [attempt, setAttempt] = useState(0);
-  const [zoom, setZoom] = useState(4);
-  const [revision, setRevision] = useState(0);
+  const [detail, setDetail] = useState<Detail>(0);
   const [overlap, setOverlap] = useState<Organization[]>([]);
   const selectRef = useRef(onSelect);
   useEffect(() => {
     selectRef.current = onSelect;
   }, [onSelect]);
   useEffect(() => {
+    const markerStore = markers.current;
     let cancelled = false;
     const controller = new AbortController();
     let instance: LibreMap | null = null;
@@ -101,8 +114,6 @@ export default function MapView({
         instance.addControl(
           new maplibregl.AttributionControl({
             compact: true,
-            customAttribution:
-              '<a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap</a> · <a href="https://carto.com/attributions" target="_blank">© CARTO</a>',
           }),
           'bottom-right',
         );
@@ -114,10 +125,12 @@ export default function MapView({
             duration: 0,
           });
         });
+        instance.on('movestart', () => setOverlap([]));
         instance.on('moveend', () => {
           if (instance) {
-            setZoom(instance.getZoom());
-            setRevision((r) => r + 1);
+            setDetail((previous) =>
+              detailAtZoom(instance!.getZoom(), previous),
+            );
           }
         });
         instance.on('error', () => {
@@ -137,8 +150,8 @@ export default function MapView({
     return () => {
       cancelled = true;
       controller.abort();
-      markers.current.forEach((m) => m.remove());
-      markers.current = [];
+      markerStore.forEach(({ marker }) => marker.remove());
+      markerStore.clear();
       instance?.remove();
       map.current = null;
     };
@@ -149,7 +162,13 @@ export default function MapView({
     const reduced = window.matchMedia(
       '(prefers-reduced-motion: reduce)',
     ).matches;
-    if (selected?.location) {
+    if (selected?.geographicCoverage?.bounds) {
+      m.fitBounds(selected.geographicCoverage.bounds, {
+        padding: viewportPadding(true),
+        maxZoom: 6.5,
+        duration: reduced ? 0 : 1100,
+      });
+    } else if (selected?.location) {
       const [lat, lng] = selected.location.coordinates;
       const children = nodes.filter(
         (o) => o.parentId === selected.id && o.location && o.level !== 'asset',
@@ -171,15 +190,20 @@ export default function MapView({
           duration: reduced ? 0 : 1100,
         });
       } else
-        m.flyTo({
-          center: [lng, lat],
-          zoom:
-            selected.level === 'command' || selected.level === 'directorate'
-              ? 5.5
-              : 6.5,
-          padding: viewportPadding(true),
-          duration: reduced ? 0 : 1100,
-        });
+        m.fitBounds(
+          [
+            [lng, lat],
+            [lng, lat],
+          ],
+          {
+            maxZoom:
+              selected.level === 'command' || selected.level === 'directorate'
+                ? 5.5
+                : 6.5,
+            padding: viewportPadding(true),
+            duration: reduced ? 0 : 1100,
+          },
+        );
     } else if (!selected)
       m.fitBounds(country.bounds, {
         padding: viewportPadding(false),
@@ -189,40 +213,65 @@ export default function MapView({
   useEffect(() => {
     if (!ready || !map.current) return;
     const m = map.current;
-    markers.current.forEach((marker) => marker.remove());
-    markers.current = [];
-    const focusParent = selected?.parentId;
-    const shown = nodes.filter(
-      (o) =>
-        o.location &&
-        o.level !== 'asset' &&
-        o.level !== 'headquarters' &&
-        o.status !== 'newly-approved' &&
-        (o.id === selected?.id ||
-          ((o.level === 'command' || o.level === 'directorate') &&
-            o.function !== 'training' &&
-            o.function !== 'maintenance' &&
-            !selected) ||
-          (selected &&
-            (o.parentId === selected.id ||
-              (selected.level !== 'command' &&
-                selected.level !== 'directorate' &&
-                o.parentId === focusParent &&
-                o.level === selected.level))) ||
-          (zoom >= 6.5 && o.level !== 'command' && o.level !== 'directorate')),
+    const config = country.regions?.[service];
+    return connectRegions(m, config, nodes, selected, (o) =>
+      selectRef.current(o),
     );
+  }, [ready, country, service, nodes, selected]);
+  useEffect(() => {
+    if (!ready || !map.current) return;
+    const m = map.current;
+    const shown = mapOrganizations(nodes, selected, detail);
     const groups = new Map<string, Organization[]>();
     for (const org of shown) {
       const key = org.location!.coordinates.map((n) => n.toFixed(2)).join(',');
       groups.set(key, [...(groups.get(key) || []), org]);
     }
-    const occupied: LabelRect[] = [];
-    for (const group of groups.values()) {
-      const o = group.find((x) => x.id === selected?.id) || group[0];
+    const retained = new Set<string>();
+    for (const [key, group] of groups) {
+      // A colocated fleet/corps must not replace its command when detail appears.
+      const o =
+        group.find((x) => x.level === 'command' || x.level === 'directorate') ||
+        group.find((x) => x.id === selected?.id) ||
+        group[0];
+      retained.add(key);
+      const signature =
+        group.map((x) => x.id).join('|') + ':' + selected?.id + ':' + labels;
+      const existing = markers.current.get(key);
+      if (existing?.signature === signature) continue;
+      if (existing?.command && existing.org.id === o.id) {
+        // Keep the actual button (and keyboard focus) when its shared-HQ list changes.
+        existing.signature = signature;
+        existing.el.classList.toggle(
+          'active',
+          group.some((x) => x.id === selected?.id),
+        );
+        existing.el.classList.toggle('no-label', !labels);
+        existing.el.setAttribute(
+          'aria-label',
+          group.length > 1
+            ? `${group.length} headquarters in ${o.location!.name}`
+            : `${o.name}, headquarters ${o.location!.name}`,
+        );
+        existing.el.querySelector('em')?.remove();
+        if (group.length > 1) {
+          const count = document.createElement('em');
+          count.textContent = `+${group.length - 1}`;
+          existing.el.appendChild(count);
+        }
+        existing.el.onclick = (event) => {
+          event.stopPropagation();
+          if (group.length > 1) setOverlap(group);
+          else selectRef.current(o);
+        };
+        continue;
+      }
+      existing?.marker.remove();
       const command = o.level === 'command' || o.level === 'directorate';
       const el = document.createElement('button');
       el.type = 'button';
-      el.className = `map-organization ${command ? 'command-label' : 'formation-label'} ${o.id === selected?.id ? 'active' : ''} ${labels ? '' : 'no-label'}`;
+      el.className = `map-organization ${command ? 'command-label' : 'formation-label'} ${group.some((x) => x.id === selected?.id) ? 'active' : ''} ${labels ? '' : 'no-label'}`;
+      el.dataset.organizationId = o.id;
       el.setAttribute(
         'aria-label',
         group.length > 1
@@ -272,59 +321,110 @@ export default function MapView({
         count.textContent = `+${group.length - 1}`;
         el.appendChild(count);
       }
-      el.addEventListener('click', () => {
+      el.onclick = (event) => {
+        event.stopPropagation();
         if (group.length > 1) setOverlap(group);
         else selectRef.current(o);
-      });
+      };
       const [lat, lng] = o.location!.coordinates;
-      let marker = new maplibregl.Marker({
-        element: el,
-        anchor: el.classList.contains('label-west')
-          ? 'right'
-          : command
-            ? 'left'
-            : 'center',
-        offset: el.classList.contains('label-west')
-          ? [5, 0]
-          : command
-            ? [-5, 0]
-            : [0, 0],
-      })
+      const marker = new maplibregl.Marker({ element: el, anchor: 'center' })
         .setLngLat([lng, lat])
         .addTo(m);
-      if (command && o.id !== selected?.id && labels) {
-        const rect = el.getBoundingClientRect();
-        const point = m.project([lng, lat]);
-        const placement = chooseLabelSide(
-          point,
-          rect.width,
-          rect.height,
-          occupied,
-          {
-            width: host.current!.clientWidth,
-            height: host.current!.clientHeight,
-          },
-          el.classList.contains('label-west'),
-        );
-        if (placement) {
-          occupied.push(placement.rect);
-          marker.remove();
-          el.classList.toggle('label-west', placement.side === 'west');
-          marker = new maplibregl.Marker({
-            element: el,
-            anchor: placement.side === 'west' ? 'right' : 'left',
-            offset: placement.side === 'west' ? [5, 0] : [-5, 0],
-          })
-            .setLngLat([lng, lat])
-            .addTo(m);
-        } else {
-          el.classList.add('quiet-label');
-          el.title = o.name + ' · ' + o.location!.name;
-        }
+      if (command) {
+        const line = document.createElement('span');
+        line.className = 'label-leader';
+        line.setAttribute('aria-hidden', 'true');
+        el.prepend(line);
       }
-      markers.current.push(marker);
+      markers.current.set(key, { marker, signature, org: o, el, command });
     }
-  }, [ready, nodes, selected, zoom, labels, revision, country]);
+    for (const [key, entry] of markers.current) {
+      if (!retained.has(key)) {
+        entry.marker.remove();
+        markers.current.delete(key);
+      }
+    }
+    function layoutLabels() {
+      const occupied: LabelRect[] = [];
+      const context = document
+        .querySelector('.map-context')
+        ?.getBoundingClientRect();
+      if (context) occupied.push(context);
+      const width = host.current!.clientWidth;
+      const height = host.current!.clientHeight;
+      const viewport = {
+        left: 24,
+        top: 110,
+        right: width - (selected && width >= 760 ? 425 : 65),
+        bottom: height - (selected && width < 760 ? height * 0.54 + 20 : 80),
+      };
+      // Fixed geographic order prevents data ordering or newly visible units from
+      // changing which command gets first choice of space.
+      const entries = [...markers.current.values()]
+        .filter((e) => e.command)
+        .sort(
+          (a, b) =>
+            b.org.location!.coordinates[0] - a.org.location!.coordinates[0],
+        );
+      // Reserve every visible HQ anchor as well as the labels. A callout must
+      // not cover a different organization's click target.
+      for (const { org } of markers.current.values()) {
+        const p = m.project([
+          org.location!.coordinates[1],
+          org.location!.coordinates[0],
+        ]);
+        if (p.x >= 0 && p.x <= width && p.y >= 0 && p.y <= height)
+          occupied.push({
+            left: p.x - 8,
+            right: p.x + 8,
+            top: p.y - 8,
+            bottom: p.y + 8,
+          });
+      }
+      for (const { org, el } of entries) {
+        const point = m.project([
+          org.location!.coordinates[1],
+          org.location!.coordinates[0],
+        ]);
+        const text = el.querySelector<HTMLElement>('.marker-text')!;
+        const line = el.querySelector<HTMLElement>('.label-leader')!;
+        // Labels leave the viewport with their real HQ, never detach to an edge.
+        const outside =
+          point.x < 0 || point.x > width || point.y < 0 || point.y > height;
+        el.style.visibility = outside ? 'hidden' : '';
+        if (outside || !labels) continue;
+        const placement = placeLabel(
+          point,
+          text.offsetWidth,
+          text.offsetHeight,
+          occupied,
+          viewport,
+          el.classList.contains('label-west') ||
+            org.location!.coordinates[1] < 78,
+        );
+        occupied.push(placement.rect);
+        text.style.left = `${placement.x + 5}px`;
+        text.style.top = `${placement.y + 5}px`;
+        const dx =
+          placement.x > 0
+            ? placement.x - 4
+            : placement.x + text.offsetWidth + 4;
+        const dy = placement.y + text.offsetHeight / 2;
+        line.style.width = `${Math.hypot(dx, dy)}px`;
+        line.style.transform = `rotate(${Math.atan2(dy, dx)}rad)`;
+      }
+    }
+    layoutLabels();
+    m.on('move', layoutLabels);
+    m.on('resize', layoutLabels);
+    void document.fonts.ready.then(() => {
+      if (map.current === m) layoutLabels();
+    });
+    return () => {
+      m.off('move', layoutLabels);
+      m.off('resize', layoutLabels);
+    };
+  }, [ready, nodes, selected, detail, labels, country]);
   const move = (delta: number) =>
     map.current?.zoomTo((map.current?.getZoom() || 4) + delta, {
       duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -387,7 +487,7 @@ export default function MapView({
           </button>
         </div>
       )}
-      {overlap.length > 0 && (
+      {overlap.length > 0 && overlap[0].service === service && (
         <div className="overlap-picker">
           <header>
             <strong>{overlap[0].location?.name}</strong>

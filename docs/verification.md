@@ -23,3 +23,9 @@ Manual desktop/mobile screenshots were reviewed. These checks found and correcte
 ## Design checkpoint
 
 The user explicitly cleared the checkpoint on 7 September 2026 ("consider everything approved from my side"). The implementation follows the prepared map-first review boards. The Figma file contains editable foundations and geography; tool quota prevented completing the editor transfer. Portable review SVGs retain editable text and geometry. This limitation remains documented rather than representing the Figma file as finished.
+
+## Desktop zoom regression audit (subsequent user feedback)
+
+The original six tests missed visual and camera-state defects. The revised implementation removes collision-driven hiding of command names, preserves command DOM nodes through level-of-detail changes, stages subordinate layers with transition hysteresis, and keeps command identity when subordinate HQs share a city. Connected callouts avoid other names and HQ click targets. Point-centered `fitBounds` replaces persistent fly-to padding, fixing repeated dossier visits shrinking and shifting the national overview.
+
+Sixteen local browser scenarios passed after these fixes. Additional coverage includes four-mode zoom-in/out cycles, panning, command-button identity, all 17 mapped NCC labels at 1440×900, 1280×720 and 1280×633, clicking every directorate at each size, comparing HQ positions before/after repeated selections, and Karnataka & Goa’s six groups/shared Bengaluru HQs/Goa unit navigation. Animated mouse-wheel transitions and the Mysuru air-unit flow also passed. These results apply to the working build until it is redeployed. Mobile redesign is deferred per user instruction; its existing smoke test remains.
