@@ -53,7 +53,7 @@ Vercel configuration is included. Set `VITE_CARTO_API_KEY` for Production and Pr
 
 See [contribution guidance](CONTRIBUTING.md) and [attribution](ATTRIBUTION.md).
 
-Production is deployed through the Vercel CLI. The attempted GitHub integration did not connect, so pushes currently run validation without automatically publishing a new deployment. Use `npx vercel deploy --prod` from the linked project to publish a tested update.
+Production is deployed through the Vercel CLI. The attempted GitHub integration did not connect, so pushes currently run validation without automatically publishing a new deployment. Use `npx vercel deploy --prod --scope aditya-ed1c` from the linked project to publish a tested update.
 
 ### NCC regions
 
