@@ -94,7 +94,7 @@ test('short desktop shared-HQ menu stays on screen and search returns to its fir
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?org=in-ncc-group-mysuru');
   await page
-    .getByRole('button', { name: '7 headquarters in Mysuru', exact: true })
+    .getByRole('button', { name: '8 headquarters in Mysuru', exact: true })
     .click();
   const menu = page.locator('.overlap-picker');
   await expect(menu).toBeVisible();

@@ -21,7 +21,9 @@ export function mapOrganizations(
       o.status === 'newly-approved'
     )
       return false;
-    if (o.id === selected?.id || o.parentId === selected?.id) return true;
+    if (o.id === selected?.id) return true;
+    if (o.historicalAsOf) return false;
+    if (o.parentId === selected?.id) return true;
     if (o.level === 'command' || o.level === 'directorate')
       return o.function !== 'training' && o.function !== 'maintenance';
     if (

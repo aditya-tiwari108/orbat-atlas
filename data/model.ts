@@ -20,6 +20,7 @@ export interface Source {
   kind: 'official' | 'reference';
 }
 export interface Evidence {
+  asOf?: string;
   sourceIds: string[];
   checkedAt: string;
   status: 'supported' | 'conflicting' | 'unverified';
@@ -51,6 +52,12 @@ export interface Organization {
   parentId: string | null;
   description: string;
   aliases?: string[];
+  historicalAsOf?: string;
+  institutionalAffiliations?: {
+    name: string;
+    sourceIds: string[];
+    note: string;
+  }[];
   location: {
     name: string;
     coordinates: [number, number];

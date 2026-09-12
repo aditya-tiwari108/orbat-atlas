@@ -9,6 +9,7 @@ import type { Organization, Service } from '../../data/model';
 import type { CountryPresentation } from '../../data/country-config';
 import { militarySymbolGraphic } from './symbology';
 import { cartoRequest, decorateStyle, fallbackStyle } from './map/style';
+import { connectRegionLabels } from './map/region-labels';
 import { connectRegions } from './map/regions';
 import { placeLabel, type LabelRect } from './map/labels';
 import { detailAtZoom, mapOrganizations, type Detail } from './map/visibility';
@@ -103,10 +104,16 @@ export default function MapView({
           zoom: 4,
           minZoom: 2.6,
           maxZoom: 9,
+          // Interior label boxes use a north-up, flat cartographic projection.
+          dragRotate: false,
+          pitchWithRotate: false,
+          maxPitch: 0,
           attributionControl: false,
           renderWorldCopies: false,
           transformRequest: (url) => ({ url: cartoRequest(url, key) }),
         });
+        instance.touchZoomRotate.disableRotation();
+        instance.keyboard.disableRotation();
         map.current = instance;
         const observer = new ResizeObserver(() => instance?.resize());
         observer.observe(host.current);
@@ -214,14 +221,31 @@ export default function MapView({
     if (!ready || !map.current) return;
     const m = map.current;
     const config = country.regions?.[service];
-    return connectRegions(m, config, nodes, selected, (o) =>
+    const disconnect = connectRegions(m, config, nodes, selected, (o) =>
       selectRef.current(o),
     );
-  }, [ready, country, service, nodes, selected]);
+    const disconnectLabels = connectRegionLabels(
+      m,
+      config?.labelsPath,
+      nodes,
+      selected,
+      labels,
+      (o) => selectRef.current(o),
+    );
+    return () => {
+      disconnectLabels();
+      disconnect();
+    };
+  }, [ready, country, service, nodes, selected, labels]);
   useEffect(() => {
     if (!ready || !map.current) return;
     const m = map.current;
-    const shown = mapOrganizations(nodes, selected, detail);
+    const shown = mapOrganizations(nodes, selected, detail).filter(
+      (o) =>
+        !country.regions?.[service] ||
+        o.level !== 'directorate' ||
+        o.id === selected?.id,
+    );
     const groups = new Map<string, Organization[]>();
     for (const org of shown) {
       const key = org.location!.coordinates.map((n) => n.toFixed(2)).join(',');
@@ -351,6 +375,8 @@ export default function MapView({
       }
     }
     function layoutLabels() {
+      host.current!.classList.toggle('compact-map-labels', m.getZoom() < 4.3);
+      host.current!.classList.toggle('minimal-map-labels', m.getZoom() < 3.5);
       const occupied: LabelRect[] = [];
       const context = document
         .querySelector('.map-context')
@@ -441,7 +467,7 @@ export default function MapView({
       m.off('move', layoutLabels);
       m.off('resize', layoutLabels);
     };
-  }, [ready, nodes, selected, detail, labels, country]);
+  }, [ready, nodes, selected, detail, labels, country, service]);
   const move = (delta: number) =>
     map.current?.zoomTo((map.current?.getZoom() || 4) + delta, {
       duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches

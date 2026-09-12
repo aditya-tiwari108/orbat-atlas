@@ -65,6 +65,7 @@ export default function Dossier({
       ...org.relationshipSourceIds,
       ...(org.location?.sourceIds || []),
       ...(org.commander?.sourceIds || []),
+      ...(org.institutionalAffiliations || []).flatMap((a) => a.sourceIds),
       ...Object.values(org.evidence || {}).flatMap((e) => e.sourceIds),
     ]),
   ];
@@ -136,6 +137,12 @@ export default function Dossier({
               ? 'Organizational asset · no position'
               : org.location?.name || 'Headquarters not verified'}
           </div>
+          {org.historicalAsOf && (
+            <p className="data-note historical-record">
+              Historical record · {org.historicalAsOf}. Current status
+              unverified.
+            </p>
+          )}
         </div>
         <nav className="dossier-tabs" aria-label="Dossier views">
           <button
@@ -212,49 +219,51 @@ export default function Dossier({
                 {org.announcedSuccessor.note}
               </p>
             )}
-            <div className="dossier-section">
-              <div className="section-heading">
-                <h2>
-                  {org.service === 'navy'
-                    ? 'Organizations & assets'
-                    : 'Subordinate organizations'}
-                </h2>
-                <span>
-                  {children.length
-                    ? String(children.length).padStart(2, '0')
-                    : '—'}
-                </span>
+            {(children.length > 0 || org.level !== 'unit') && (
+              <div className="dossier-section">
+                <div className="section-heading">
+                  <h2>
+                    {org.service === 'navy'
+                      ? 'Organizations & assets'
+                      : 'Subordinate organizations'}
+                  </h2>
+                  <span>
+                    {children.length
+                      ? String(children.length).padStart(2, '0')
+                      : '—'}
+                  </span>
+                </div>
+                {children.length ? (
+                  <>
+                    {children.slice(0, 6).map((c) => (
+                      <OrganizationRow key={c.id} org={c} onSelect={onSelect} />
+                    ))}
+                    {children.length > 6 && (
+                      <button
+                        className="text-link"
+                        onClick={() => setTab('structure')}
+                      >
+                        View all in tree <ChevronRight size={14} />
+                      </button>
+                    )}
+                  </>
+                ) : (
+                  <p className="empty">
+                    {org.level === 'asset'
+                      ? 'Ships are listed as organizational assets. No live or inferred ship positions are recorded.'
+                      : 'No subordinate entries have been verified for this record yet.'}
+                  </p>
+                )}
+                {children.some(
+                  (c) => c.evidence?.parent?.status === 'unverified',
+                ) && (
+                  <p className="data-note">
+                    Some relationships are reported associations; current
+                    subordination has not been corroborated.
+                  </p>
+                )}
               </div>
-              {children.length ? (
-                <>
-                  {children.slice(0, 6).map((c) => (
-                    <OrganizationRow key={c.id} org={c} onSelect={onSelect} />
-                  ))}
-                  {children.length > 6 && (
-                    <button
-                      className="text-link"
-                      onClick={() => setTab('structure')}
-                    >
-                      View all in tree <ChevronRight size={14} />
-                    </button>
-                  )}
-                </>
-              ) : (
-                <p className="empty">
-                  {org.level === 'asset'
-                    ? 'Ships are listed as organizational assets. No live or inferred ship positions are recorded.'
-                    : 'No subordinate entries have been verified for this record yet.'}
-                </p>
-              )}
-              {children.some(
-                (c) => c.evidence?.parent?.status === 'unverified',
-              ) && (
-                <p className="data-note">
-                  Some relationships are reported associations; current
-                  subordination has not been corroborated.
-                </p>
-              )}
-            </div>
+            )}
             {parent && (
               <div className="parent-block">
                 <span className="eyebrow">
@@ -268,10 +277,41 @@ export default function Dossier({
                   {parent.name}
                   <ArrowUpRight size={16} />
                 </button>
+                {org.evidence?.parent?.asOf && (
+                  <small>
+                    Relationship documented {org.evidence.parent.asOf}
+                  </small>
+                )}
                 {org.evidence?.parent?.status === 'unverified' && (
                   <small>Current relationship not independently verified</small>
                 )}
               </div>
+            )}
+            {!!org.institutionalAffiliations?.length && (
+              <details className="disclosure">
+                <summary>
+                  Institutional associations{' '}
+                  <span>{org.institutionalAffiliations.length}</span>
+                  <ChevronRight size={14} />
+                </summary>
+                {org.institutionalAffiliations.map((a) => (
+                  <div key={a.name}>
+                    <h3>{a.name}</h3>
+                    <p>{a.note}</p>
+                    {a.sourceIds.map((id) => (
+                      <a
+                        key={id}
+                        className="text-link"
+                        href={sources.find((s) => s.id === id)?.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Institutional source ↗
+                      </a>
+                    ))}
+                  </div>
+                ))}
+              </details>
             )}
             <details className="disclosure">
               <summary>

@@ -15,11 +15,13 @@ export function OrganizationRow({
       <span>
         <strong>{org.shortName}</strong>
         <small>
-          {org.status === 'newly-approved'
-            ? 'Approved · opening not verified'
-            : org.level === 'asset'
-              ? 'Organizational asset'
-              : org.location?.name || 'Available in tree'}
+          {org.historicalAsOf
+            ? `${org.historicalAsOf.slice(0, 4)} record · ${org.location?.name || 'Unmapped'}`
+            : org.status === 'newly-approved'
+              ? 'Approved · opening not verified'
+              : org.level === 'asset'
+                ? 'Organizational asset'
+                : org.location?.name || 'Available in tree'}
         </small>
       </span>
       <ChevronRight size={16} />

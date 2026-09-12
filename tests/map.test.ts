@@ -122,3 +122,38 @@ void test('NCC regions cover each state once, preserve disputed areas and match 
     );
   }
 });
+
+void test('command labels stay within a short leader of their HQ under crowding', async () => {
+  const { placeLabel } = await import('../components/explorer/map/labels');
+  for (const occupied of [
+    [],
+    [{ left: 0, top: 0, right: 1200, bottom: 900 }],
+  ]) {
+    const result = placeLabel({ x: 500, y: 400 }, 120, 30, occupied, {
+      left: 24,
+      top: 110,
+      right: 1000,
+      bottom: 800,
+    });
+    assert.ok(Math.abs(result.y + 15) <= 32);
+    assert.ok(result.x === 20 || result.x === -140);
+  }
+});
+void test('interior labels cover all published directorates separately from HQ positions', async () => {
+  const { readFileSync } = await import('node:fs');
+  const labels = JSON.parse(
+    readFileSync('public/geography/india-ncc-labels.json', 'utf8'),
+  );
+  assert.equal(labels.length, 17);
+  assert.equal(
+    new Set(labels.map((l: { organizationId: string }) => l.organizationId))
+      .size,
+    17,
+  );
+  for (const label of labels) {
+    const [lng, lat] = label.coordinates;
+    for (const [w, s, e, n] of [label.bounds, label.compactBounds])
+      assert.ok(lng > w && lng < e && lat > s && lat < n);
+    assert.ok(label.lines.length && label.compactLines.length);
+  }
+});

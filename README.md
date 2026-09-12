@@ -66,3 +66,9 @@ python scripts/prepare-ncc-regions.py /path/to/extracted/state-directory
 ```
 
 The script validates the 36 state/UT assignments, preserves source-designated disputed areas, and writes GeoJSON plus sourced coverage/bounds into the dataset. See [Karnataka & Goa's field audit](docs/ncc-karnataka-goa-audit.md) for dated unit evidence and unresolved records.
+
+### NCC cartographic labels
+
+`python scripts/prepare-region-labels.py` (Shapely and pyproj required) derives horizontal label boxes from the existing NCC region polygons in Web Mercator. Full and compact boxes share a fixed center; every box is checked for containment in its directorate's largest land polygon. These are cartographic positions, independent of headquarters. The north-up browser map measures font widths and fits or abbreviates names within those boxes; tiny regions remain selectable through their polygon, search and the directorate index. No group boundaries are inferred.
+
+The September 12 research expansion documents six Karnataka & Goa groups and 55 units, including 4 Karnataka Engineer Company at Manipal. Two unit records are historical-only, and older parent/HQ evidence is dated individually. This is not a certified current roster. The [field audit](docs/ncc-karnataka-goa-audit.md) provides the complete register, primary-source links, institution associations and unresolved conflicts.

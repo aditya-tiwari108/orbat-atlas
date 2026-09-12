@@ -12,7 +12,7 @@ export function collides(a: LabelRect, b: LabelRect) {
     a.bottom + 7 > b.top
   );
 }
-/** Keep every HQ name; crowded labels become callouts, never anonymous dots. */
+/** Bounded callouts preserve geographic association even at the widest zoom. */
 export function placeLabel(
   point: { x: number; y: number },
   width: number,
@@ -27,42 +27,34 @@ export function placeLabel(
   let best:
     | { x: number; y: number; rect: LabelRect; score: number }
     | undefined;
-  for (let distance = 0; distance <= 480; distance += 24) {
-    for (const outward of [0, 220, 440]) {
-      for (const side of sides) {
-        for (const dy of distance ? [-distance, distance] : [0]) {
-          const left = Math.max(
-            viewport.left,
-            Math.min(
-              viewport.right - width,
-              side === 'west'
-                ? point.x - width - gap - outward
-                : point.x + gap + outward,
-            ),
-          );
-          const top = Math.max(
-            viewport.top,
-            Math.min(viewport.bottom - height, point.y - height / 2 + dy),
-          );
-          const rect = { left, top, right: left + width, bottom: top + height };
-          const overlaps = occupied.filter((other) =>
-            collides(rect, other),
-          ).length;
-          const score =
-            overlaps * 100000 +
-            Math.abs(top + height / 2 - point.y) +
-            outward * 0.7 +
-            (side === sides[0] ? 0 : secondarySidePenalty);
-          const result = { x: left - point.x, y: top - point.y, rect, score };
-          if (!best || score < best.score) best = result;
-          if (
-            overlaps === 0 &&
-            distance === 0 &&
-            outward === 0 &&
-            (side === sides[0] || !secondarySidePenalty)
-          )
-            return result;
-        }
+  for (let distance = 0; distance <= 32; distance += 16) {
+    for (const side of sides) {
+      for (const dy of distance ? [-distance, distance] : [0]) {
+        const left = side === 'west' ? point.x - width - gap : point.x + gap;
+        const top = point.y - height / 2 + dy;
+        const rect = { left, top, right: left + width, bottom: top + height };
+        const overlaps = occupied.filter((other) =>
+          collides(rect, other),
+        ).length;
+        const score =
+          overlaps * 100000 +
+          (rect.left < viewport.left ||
+          rect.right > viewport.right ||
+          rect.top < viewport.top ||
+          rect.bottom > viewport.bottom
+            ? 10000
+            : 0) +
+          Math.abs(top + height / 2 - point.y) +
+          (side === sides[0] ? 0 : secondarySidePenalty);
+        const result = { x: left - point.x, y: top - point.y, rect, score };
+        if (!best || score < best.score) best = result;
+        if (
+          overlaps === 0 &&
+          score === 0 &&
+          distance === 0 &&
+          (side === sides[0] || !secondarySidePenalty)
+        )
+          return result;
       }
     }
   }

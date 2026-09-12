@@ -11,7 +11,13 @@ export interface CountryPresentation {
   mapLabels?: Record<string, string>;
   regions?: Record<
     string,
-    { path: string; sourceUrl: string; credit: string; maxZoom: number }
+    {
+      path: string;
+      labelsPath?: string;
+      sourceUrl: string;
+      credit: string;
+      maxZoom: number;
+    }
   >;
 }
 export const countryPresentation: Record<string, CountryPresentation> = {
@@ -19,6 +25,7 @@ export const countryPresentation: Record<string, CountryPresentation> = {
     regions: {
       ncc: {
         path: '/geography/india-ncc-regions.geojson',
+        labelsPath: '/geography/india-ncc-labels.json',
         sourceUrl:
           'https://surveyofindia.gov.in/pages/administrative-boundary-data-base-abdb-',
         credit: 'Survey of India · ABDB states 2025',

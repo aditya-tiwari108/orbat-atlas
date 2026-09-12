@@ -51,6 +51,11 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
       <a href="/data-coverage.md" target="_blank" rel="noreferrer">
         Read the coverage report ↗
       </a>
+      <p>
+        <a href="/ncc-karnataka-goa-audit.md" target="_blank" rel="noreferrer">
+          Karnataka &amp; Goa NCC: group and unit research ↗
+        </a>
+      </p>
     </dialog>
   );
 }

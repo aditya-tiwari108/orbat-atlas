@@ -148,3 +148,31 @@ void test('new country schemas do not assume Indian locations or root IDs', () =
     ['example-national'],
   );
 });
+
+void test('Karnataka Goa register preserves historical gaps and the engineer company hierarchy', () => {
+  const groups = organizations.filter(
+    (o) => o.parentId === 'in-ncc-karnataka-goa',
+  );
+  const ids = new Set(groups.map((o) => o.id));
+  const units = organizations.filter((o) => ids.has(o.parentId || ''));
+  assert.equal(groups.length, 6);
+  assert.equal(units.length, 55);
+  const company = index.get('in-ncc-4-kar-engineer')!;
+  assert.equal(company.parentId, 'in-ncc-group-mangaluru');
+  assert.equal(company.location?.name, 'Manipal');
+  assert.equal(company.commander?.asOf, '2025-08-13');
+  assert.equal(company.commander?.assumedOffice, undefined);
+  assert.ok(searchOrganizations('4 Kar Eng Coy').includes(company));
+  for (const o of organizations) {
+    for (const affiliation of o.institutionalAffiliations || [])
+      for (const id of affiliation.sourceIds) assert.ok(sourceIndex.has(id));
+    for (const evidence of Object.values(o.evidence || {}))
+      if (evidence.asOf)
+        assert.ok(Date.parse(evidence.asOf) <= Date.parse(evidence.checkedAt));
+    if (o.historicalAsOf)
+      assert.ok(
+        o.verificationGaps?.length &&
+          o.evidence?.parent?.status === 'unverified',
+      );
+  }
+});

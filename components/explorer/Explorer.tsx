@@ -9,6 +9,7 @@ import {
 import {
   Anchor,
   ArrowLeft,
+  ChevronRight,
   ChevronDown,
   Compass,
   GraduationCap,
@@ -171,6 +172,11 @@ export default function Explorer() {
               Select a {service === 'ncc' ? 'directorate' : 'command'} to
               explore its organization.
             </p>
+            {service === 'ncc' && (
+              <button className="text-link" onClick={() => setBrowse(true)}>
+                Browse all directorates <ChevronRight size={14} />
+              </button>
+            )}
           </>
         )}
       </div>
@@ -255,7 +261,7 @@ export default function Explorer() {
           </label>
           <p>
             {service === 'ncc'
-              ? 'Directorate regions follow published state and union-territory administration. Select a region or its headquarters name to explore.'
+              ? 'Directorate regions follow published state and union-territory administration. Select a region to explore. Small regions use abbreviated names as space permits; all directorates remain in the hierarchy.'
               : 'Headquarters are city-level points. Command areas are only shown when published geography supports them.'}
           </p>
           <p>

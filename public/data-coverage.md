@@ -1,4 +1,4 @@
-# Data coverage review — 8 September 2026
+# Data coverage review — 12 September 2026
 
 This report describes a sourced snapshot and its remaining gaps, not a complete or live order of battle. Manual field review and structural validation serve different purposes. The user authorized implementation on 7 September 2026. Remaining factual gaps are explicit; publication requires implementation verification.
 
@@ -74,7 +74,7 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 - Complete portrait searches and visual/license checks. Kerala’s identified website portrait explicitly requires permission; it is not included in public assets.
 - Corroborate current corps/division parents and expand subordinate coverage. Existing uncertain relationships must be displayed as reported associations, not current command facts.
 - Source authentic formation insignia and published geographic coverage. Do not derive territorial polygons from headquarters points.
-- Karnataka & Goa: all six groups and nineteen sourced units added; further unit and leadership coverage remains partial. See ncc-karnataka-goa-audit.md.
+- Karnataka & Goa: six groups and 55 unit records, including two explicitly historical-only records. Current parent/HQ and leadership coverage remains partial. See ncc-karnataka-goa-audit.md.
 - NCC administrative regions: 17 mapped directorate remits use separately sourced SOI ABDB state geometry; operational transitions remain explicit.
 
 ## Record-specific gaps

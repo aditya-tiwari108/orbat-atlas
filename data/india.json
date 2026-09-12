@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-06",
+  "reviewedAt": "2026-09-12",
   "organizations": [
     {
       "id": "in-army",
@@ -4524,7 +4524,8 @@
           18.47773
         ],
         "asOf": "2026-09-08"
-      }
+      },
+      "note": "Six documented groups are included. Unit records mix recent institutional corroboration and explicitly dated historical evidence; the register is not a certified current strength return. No separate Goa Group is asserted operational without a dated official confirmation."
     },
     {
       "id": "in-ncc-kerala",
@@ -7417,9 +7418,20 @@
       "level": "unit",
       "parentId": "in-ncc-group-bengaluru-a",
       "description": "NCC cadet training unit with publicly documented institutional affiliations under Bengaluru A Group. School and college contingents are subordinate components, not separate battalions.",
-      "location": null,
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-group-a-2022"
+        ]
+      },
       "sourceIds": [
-        "ncc-kargo-bmsce"
+        "ncc-kargo-bmsce",
+        "ncc-audit-group-a-2022"
       ],
       "relationshipSourceIds": [
         "ncc-kargo-bmsce"
@@ -7443,12 +7455,20 @@
           "checkedAt": "2026-09-08",
           "status": "supported",
           "note": "Institutional NCC page explicitly identifies this organization and parent. Page is an undated public profile unless a source publication date is recorded."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "NCC circular explicitly names the unit in Bengaluru.",
+          "asOf": "2022-02-15"
         }
       },
       "verificationGaps": [
         "Current leadership and appointment dates not independently verified.",
-        "Subordinate coverage remains partial; institutional sub-units are not comprehensively catalogued.",
-        "Headquarters city not independently established; kept in the organizational tree."
+        "Subordinate coverage remains partial; institutional sub-units are not comprehensively catalogued."
       ]
     },
     {
@@ -7460,9 +7480,20 @@
       "level": "unit",
       "parentId": "in-ncc-group-bengaluru-a",
       "description": "NCC cadet training unit with publicly documented institutional affiliations under Bengaluru A Group. School and college contingents are subordinate components, not separate battalions.",
-      "location": null,
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-group-a-2022"
+        ]
+      },
       "sourceIds": [
-        "ncc-kargo-dsba"
+        "ncc-kargo-dsba",
+        "ncc-audit-group-a-2022"
       ],
       "relationshipSourceIds": [
         "ncc-kargo-dsba"
@@ -7486,12 +7517,20 @@
           "checkedAt": "2026-09-08",
           "status": "supported",
           "note": "Institutional NCC page explicitly identifies this organization and parent. Page is an undated public profile unless a source publication date is recorded."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "NCC circular explicitly names the unit in Bengaluru.",
+          "asOf": "2022-02-15"
         }
       },
       "verificationGaps": [
         "Current leadership and appointment dates not independently verified.",
-        "Subordinate coverage remains partial; institutional sub-units are not comprehensively catalogued.",
-        "Headquarters city not independently established; kept in the organizational tree."
+        "Subordinate coverage remains partial; institutional sub-units are not comprehensively catalogued."
       ]
     },
     {
@@ -8515,6 +8554,2447 @@
         "Institutional contingents are not comprehensively catalogued.",
         "HQ city is a dated 2017 public record; current location needs corroboration."
       ]
+    },
+    {
+      "id": "in-ncc-1-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Battalion NCC",
+      "shortName": "1 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-a",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-group-a-2022"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-francis1",
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-francis1"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-francis1"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-francis1"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "1 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-3-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "3 Karnataka Battalion NCC",
+      "shortName": "3 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-a",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-group-a-2022"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-kjc3",
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-kjc3"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-kjc3"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-kjc3"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "3 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-4-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "4 Karnataka Battalion NCC",
+      "shortName": "4 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-a",
+      "description": "NCC cadet training unit documented in Tumakuru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Tumakuru",
+        "coordinates": [
+          13.34,
+          77.1
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-ssit4"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-ssit4"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-ssit4"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-ssit4"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-ssit4"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-ssit4"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "4 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-kar-girls",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Girls Battalion NCC",
+      "shortName": "1 Kar Girls Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-a",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-group-a-2022"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-mes-girls",
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-mes-girls"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "1 Kar Girls Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-kar-naval",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Naval Unit NCC",
+      "shortName": "1 Kar Naval Unit",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-a",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-naval-roster"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-naval-roster",
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-group-a-2022"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2024-07-22"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-group-a-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "1 Kar Naval Unit NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-9-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "9 Karnataka Battalion NCC",
+      "shortName": "9 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-b",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-cmr9",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-cmr9"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-cmr9"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-cmr9"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "9 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-10-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "10 Karnataka Battalion NCC",
+      "shortName": "10 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-b",
+      "description": "NCC cadet training unit documented in Kolar. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Kolar",
+        "coordinates": [
+          13.14,
+          78.13
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-jss10"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-jss10",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-jss10"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2026-06-29"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-jss10"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "10 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-kar-armoured",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Armoured Squadron NCC",
+      "shortName": "1 Kar Armoured Squadron",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-b",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-sju-armour",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-sju-armour"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "1 Kar Armoured Sqn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-kar-air",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Air Squadron NCC",
+      "shortName": "1 Kar Air Squadron",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-b",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-mlac-air"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-mlac-air",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-mlac-air"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-mlac-air"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "1 Kar Air Sqn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-2-kar-air",
+      "country": "IN",
+      "service": "ncc",
+      "name": "2 Karnataka Air Squadron (Technical) NCC",
+      "shortName": "2 Kar Air Squadron (Technical)",
+      "level": "unit",
+      "parentId": "in-ncc-group-bengaluru-b",
+      "description": "NCC cadet training unit documented in Bengaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bengaluru",
+        "coordinates": [
+          12.97,
+          77.59
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-msr-air",
+        "ncc-audit-group-b-2022",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-msr-air"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-msr-air",
+            "ncc-audit-group-b-2022"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-msr-air"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "2 Kar Air Sqn (Technical) NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-24-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "24 Karnataka Battalion NCC",
+      "shortName": "24 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Dharwad. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Dharwad",
+        "coordinates": [
+          15.46,
+          75.01
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-kacd24"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-kacd24",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-kacd24"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2022-06-21"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-kacd24"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "24 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-25-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "25 Karnataka Battalion NCC",
+      "shortName": "25 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Belagavi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Belagavi",
+        "coordinates": [
+          15.85,
+          74.5
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-kle-belgaum"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-kle-belgaum",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-kle-belgaum"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2019-07-01"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-kle-belgaum"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "25 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-26-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "26 Karnataka Battalion NCC",
+      "shortName": "26 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Belagavi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Belagavi",
+        "coordinates": [
+          15.85,
+          74.5
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-kle-belgaum"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-kle-belgaum",
+        "ncc-audit-lingaraj26"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-lingaraj26"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-kle-belgaum",
+            "ncc-audit-lingaraj26"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-lingaraj26"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-kle-belgaum"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "26 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-27-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "27 Karnataka Battalion NCC",
+      "shortName": "27 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Hubballi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Hubballi",
+        "coordinates": [
+          15.36,
+          75.12
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-haveri27"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-haveri27"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-haveri27"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-haveri27"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-haveri27"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-haveri27"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "27 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-28-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "28 Karnataka Battalion NCC",
+      "shortName": "28 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Hubballi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Hubballi",
+        "coordinates": [
+          15.36,
+          75.12
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-hubli28"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-hubli28",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-hubli28"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-hubli28"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "28 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-29-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "29 Karnataka Battalion NCC",
+      "shortName": "29 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Karwar. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Karwar",
+        "coordinates": [
+          14.81,
+          74.13
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-karwar29"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-karwar29"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-karwar29"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-karwar29"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-karwar29"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-karwar29"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "29 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-5-kar-girls",
+      "country": "IN",
+      "service": "ncc",
+      "name": "5 Karnataka Girls Battalion NCC",
+      "shortName": "5 Kar Girls Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Dharwad. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Dharwad",
+        "coordinates": [
+          15.46,
+          75.01
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-kittur5"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-kittur5",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-kittur5"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-kittur5"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "5 Kar Girls Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-8-kar-naval",
+      "country": "IN",
+      "service": "ncc",
+      "name": "8 Karnataka Naval Unit NCC",
+      "shortName": "8 Kar Naval Unit",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Karwar. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Karwar",
+        "coordinates": [
+          14.81,
+          74.13
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-naval-roster"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-naval-roster",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2024-07-22"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "8 Kar Naval Unit NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-8-kar-air",
+      "country": "IN",
+      "service": "ncc",
+      "name": "8 Karnataka Air Squadron NCC",
+      "shortName": "8 Kar Air Squadron",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Belagavi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Belagavi",
+        "coordinates": [
+          15.85,
+          74.5
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-rls8",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-rls8"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "8 Kar Air Sqn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-goa-rv",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Goa Remount and Veterinary Squadron NCC",
+      "shortName": "1 Goa Remount and Veterinary Squadron",
+      "level": "unit",
+      "parentId": "in-ncc-group-belagavi",
+      "description": "NCC cadet training unit documented in Panaji. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Panaji",
+        "coordinates": [
+          15.49,
+          73.83
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Historical directory entry only; present status unknown.",
+          "asOf": "2017-12-28"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "historicalAsOf": "2017-12-28",
+      "aliases": [
+        "1 Goa Remount and Veterinary Sqn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-33-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "33 Karnataka Battalion NCC",
+      "shortName": "33 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Davangere. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Davangere",
+        "coordinates": [
+          14.46,
+          75.92
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-arg33"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-arg33"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-arg33"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-arg33"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-arg33"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-arg33"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "33 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-35-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "35 Karnataka Battalion NCC",
+      "shortName": "35 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Raichur. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Raichur",
+        "coordinates": [
+          16.21,
+          77.35
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-lvd35"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-lvd35"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-lvd35"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-lvd35"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2021-06-30"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-lvd35"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-lvd35"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "35 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-36-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "36 Karnataka Battalion NCC",
+      "shortName": "36 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Vijayapura. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Vijayapura",
+        "coordinates": [
+          16.83,
+          75.71
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-bms36",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-bms36"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2018-08-03"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "36 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-37-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "37 Karnataka Battalion NCC",
+      "shortName": "37 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Bagalkot. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bagalkot",
+        "coordinates": [
+          16.18,
+          75.7
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-svm37"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-svm37",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-svm37"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-svm37"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "37 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-38-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "38 Karnataka Battalion NCC",
+      "shortName": "38 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Gadag. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Gadag",
+        "coordinates": [
+          15.43,
+          75.63
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-gadag38-city"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-gadag38",
+        "ncc-audit-gadag38-city"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-gadag38"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-gadag38"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2026-02-04"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-gadag38"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-gadag38-city"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "38 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-3-kar-engineer",
+      "country": "IN",
+      "service": "ncc",
+      "name": "3 Karnataka Engineer Company NCC",
+      "shortName": "3 Kar Engineer Company",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Davangere. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Davangere",
+        "coordinates": [
+          14.46,
+          75.92
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-gmu3"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-gmu3",
+        "ncc-audit-gmit3"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-gmit3"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-gmu3"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2024-08-23"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-gmit3"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-gmu3"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "3 Kar Engr Coy NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-3-kar-air",
+      "country": "IN",
+      "service": "ncc",
+      "name": "3 Karnataka Air Squadron (Technical) NCC",
+      "shortName": "3 Kar Air Squadron (Technical)",
+      "level": "unit",
+      "parentId": "in-ncc-group-ballari",
+      "description": "NCC cadet training unit documented in Bidar. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Bidar",
+        "coordinates": [
+          17.91,
+          77.52
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Historical directory entry only; present status unknown.",
+          "asOf": "2017-12-28"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "historicalAsOf": "2017-12-28",
+      "aliases": [
+        "3 Kar Air Sqn (Technical) NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-19-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "19 Karnataka Battalion NCC",
+      "shortName": "19 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "NCC cadet training unit documented in Madikeri. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Madikeri",
+        "coordinates": [
+          12.42,
+          75.74
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-spc19"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-spc19",
+        "ncc-audit-spc-parent"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-spc-parent"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-spc19"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2023-01-15"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-spc-parent"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "The institutional extension report identifies Mangalore Group in its 2015 activity record; current continuity requires corroboration.",
+          "asOf": "2015-06-21"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-spc19"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Group affiliation is documented by a 2015 institutional activity report; its current continuity needs confirmation."
+      ],
+      "aliases": [
+        "19 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-20-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "20 Karnataka Battalion NCC",
+      "shortName": "20 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "NCC cadet training unit documented in Shivamogga. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Shivamogga",
+        "coordinates": [
+          13.93,
+          75.57
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-svvs20"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-svvs20"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-svvs20"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-svvs20"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-svvs20"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-svvs20"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "20 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-21-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "21 Karnataka Battalion NCC",
+      "shortName": "21 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "NCC cadet training unit documented in Udupi. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Udupi",
+        "coordinates": [
+          13.34,
+          74.75
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-sharada21"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-sharada21",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-sharada21"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-sharada21"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "21 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-2-kar-engineer",
+      "country": "IN",
+      "service": "ncc",
+      "name": "2 Karnataka Engineer Company NCC",
+      "shortName": "2 Kar Engineer Company",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "Army Wing engineer company established at NITK Surathkal in 1963. NITK’s own unit website explicitly identifies Mangaluru Group under the Karnataka & Goa Directorate. The public headquarters marker represents Surathkal at city-level precision.",
+      "location": {
+        "name": "Surathkal",
+        "coordinates": [
+          12.99,
+          74.8
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-nitk"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-nitk"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-nitk"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-nitk"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-nitk"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-nitk"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        },
+        "commander": {
+          "sourceIds": [
+            "ncc-audit-nitk"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Undated institutional office-bearer profile, observed on the review date; appointment date not established."
+        }
+      },
+      "verificationGaps": [
+        "Officer name is from an undated institutional profile; present tenure and appointment date need verification.",
+        "The institutional page identifies an officer portrait, but reusable image rights were not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "2 Kar Engr Coy NCC"
+      ],
+      "commander": {
+        "name": "Lt Col Nikhil Khullar",
+        "role": "Officer Commanding",
+        "asOf": "2026-09-12",
+        "sourceIds": [
+          "ncc-audit-nitk"
+        ],
+        "evidenceKind": "undated-profile"
+      }
+    },
+    {
+      "id": "in-ncc-4-kar-engineer",
+      "country": "IN",
+      "service": "ncc",
+      "name": "4 Karnataka Engineer Company NCC",
+      "shortName": "4 Kar Engineer Company",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "Army Wing engineer company of the National Cadet Corps under Mangaluru Group, Karnataka & Goa Directorate. The public unit office is identified at MIT Campus, Manipal; the map uses only a Manipal city-level point. Institutional reports document cadet training, B/C certificate examinations and community service. SMVITM’s contingent has been affiliated since 2020. A 2025 Republic Day Camp report explicitly identifies the company’s Mangaluru Group affiliation.",
+      "location": {
+        "name": "Manipal",
+        "coordinates": [
+          13.35,
+          74.79
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-smvitm-profile"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-smvitm",
+        "ncc-audit-smvitm-profile",
+        "ncc-audit-yit-ranks",
+        "ncc-audit-smvitm-rdc",
+        "ncc-audit-sjec-camp"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-smvitm-rdc"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-smvitm",
+            "ncc-audit-smvitm-profile",
+            "ncc-audit-yit-ranks"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2025-08-13"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-smvitm-rdc"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-smvitm-profile"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        },
+        "commander": {
+          "sourceIds": [
+            "ncc-audit-smvitm-profile",
+            "ncc-audit-sjec-camp",
+            "ncc-audit-yit-ranks"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "OC role in institutional profile and June report; August ceremony corroboration. Appointment and present tenure unknown.",
+          "asOf": "2025-08-13"
+        }
+      },
+      "verificationGaps": [
+        "Leadership is evidenced in 2025; present tenure and appointment date need verification.",
+        "No correctly identified, reuse-cleared commander portrait was established.",
+        "Full list of affiliated institutions and sanctioned company strength is not established."
+      ],
+      "aliases": [
+        "4 Kar Engr Coy NCC",
+        "4 Kar Eng Coy",
+        "4 Kar Engr Coy NCC Manipal",
+        "4 Karnataka Engineering Company",
+        "4 Kar Engineer Company"
+      ],
+      "note": "Lt Col P. S. Chauhan is named as Officer Commanding in the SMVITM unit profile and in a June 2025 camp report; YIT records Lt Col P. S. Chouhan leading the 13 August 2025 rank ceremony. The spelling variant is preserved in source notes. This does not establish incumbency in September 2026. Associate NCC Officers at individual colleges are separate appointments.",
+      "commander": {
+        "name": "Lt Col P. S. Chauhan",
+        "role": "Officer Commanding",
+        "asOf": "2025-08-13",
+        "sourceIds": [
+          "ncc-audit-smvitm-profile",
+          "ncc-audit-sjec-camp",
+          "ncc-audit-yit-ranks"
+        ],
+        "evidenceKind": "dated-observation"
+      },
+      "institutionalAffiliations": [
+        {
+          "name": "Manipal Institute of Technology (MIT), MAHE",
+          "sourceIds": [
+            "ncc-audit-smvitm-profile"
+          ],
+          "note": "Public unit office identified at MIT Campus. This is not a separate engineer company."
+        },
+        {
+          "name": "Shri Madhwa Vadiraja Institute of Technology & Management, Bantakal",
+          "sourceIds": [
+            "ncc-audit-smvitm"
+          ],
+          "note": "Army Wing contingent affiliated since 2020; institutional ANO Lt Karthik V on the undated college page."
+        },
+        {
+          "name": "Yenepoya Institute of Technology",
+          "sourceIds": [
+            "ncc-audit-yit-ranks"
+          ],
+          "note": "Institution reports its cadets’ rank ceremony at 4 Kar Engineer Company on 13 August 2025; formal affiliation sanction not located."
+        }
+      ]
+    },
+    {
+      "id": "in-ncc-5-kar-naval",
+      "country": "IN",
+      "service": "ncc",
+      "name": "5 Karnataka Naval Unit NCC",
+      "shortName": "5 Kar Naval Unit",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "NCC cadet training unit documented in Mangaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Mangaluru",
+        "coordinates": [
+          12.91,
+          74.86
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-naval-roster"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-naval-roster",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-loksabha-2017"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2024-07-22"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "unverified",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity.",
+          "asOf": "2017-12-28"
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-naval-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "Parent association is documented in 2017; a current group roster has not corroborated it."
+      ],
+      "aliases": [
+        "5 Kar Naval Unit NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-6-kar-air",
+      "country": "IN",
+      "service": "ncc",
+      "name": "6 Karnataka Air Squadron NCC",
+      "shortName": "6 Kar Air Squadron",
+      "level": "unit",
+      "parentId": "in-ncc-group-mangaluru",
+      "description": "NCC cadet training unit documented in Mangaluru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Mangaluru",
+        "coordinates": [
+          12.91,
+          74.86
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-aloysius6"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-aloysius6",
+        "ncc-audit-sjec-camp",
+        "ncc-audit-aiet-air"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-aiet-air"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-aloysius6",
+            "ncc-audit-sjec-camp"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-aiet-air"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-aloysius6"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "6 Kar Air Sqn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-15-kar-bn",
+      "country": "IN",
+      "service": "ncc",
+      "name": "15 Karnataka Battalion NCC",
+      "shortName": "15 Kar Battalion",
+      "level": "unit",
+      "parentId": "in-ncc-group-mysuru",
+      "description": "NCC cadet training unit documented in Hassan. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Hassan",
+        "coordinates": [
+          13.01,
+          76.1
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-audit-ait15"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-ait15",
+        "ncc-audit-christ15"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-ait15"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-ait15",
+            "ncc-audit-christ15"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record.",
+          "asOf": "2025-07-04"
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-ait15"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-audit-ait15"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment."
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued."
+      ],
+      "aliases": [
+        "15 Kar Bn NCC"
+      ]
+    },
+    {
+      "id": "in-ncc-1-kar-engineer",
+      "country": "IN",
+      "service": "ncc",
+      "name": "1 Karnataka Engineer Company NCC",
+      "shortName": "1 Kar Engineer Company",
+      "level": "unit",
+      "parentId": "in-ncc-group-mysuru",
+      "description": "NCC cadet training unit documented in Mysuru. Its institutional sources and the dated parliamentary register are listed separately; college contingents are not independent battalions.",
+      "location": {
+        "name": "Mysuru",
+        "coordinates": [
+          12.3,
+          76.65
+        ],
+        "precision": "city",
+        "sourceIds": [
+          "ncc-loksabha-2017"
+        ]
+      },
+      "sourceIds": [
+        "ncc-audit-mysore-engineer",
+        "ncc-audit-mysore-roster",
+        "ncc-loksabha-2017"
+      ],
+      "relationshipSourceIds": [
+        "ncc-audit-mysore-roster"
+      ],
+      "relationshipKind": "administrative",
+      "coverage": "leaf",
+      "function": "youth-development",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "ncc-audit-mysore-engineer"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Unit identity corroborated by the attached institutional record."
+        },
+        "parent": {
+          "sourceIds": [
+            "ncc-audit-mysore-roster"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "Publicly documented group association; evidence date is not a claim of present continuity."
+        },
+        "headquarters": {
+          "sourceIds": [
+            "ncc-loksabha-2017"
+          ],
+          "checkedAt": "2026-09-12",
+          "status": "supported",
+          "note": "City-level location only; this does not identify a training camp or deployment.",
+          "asOf": "2017-12-28"
+        }
+      },
+      "verificationGaps": [
+        "Current commander, appointment date and reusable portrait are not established.",
+        "Institutional contingents are not comprehensively catalogued.",
+        "HQ city is documented in 2017; current location has not been independently corroborated."
+      ],
+      "aliases": [
+        "1 Kar Engr Coy NCC"
+      ]
     }
   ],
   "sources": [
@@ -9476,6 +11956,363 @@
       "publisher": "Ballari Institute of Technology and Management",
       "accessed": "2026-09-08",
       "kind": "official"
+    },
+    {
+      "id": "ncc-audit-smvitm",
+      "title": "NCC Army Wing — 4 Kar Engineer Company affiliation",
+      "url": "https://sode-edu.in/smvitm/ncc/",
+      "publisher": "SMVITM",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-smvitm-profile",
+      "title": "4 Kar Engineer Company — Officer Commanding and Manipal office (p. 2)",
+      "url": "https://sode-edu.in/smvitm/wp-content/uploads/2025/04/NCC-Content.pdf",
+      "publisher": "SMVITM",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-smvitm-rdc",
+      "title": "RDC 2025 — 4 Kar Engineer Company, Mangaluru Group",
+      "url": "https://sode-edu.in/smvitm/accomplishments/cadet-chm-arpita-thantry-to-represent-4-kar-engr-coy-ncc-as-main-dancer-at-republic-day-camp-2025/",
+      "publisher": "SMVITM",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-yit-ranks",
+      "title": "NCC rank distribution ceremony — 13 August 2025",
+      "url": "https://yit.edu.in/activities.php",
+      "publisher": "Yenepoya Institute of Technology",
+      "accessed": "2026-09-12",
+      "kind": "official",
+      "published": "2025-08-13"
+    },
+    {
+      "id": "ncc-audit-nitk",
+      "title": "2 Kar Engineer Company — unit history, parent and Officer Commanding",
+      "url": "https://ncc.l4.nitk.ac.in/",
+      "publisher": "NITK Surathkal",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-spc19",
+      "title": "19 Kar Battalion, Madikeri — January 2023 training camp",
+      "url": "https://spcputtur.ac.in/updates/madikeri-holds-combined-annual-training-camp",
+      "publisher": "St Philomena College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-spc-parent",
+      "title": "Sociology extension reports — 19 Kar Battalion / Mangalore Group",
+      "url": "https://spcputtur.ac.in/sociology",
+      "publisher": "St Philomena College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-svvs20",
+      "title": "Kumadvathi NCC troop — 20 Kar Battalion / Mangalore Group",
+      "url": "https://www.svvsedu.in/wp-content/uploads/2024/01/Vivekanda_Booklet_New.pdf",
+      "publisher": "Swamy Vivekananda Vidya Samsthe",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-sharada21",
+      "title": "NCC affiliation — 21 Karnataka Battalion, Udupi",
+      "url": "https://sharadacollegebasrur.com/ncc/",
+      "publisher": "Sri Sharada College Basrur",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-naval-roster",
+      "title": "Pre-Yachting Regatta Camp Phase I — six naval units and cities",
+      "url": "https://www.damodarcollege.edu.in/pre-yachting-regatta-camp-phase-i/",
+      "publisher": "Shree Damodar College",
+      "accessed": "2026-09-12",
+      "kind": "official",
+      "published": "2024-07-22"
+    },
+    {
+      "id": "ncc-audit-aloysius6",
+      "title": "A Chronicle of Excellence — RDC 2025, 6 Karnataka Air Squadron Mangalore",
+      "url": "https://staloysius.edu.in/storage/files/documents/A-Chronicle-of-Excellence.pdf",
+      "publisher": "St Aloysius University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-aiet-air",
+      "title": "NCC Air Wing report — Mangalore Group affiliations",
+      "url": "https://cloud.aiet.org.in/storage/NAAC/criteria-5/5.3.2/REPORT/NCC%20report.pdf",
+      "publisher": "Alva’s Institute of Engineering and Technology",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-sjec-camp",
+      "title": "Annual Training Camp 2025 closing ceremony — named unit and group leaders",
+      "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1282568",
+      "publisher": "Daijiworld / institutional media release",
+      "accessed": "2026-09-12",
+      "kind": "reference",
+      "published": "2025-06-05"
+    },
+    {
+      "id": "ncc-audit-francis1",
+      "title": "NCC affiliation — 1 Karnataka Battalion, Bengaluru A",
+      "url": "https://www.stfranciscollege.edu.in/Centers/NCC/ncccollege",
+      "publisher": "St Francis College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-kjc3",
+      "title": "NCC reports — 3 Karnataka Battalion, Bengaluru A",
+      "url": "https://www.kristujayanti.edu.in/studentlife/public_ncc.php",
+      "publisher": "Kristu Jayanti University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-ssit4",
+      "title": "NCC report 2019–20 — 4 Karnataka Battalion, Tumakuru, Bengaluru A",
+      "url": "https://ssahe.edu.in/ssit/assets/ncc/NCC-2019-2020.pdf",
+      "publisher": "Sri Siddhartha Institute of Technology",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-group-a-2022",
+      "title": "NCC Group A circular — 15 February 2022, constituent units and cities",
+      "url": "https://bcwcc.edu.in/ssr/3.4.3/Supportingdocument.pdf",
+      "publisher": "Bishop Cotton Women’s Christian College / NCC circular",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-mes-girls",
+      "title": "NCC achievements 2026 — 1 Karnataka Girls Battalion",
+      "url": "https://www.mesacs.in/",
+      "publisher": "MES College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-group-b-2022",
+      "title": "NCC correspondence December 2022 — Bengaluru units",
+      "url": "https://ssr.sabs.ac.in/2022-23/Criterion-3/3.4.3/advanced-leadership-camp_02-01-2023.pdf",
+      "publisher": "St Anne’s Degree College / NCC correspondence",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-cmr9",
+      "title": "Institutional NCC certificate — 9 Kar Battalion, Bengaluru B",
+      "url": "https://www.cmr.edu.in/wp-content/uploads/2025/05/c5-15.pdf",
+      "publisher": "CMR University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-jss10",
+      "title": "Investiture ceremony 29 June 2026 — 10 Kar Battalion, Kolar",
+      "url": "https://jsspsm.com/jss/gallery",
+      "publisher": "JSS Public School Malur",
+      "accessed": "2026-09-12",
+      "kind": "official",
+      "published": "2026-06-29"
+    },
+    {
+      "id": "ncc-audit-sju-armour",
+      "title": "History of 1 Karnataka Armoured Squadron",
+      "url": "https://www.sju.edu.in/services/ncc-organization-history",
+      "publisher": "St Joseph’s University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-mlac-air",
+      "title": "NCC Air Wing — 1 Karnataka Air Squadron, Jakkur",
+      "url": "https://www.mlacw.edu.in/about/accreditation/nirf-india-ranking/",
+      "publisher": "Maharani Lakshmi Ammanni College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-msr-air",
+      "title": "NCC debate tournament 2021 — 2 Kar Technical Air Squadron, Bengaluru B",
+      "url": "https://msrcl.org/ncc-debate-tournament-2021",
+      "publisher": "Ramaiah College of Law",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-kacd24",
+      "title": "Yoga Day 21 June 2022 — 24 Karnataka Battalion, Dharwad",
+      "url": "https://www.kacd.ac.in/assets/upload/attachment/1203488443_5.1.3%20-%20Capacity%20building%20and%20skills%20enhancement-Supportive.pdf",
+      "publisher": "Karnatak Arts College Dharwad",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-kle-belgaum",
+      "title": "NCC reports — 25 and 26 Karnataka Battalions, Belagavi",
+      "url": "https://www.kleschoolbelgaum.com/ncc.php",
+      "publisher": "KLE International School Belagavi",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-lingaraj26",
+      "title": "NCC affiliation — 26 Karnataka Battalion and Belagavi Group",
+      "url": "https://www.kleslingarajcollege.edu.in/ncc.aspx",
+      "publisher": "KLE Lingaraj College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-haveri27",
+      "title": "NCC profile — 27 Karnataka Battalion, Hubballi, Belagavi Group",
+      "url": "https://www.kleghcollege.com/Files/Other%20Files/NCC%20SOP.pdf",
+      "publisher": "Gudleppa Hallikeri College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-hubli28",
+      "title": "NCC school troop — 28 Karnataka Battalion, Hubballi",
+      "url": "https://klemrsakharestate.com/ncc.php",
+      "publisher": "KLE M. R. Sakhare School",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-karwar29",
+      "title": "NCC enrolment 2024–25 — 29 Kar Battalion, Karwar, Belagavi Group",
+      "url": "https://kwtgcc.org/wp-content/uploads/GCC.NCC-Enrollment-2024-25_C.pdf",
+      "publisher": "Gokhale Centenary College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-kittur5",
+      "title": "NCC Annual Training Camp — 5 Karnataka Girls Battalion, Dharwad",
+      "url": "https://www.kittursainikschool.in/ncc.php",
+      "publisher": "Kittur Rani Channamma Sainik School",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-rls8",
+      "title": "NCC Air Wing — 8 Karnataka Air Squadron, Belagavi",
+      "url": "https://rlsinstitute.edu.in/ncc-2/",
+      "publisher": "Raja Lakhamagouda Science Institute",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-arg33",
+      "title": "NCC affiliation — 33 Karnataka Battalion, Davangere, Ballari Group",
+      "url": "https://beaargcdvg.in/ncc-2/",
+      "publisher": "ARG College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-lvd35",
+      "title": "NCC report 2020–21 — 35 Karnataka Battalion, Raichur, Ballari Group",
+      "url": "https://lvdcollege.com/assets/files/NCC/NCC_Abstract_Introduction_2020_2021.pdf",
+      "publisher": "LVD College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-bms36",
+      "title": "NCC achievements 2015–22 — 36 Karnataka Battalion, Vijayapura",
+      "url": "https://bmsce.ac.in/assets/img/NCC/Summary%20of%20NCC%20Achievements%20%282015-2022%29.pdf",
+      "publisher": "BMS College of Engineering",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-svm37",
+      "title": "NCC affiliation — 37 Karnataka Battalion, Bagalkot",
+      "url": "https://svmdegreecollege.edu.in/n-c-c/",
+      "publisher": "SVM College",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-gadag38",
+      "title": "NCC award February 2026 — 38 Karnataka Battalion, Ballari Group",
+      "url": "https://klesgadag.com/achievements.php",
+      "publisher": "KLE Society’s School Gadag",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-gadag38-city",
+      "title": "EBSB II January 2025 — 38 Karnataka Battalion, Gadag",
+      "url": "https://www.damodarcollege.edu.in/ebsb-ek-bharat-shreshtha-bharat-camp-ii/",
+      "publisher": "Shree Damodar College",
+      "accessed": "2026-09-12",
+      "kind": "official",
+      "published": "2025-01-16"
+    },
+    {
+      "id": "ncc-audit-gmit3",
+      "title": "NCC Group Ballari sanction — 3 Kar Engineer Company, Davangere, 12 March 2021",
+      "url": "https://www.gmit.ac.in/pdfs/NCC.pdf",
+      "publisher": "GM Institute of Technology / NCC Group Ballari",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-gmu3",
+      "title": "GMU Times July–September 2024 — 3 Kar Engineer Company, Davangere",
+      "url": "https://gmu.ac.in/assets/downloadmaterial/gmutimes/GMUTimes4Final.pdf",
+      "publisher": "GM University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-ait15",
+      "title": "NCC affiliation 2023–24 — 15 Kar Battalion, Hassan, Mysuru Group",
+      "url": "https://aitckm.edu.in/NAAC/aqar/Criterion3/3.4.4/3.4.3_and_3.4.4_CSE.pdf",
+      "publisher": "Adichunchanagiri Institute of Technology",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-christ15",
+      "title": "EBSB camp July 2025 — 15 Karnataka Battalion, Hassan",
+      "url": "https://brc.christuniversity.in/center/C/NCC/camp",
+      "publisher": "Christ University",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-mysore-roster",
+      "title": "Annual Report 2017–18, section 23 — Mysuru NCC units",
+      "url": "https://uni-mysore.ac.in/Kannada/sites/default/files/content/annual_report_2017-18.pdf",
+      "publisher": "University of Mysore",
+      "accessed": "2026-09-12",
+      "kind": "official"
+    },
+    {
+      "id": "ncc-audit-mysore-engineer",
+      "title": "NCC seeks government funds for Mysuru training centre",
+      "url": "https://timesofindia.indiatimes.com/city/mysuru/ncc-seeks-govt-funds-for-permanent-training-centre-in-mysuru/articleshow/132961227.cms",
+      "publisher": "Times of India",
+      "accessed": "2026-09-12",
+      "kind": "reference"
     }
   ]
 }

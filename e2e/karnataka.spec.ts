@@ -39,32 +39,14 @@ test('clicking the Karnataka region opens its six-group dossier, and service swi
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?service=ncc');
-  await expect(page.locator('.command-label')).toHaveCount(17);
-  // Calibrate Web Mercator from visible HQ anchors, then click an interior
-  // Karnataka point clear of labels. This remains valid if map padding changes.
-  const point = await page.evaluate(() => {
-    const merc = (lat: number) =>
-      Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360));
-    const rect = (id: string) =>
-      document
-        .querySelector(`[data-organization-id="${id}"]`)!
-        .getBoundingClientRect();
-    const a = rect('in-ncc-karnataka-goa'),
-      b = rect('in-ncc-bihar');
-    for (const [lat, lng] of [
-      [15.4, 75.3],
-      [15.8, 76.1],
-      [14.7, 75.6],
-    ]) {
-      const x = a.x + 5 + ((lng - 77.59) / (85.14 - 77.59)) * (b.x - a.x);
-      const y =
-        a.y +
-        5 +
-        ((merc(lat) - merc(12.97)) / (merc(25.61) - merc(12.97))) * (b.y - a.y);
-      if (document.elementFromPoint(x, y)?.tagName === 'CANVAS')
-        return { x, y };
-    }
-    throw new Error('No unobstructed interior region target');
+  await expect(page.locator('.region-label')).toHaveCount(17);
+  // The label box is generated wholly inside Karnataka; click its corner after
+  // disabling label pointer events to independently exercise polygon hit-testing.
+  const label = page.locator('[data-region-id="in-ncc-karnataka-goa"]');
+  const box = await label.boundingBox();
+  const point = { x: box!.x + box!.width / 2, y: box!.y + box!.height / 2 };
+  await page.addStyleTag({
+    content: '.region-label {pointer-events:none !important}',
   });
   await expect
     .poll(async () => {
