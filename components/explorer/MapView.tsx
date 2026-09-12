@@ -7,7 +7,7 @@ maplibregl.setWorkerUrl(workerUrl);
 import { LocateFixed, Minus, Plus, RotateCcw } from 'lucide-react';
 import type { Organization, Service } from '../../data/model';
 import type { CountryPresentation } from '../../data/country-config';
-import { militarySymbol } from './symbology';
+import { militarySymbolGraphic } from './symbology';
 import { cartoRequest, decorateStyle, fallbackStyle } from './map/style';
 import { connectRegions } from './map/regions';
 import { placeLabel, type LabelRect } from './map/labels';
@@ -25,7 +25,7 @@ interface Props {
 function viewportPadding(selected: boolean) {
   const mobile = window.innerWidth < 760;
   return {
-    top: mobile ? 168 : 100,
+    top: mobile ? 168 : selected ? 155 : 100,
     bottom: mobile && selected ? window.innerHeight * 0.54 + 45 : 85,
     left: mobile ? 30 : 100,
     right: !mobile && selected ? 450 : mobile ? 30 : 100,
@@ -239,7 +239,7 @@ export default function MapView({
         group.map((x) => x.id).join('|') + ':' + selected?.id + ':' + labels;
       const existing = markers.current.get(key);
       if (existing?.signature === signature) continue;
-      if (existing?.command && existing.org.id === o.id) {
+      if (existing && existing.org.id === o.id) {
         // Keep the actual button (and keyboard focus) when its shared-HQ list changes.
         existing.signature = signature;
         existing.el.classList.toggle(
@@ -287,11 +287,17 @@ export default function MapView({
         ].includes(o.id)
       )
         el.classList.add('label-west');
-      const symbol = militarySymbol(o);
+      const symbol = militarySymbolGraphic(o);
       if (symbol) {
         const s = document.createElement('span');
         s.className = 'mil-symbol';
-        s.innerHTML = symbol;
+        s.innerHTML = symbol.svg;
+        // milsymbol's HQ reference is the foot of the staff, not the SVG center.
+        const scale = Math.min(46 / symbol.size.width, 47 / symbol.size.height);
+        s.style.width = `${symbol.size.width * scale}px`;
+        s.style.height = `${symbol.size.height * scale}px`;
+        s.style.left = `${5 - symbol.anchor.x * scale}px`;
+        s.style.top = `${5 - symbol.anchor.y * scale}px`;
         el.appendChild(s);
       } else {
         const point = document.createElement('span');
@@ -330,7 +336,7 @@ export default function MapView({
       const marker = new maplibregl.Marker({ element: el, anchor: 'center' })
         .setLngLat([lng, lat])
         .addTo(m);
-      if (command) {
+      {
         const line = document.createElement('span');
         line.className = 'label-leader';
         line.setAttribute('aria-hidden', 'true');
@@ -350,6 +356,10 @@ export default function MapView({
         .querySelector('.map-context')
         ?.getBoundingClientRect();
       if (context) occupied.push(context);
+      for (const overlay of document.querySelectorAll(
+        '.map-controls, .non-territorial, .bottom-controls',
+      ))
+        occupied.push(overlay.getBoundingClientRect());
       const width = host.current!.clientWidth;
       const height = host.current!.clientHeight;
       const viewport = {
@@ -360,26 +370,30 @@ export default function MapView({
       };
       // Fixed geographic order prevents data ordering or newly visible units from
       // changing which command gets first choice of space.
-      const entries = [...markers.current.values()]
-        .filter((e) => e.command)
-        .sort(
-          (a, b) =>
-            b.org.location!.coordinates[0] - a.org.location!.coordinates[0],
-        );
+      const entries = [...markers.current.values()].sort(
+        (a, b) =>
+          Number(b.org.id === selected?.id) -
+            Number(a.org.id === selected?.id) ||
+          Number(b.command) - Number(a.command) ||
+          b.org.location!.coordinates[0] - a.org.location!.coordinates[0],
+      );
       // Reserve every visible HQ anchor as well as the labels. A callout must
       // not cover a different organization's click target.
-      for (const { org } of markers.current.values()) {
+      for (const { org, el } of markers.current.values()) {
         const p = m.project([
           org.location!.coordinates[1],
           org.location!.coordinates[0],
         ]);
-        if (p.x >= 0 && p.x <= width && p.y >= 0 && p.y <= height)
+        if (p.x >= 0 && p.x <= width && p.y >= 0 && p.y <= height) {
+          const glyph = el.querySelector('.mil-symbol');
+          if (glyph) occupied.push(glyph.getBoundingClientRect());
           occupied.push({
             left: p.x - 8,
             right: p.x + 8,
             top: p.y - 8,
             bottom: p.y + 8,
           });
+        }
       }
       for (const { org, el } of entries) {
         const point = m.project([
@@ -399,8 +413,11 @@ export default function MapView({
           text.offsetHeight,
           occupied,
           viewport,
-          el.classList.contains('label-west') ||
-            org.location!.coordinates[1] < 78,
+          !el.querySelector('.mil-symbol') &&
+            (el.classList.contains('label-west') ||
+              org.location!.coordinates[1] < 78),
+          el.querySelector('.mil-symbol') ? 44 : 20,
+          el.querySelector('.mil-symbol') ? 100 : 0,
         );
         occupied.push(placement.rect);
         text.style.left = `${placement.x + 5}px`;

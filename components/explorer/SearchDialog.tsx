@@ -20,7 +20,7 @@ export default function SearchDialog({
       .getElementById(`search-results`)
       ?.querySelector('[aria-selected="true"]')
       ?.scrollIntoView({ block: 'nearest' });
-  }, [active]);
+  }, [active, query]);
   const results = searchOrganizations(query)
     .filter((o) => query || o.level === 'command' || o.level === 'directorate')
     .slice(0, 40);

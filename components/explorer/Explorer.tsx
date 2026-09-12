@@ -149,7 +149,9 @@ export default function Explorer() {
         <button className="search-trigger" onClick={() => setSearch(true)}>
           <Search size={17} />
           <span>Search the atlas</span>
-          <kbd>⌘ K</kbd>
+          <kbd>
+            {/Mac|iPhone|iPad/.test(navigator.platform) ? '⌘ K' : 'Ctrl K'}
+          </kbd>
         </button>
       </header>
       <div className="map-context">

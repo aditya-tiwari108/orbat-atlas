@@ -26,8 +26,10 @@ export function decorateStyle(
       layer.paint = { 'background-color': '#253034' };
     if (layer.type === 'fill' && /water/i.test(layer.id))
       layer.paint = { ...layer.paint, 'fill-color': '#111b22' };
-    if (layer.type === 'symbol')
-      layer.minzoom = Math.max(layer.minzoom || 0, 5.5);
+    if (layer.type === 'symbol') {
+      layer.minzoom = Math.max(layer.minzoom || 0, 6.8);
+      layer.paint = { ...layer.paint, 'text-opacity': 0.55 };
+    }
   }
   return {
     ...style,

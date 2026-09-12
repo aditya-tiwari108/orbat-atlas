@@ -45,7 +45,7 @@ To add a country, add a dataset and source registry, register it in `catalog.ts`
 
 ## Reproducible artifacts
 
-`python3 scripts/coverage-report.py` regenerates the coverage report from canonical records. Copy it to `public/data-coverage.md` for the app. `node scripts/generate-symbols.mjs` regenerates the browser SVG symbol registry using milsymbol, keeping the full renderer out of the initial bundle. Geography preparation scripts document the downloaded source and generalization process. The review map script accepts the Natural Earth GeoJSON and SOI `.prj` as command-line arguments, and requires Shapely and pyproj. Review SVGs and PNGs live in `design/review/`; the user authorized implementation on 7 September 2026 after the Figma tool quota prevented further transfers.
+`python3 scripts/coverage-report.py` regenerates the coverage report from canonical records. Copy it to `public/data-coverage.md` for the app. `node scripts/generate-symbols.mjs` regenerates the browser SVG symbol registry using milsymbol, keeping the full renderer out of the initial bundle. Geography preparation scripts document the downloaded source and generalization process. The review map script accepts the Natural Earth GeoJSON and SOI `.prj` as command-line arguments, and requires Shapely and pyproj. Historical review SVGs and PNGs live in `design/review/`. The user dropped Figma on 8 September 2026; design changes are reviewed directly in the running application.
 
 ## Deployment
 

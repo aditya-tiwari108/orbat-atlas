@@ -20,9 +20,9 @@ All 37 command/directorate entries have field-level review records for identity,
 
 Manual desktop/mobile screenshots were reviewed. These checks found and corrected the MapLibre 6 worker URL, the lazy CSS container height, overlapping national labels and mobile camera padding. The same six Playwright scenarios also passed against https://orbat-atlas.vercel.app on 8 September 2026. The deployment was public, and no production browser errors were reported. GitHub CI passed for the published revision.
 
-## Design checkpoint
+## Design workflow
 
-The user explicitly cleared the checkpoint on 7 September 2026 ("consider everything approved from my side"). The implementation follows the prepared map-first review boards. The Figma file contains editable foundations and geography; tool quota prevented completing the editor transfer. Portable review SVGs retain editable text and geometry. This limitation remains documented rather than representing the Figma file as finished.
+On 8 September 2026 the user explicitly instructed: “Don't use figma, ditch it.” Figma is removed from the remaining deliverables and review gates. Design work proceeds directly in the React application, with rendered browser previews and interaction tests. The temporary capture script was removed without publishing it. Existing review SVGs remain historical artifacts, not an outstanding Figma transfer requirement.
 
 ## Desktop zoom regression audit (subsequent user feedback)
 
@@ -31,3 +31,13 @@ The original six tests missed visual and camera-state defects. The revised imple
 Sixteen local browser scenarios passed after these fixes. Additional coverage includes four-mode zoom-in/out cycles, panning, command-button identity, all 17 mapped NCC labels at 1440×900, 1280×720 and 1280×633, clicking every directorate at each size, comparing HQ positions before/after repeated selections, and Karnataka & Goa’s six groups/shared Bengaluru HQs/Goa unit navigation. Animated mouse-wheel transitions and the Mysuru air-unit flow also passed. All sixteen scenarios also passed against the production alias on 8 September 2026 (deployment `dpl_7ZSinAddiE8XguvEACAcKrS4EErM`, application commit `c3a162b`). A separate live check confirmed 33 successful CARTO responses, the region GeoJSON loaded successfully, six group rows, and no browser errors or map-error messages. Mobile redesign is deferred per user instruction; its existing smoke test remains.
 
 GitHub validation passed for `c3a162b`: https://github.com/aditya-tiwari108/orbat-atlas/actions/runs/34224390632.
+
+## Desktop visual audit — 12 September 2026
+
+The reported XVI Corps displacement was a rendering defect: MapLibre centered the entire variable-width symbol/label button on the location. The military glyph therefore sat west of the actual coordinate, and the geographic size of that pixel error changed with zoom. The marker now has a fixed geographic anchor; the generated milsymbol reference point (the HQ staff tip) is placed on it. Symbol size and reference metadata are version-controlled with each generated SVG. Labels use independent callouts and cannot shift the glyph.
+
+Collision placement now includes corps, divisions, groups and units as well as commands, reserves symbol bounds and controls, and gives military text room to the right of its glyph. Selected-view camera padding keeps staff/echelon graphics below the header. Background place names appear later and are subdued. Short desktop dossiers use compact spacing and smaller missing-photo placeholders; shared-HQ menus have bounded scrolling; search repositions the highlighted result after a query change. Figma remains excluded per user instruction.
+
+The visual regression suite checks rendered SVG staff endpoints through zoom/label/font changes, selected-view label overlap at 1280, 1440 and 1920 pixels, long shared-HQ menus on a 633-pixel-high viewport, and query-change scroll behavior. Existing four-mode zoom, NCC region, keyboard, deep-link, fallback and mobile smoke scenarios remain in the suite. Screenshots of Northern Command and Karnataka & Goa were visually reviewed. These checks establish the tested cases, not an assertion that every possible visual state is bug-free.
+
+Local validation for this pass: TypeScript/Vite build, lint, data/symbol tests and all 21 Playwright scenarios passed on 12 September 2026.

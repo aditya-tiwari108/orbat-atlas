@@ -20,6 +20,8 @@ export function placeLabel(
   occupied: LabelRect[],
   viewport: LabelRect,
   preferWest = false,
+  gap = 20,
+  secondarySidePenalty = 0,
 ) {
   const sides = preferWest ? ['west', 'east'] : ['east', 'west'];
   let best:
@@ -34,8 +36,8 @@ export function placeLabel(
             Math.min(
               viewport.right - width,
               side === 'west'
-                ? point.x - width - 20 - outward
-                : point.x + 20 + outward,
+                ? point.x - width - gap - outward
+                : point.x + gap + outward,
             ),
           );
           const top = Math.max(
@@ -49,10 +51,17 @@ export function placeLabel(
           const score =
             overlaps * 100000 +
             Math.abs(top + height / 2 - point.y) +
-            outward * 0.7;
+            outward * 0.7 +
+            (side === sides[0] ? 0 : secondarySidePenalty);
           const result = { x: left - point.x, y: top - point.y, rect, score };
           if (!best || score < best.score) best = result;
-          if (overlaps === 0 && distance === 0 && outward === 0) return result;
+          if (
+            overlaps === 0 &&
+            distance === 0 &&
+            outward === 0 &&
+            (side === sides[0] || !secondarySidePenalty)
+          )
+            return result;
         }
       }
     }
