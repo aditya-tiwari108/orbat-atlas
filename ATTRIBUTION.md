@@ -9,7 +9,7 @@
 
 ## Photographs and insignia
 
-Every included portrait has its own source, identity association and reuse statement in `data/media.json`. Ministry of Defence/PIB images are reproduced with source acknowledgement under the [PIB copyright policy](https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17); third-party exceptions are respected. Anindya Sengupta's portrait is credited to Indian Army via Wikimedia Commons under the CC BY 4.0 declaration on its file page. Original images are preserved; the interface crops some images for display.
+Every included portrait has its own source, identity association and reuse statement in `data/media.json`. Ministry of Defence/PIB images are reproduced with source acknowledgement under the [PIB copyright policy](https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17); third-party exceptions are respected. Anindya Sengupta's portrait is credited to Indian Army via Wikimedia Commons under the CC BY 4.0 declaration on its file page. Source URLs are preserved; local copies may be resized and compressed, and the interface crops some images for display. NCC and Indian Air Force official portraits additionally retain their GODL-India declarations and file-page attribution. The public [portrait-credit page](https://orbat-atlas.vercel.app/image-credits.html), linked from About, lists every displayed leader photograph.
 
 Service emblems have separate credits in `data/insignia.ts`. They are labeled service emblems, not passed off as formation-specific insignia. Missing formation insignia is explicitly reported.
 

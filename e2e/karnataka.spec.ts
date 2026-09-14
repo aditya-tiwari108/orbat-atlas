@@ -61,5 +61,5 @@ test('clicking the Karnataka region opens its six-group dossier, and service swi
   await expect(page.locator('.dossier .organization-row')).toHaveCount(6);
   await page.getByRole('button', { name: 'Army', exact: true }).click();
   await page.mouse.click(600, 640);
-  await expect(page.locator('.dossier')).toHaveCount(0);
+  await expect(page.locator('.home-panel')).toBeVisible();
 });

@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { organizations, sources } from '../data/catalog';
 import assets from '../data/media.json';
+import leadership from '../data/leadership.json';
 
 void test('field evidence references resolve and supported fields contain citations', () => {
   const ids = new Set(sources.map((s) => s.id));
@@ -28,7 +29,13 @@ void test('field evidence references resolve and supported fields contain citati
 void test('published portraits match the named leader and retain attribution and local files', () => {
   const byId = new Map(assets.map((a) => [a.id, a]));
   assert.equal(byId.size, assets.length);
-  for (const org of organizations) {
+  for (const org of [
+    ...organizations,
+    ...leadership.map((entry) => ({
+      id: entry.country + '-cds',
+      commander: entry.chiefOfDefenceStaff,
+    })),
+  ]) {
     if (!org.commander?.portraitId) continue;
     const asset = byId.get(org.commander.portraitId);
     assert.ok(asset, org.id);
@@ -59,5 +66,16 @@ void test('joint browsing and announced NCC transitions do not imply operational
     assert.equal(org.location, null);
     assert.equal(org.commander, undefined);
     assert.equal(org.evidence?.headquarters?.status, 'unverified');
+  }
+});
+
+void test('country defence leadership retains dated primary evidence independently of service parents', () => {
+  for (const entry of leadership) {
+    assert.ok(organizations.some((o) => o.country === entry.country));
+    const chief = entry.chiefOfDefenceStaff;
+    assert.ok(Date.parse(chief.assumedOffice) <= Date.parse(chief.asOf));
+    assert.ok(chief.sourceIds.length > 0);
+    for (const id of chief.sourceIds)
+      assert.equal(sources.find((s) => s.id === id)?.kind, 'official');
   }
 });

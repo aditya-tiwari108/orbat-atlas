@@ -24,8 +24,7 @@ export function mapOrganizations(
     if (o.id === selected?.id) return true;
     if (o.historicalAsOf) return false;
     if (o.parentId === selected?.id) return true;
-    if (o.level === 'command' || o.level === 'directorate')
-      return o.function !== 'training' && o.function !== 'maintenance';
+    if (o.level === 'command' || o.level === 'directorate') return true;
     if (
       selected &&
       selected.level !== 'command' &&

@@ -21,13 +21,13 @@ npm run dev
 
 Switch service modes, select a command or directorate, then browse subordinate formations in its dossier or connected tree. Search across services with Ctrl/⌘ K. Share the address bar URL (`?org=organization-id`); browser Back restores earlier selections. Headquarters sharing a city open a chooser.
 
-Commands use geographic names; corps and divisions use generated APP-6-style headquarters symbols. Training and maintenance commands have a separate non-territorial selector. Ships are organizational assets and have no map positions. The initial screen has no permanent sidebars.
+Commands use geographic names; corps and divisions use generated APP-6-style headquarters symbols. Training and maintenance commands appear on the map alongside the other command headquarters. Each service opens a dismissible leadership panel with its chief and the CDS (NCC shows its Director General). Command dossiers emphasize a large commander photograph, short overview, Wikipedia link and subordinate organizations. Ships are organizational assets and have no map positions.
 
 ## Public data and limitations
 
 See [coverage and record-specific gaps](docs/data-coverage.md). This is a dated, partial public-source snapshot, **not a complete or live order of battle**. Names, headquarters cities and command-level relationships were manually reviewed. Leadership evidence and appointment dates are separate. Unknown or conflicting office-holders and portraits are explicitly labeled.
 
-Headquarters coordinates are approximate city centers, not facility or deployment coordinates. Some subordinate relationships remain reported associations with uncorroborated current status; the dossier exposes that limitation. Announced NCC reorganizations remain distinct from documented operating directorates. Andaman and Nicobar Command is tri-service; its placement in Navy mode is a browsing affiliation.
+Headquarters coordinates are approximate city centers, not facility or deployment coordinates. Some subordinate relationships remain reported associations with uncorroborated current status; the dataset and coverage report retain those field-level limitations. Announced NCC reorganizations remain distinct from documented operating directorates. Andaman and Nicobar Command is tri-service; its placement in Navy mode is a browsing affiliation.
 
 No territorial polygons are inferred from HQ points. India's national outline is derived from Survey of India's 1:16 million source and hidden at close zoom. CARTO administrative border and region-label layers are suppressed to avoid conflicting outlines. This generalized geometry is not suitable for local boundary interpretation.
 
@@ -36,6 +36,7 @@ No territorial polygons are inferred from HQ points. India's national outline is
 - `data/india.json`: organizations and source registry, with stable IDs.
 - `data/model.ts`: typed records, field evidence, dated leadership, sourced geography and verification gaps.
 - `data/media.json`: exact leader-to-portrait associations, source and reproduction attribution.
+- `data/leadership.json`: country-level defence leadership, independent of service command hierarchies.
 - `data/review/`: field audit and unresolved image candidates.
 - `data/country-config.ts`: per-country map bounds, outline, service labels and presentation.
 - `data/catalog.ts`: country dataset registration, search and traversal.
@@ -45,7 +46,7 @@ To add a country, add a dataset and source registry, register it in `catalog.ts`
 
 ## Reproducible artifacts
 
-`python3 scripts/coverage-report.py` regenerates the coverage report from canonical records. Copy it to `public/data-coverage.md` for the app. `node scripts/generate-symbols.mjs` regenerates the browser SVG symbol registry using milsymbol, keeping the full renderer out of the initial bundle. Geography preparation scripts document the downloaded source and generalization process. The review map script accepts the Natural Earth GeoJSON and SOI `.prj` as command-line arguments, and requires Shapely and pyproj. Historical review SVGs and PNGs live in `design/review/`. The user dropped Figma on 8 September 2026; design changes are reviewed directly in the running application.
+`node scripts/generate-image-credits.mjs` regenerates the public portrait-credit page linked from About. `python3 scripts/coverage-report.py` regenerates the coverage report from canonical records. Copy it to `public/data-coverage.md` for the app. `node scripts/generate-symbols.mjs` regenerates the browser SVG symbol registry using milsymbol, keeping the full renderer out of the initial bundle. Geography preparation scripts document the downloaded source and generalization process. The review map script accepts the Natural Earth GeoJSON and SOI `.prj` as command-line arguments, and requires Shapely and pyproj. Historical review SVGs and PNGs live in `design/review/`. The user dropped Figma on 8 September 2026; design changes are reviewed directly in the running application.
 
 ## Deployment
 

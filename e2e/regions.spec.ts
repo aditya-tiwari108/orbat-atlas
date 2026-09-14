@@ -116,8 +116,8 @@ test('4 Kar Eng Coy is discoverable, sourced and linked to Mangaluru Group', asy
   await expect(page.locator('.leader-block')).toContainText('P. S. Chauhan');
   await page.getByText('Institutional associations', { exact: false }).click();
   await expect(page.locator('.dossier')).toContainText('Yenepoya');
-  await page.locator('.sources-disclosure summary').click();
-  await expect(page.locator('.sources-disclosure')).toContainText('SMVITM');
+  await expect(page.locator('.sources-disclosure')).toHaveCount(0);
+  await expect(page.locator('.dossier .read-more')).toHaveAttribute('href', /^https:/);
   await page.locator('.parent-block button').click();
   await expect(page.locator('#dossier-title')).toHaveText(
     'Mangaluru NCC Group',

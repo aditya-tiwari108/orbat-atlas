@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 test('national overview and keyboard search reach an unmapped division and support Back',async({page})=>{
- await page.goto('/');await expect(page.locator('.map-organization')).toHaveCount(6);await expect(page.locator('.command-label:not(.quiet-label)')).toHaveCount(6);await expect(page.locator('.dossier')).toHaveCount(0);
+ await page.goto('/');await expect(page.locator('.map-organization')).toHaveCount(7);await expect(page.locator('.command-label:not(.quiet-label)')).toHaveCount(7);await expect(page.locator('.home-panel')).toBeVisible();
  await page.keyboard.press('Control+k');await page.getByRole('combobox').fill('XII Corps');await page.keyboard.press('Enter');
  await expect(page.locator('#dossier-title')).toHaveText('XII Corps');await page.getByRole('button',{name:'Organization tree',exact:true}).click();
  await page.locator('.dossier .tree-connector .organization-row').filter({hasText:'11 Infantry Division'}).click();
@@ -17,8 +17,8 @@ test('Navy shares HQ cities, keeps ships unlocated and labels the tri-service co
  await page.goto('/?org=in-joint-andaman-nicobar');await expect(page.locator('.dossier-kicker')).toContainText('TRI-SERVICE COMMAND');await expect(page.locator('.service-switch button[aria-pressed=true]')).toHaveText('Navy');
 });
 
-test('Air Force support selector and NCC directorate-group-unit navigation',async({page})=>{
- await page.goto('/?service=airforce');await page.locator('.non-territorial > button').click();await expect(page.locator('.support-menu')).toContainText('Maintenance');await expect(page.locator('.support-menu')).toContainText('Training');
+test('Air Force commands on the map and NCC directorate-group-unit navigation',async({page})=>{
+ await page.goto('/?service=airforce');await expect(page.locator('.command-label')).toHaveCount(7);await page.locator('[data-organization-id="in-airforce-maintenance"]').click();await expect(page.locator('#dossier-title')).toHaveText('Maintenance Command');
  await page.goto('/?org=in-ncc-kerala');await page.locator('.dossier .organization-row').filter({hasText:'Kottayam Group'}).click();await expect(page.locator('#dossier-title')).toContainText('Kottayam');
  await page.locator('.dossier .organization-row').filter({hasText:'5 Kerala Naval Unit'}).click();await expect(page.locator('#dossier-title')).toContainText('5 Kerala Naval');
 });
@@ -28,12 +28,12 @@ test('mobile selected headquarters stays above the sheet with reduced motion',as
  const marker=page.getByRole('button',{name:'Southern Command, headquarters Pune',exact:true});await expect(marker).toBeVisible();
  await expect.poll(async()=>{const m=await marker.boundingBox();const d=await page.locator('.dossier').boundingBox();return !!m&&!!d&&m.y+m.height<d.y;}).toBe(true);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- await page.locator('.dossier-toolbar [aria-label="Close dossier"]').click();await expect(page.locator('.dossier')).toHaveCount(0);await expect(page.getByRole('button',{name:'Hierarchy',exact:true})).toBeVisible();
+ await page.locator('.dossier-toolbar [aria-label="Close dossier"]').click();await expect(page.locator('.home-panel')).toBeVisible();await page.getByLabel('Close leadership panel').click();await expect(page.getByRole('button',{name:'Hierarchy',exact:true})).toBeVisible();
 });
 
 test('CARTO failure preserves the map outline and organizations; Retry recovers',async({page})=>{
- await page.route(/cartocdn\.com/,route=>route.abort());await page.goto('/');await expect(page.locator('.map-error')).toContainText('Basemap unavailable');await expect(page.locator('.map-organization')).toHaveCount(6);
- await page.unrouteAll();await page.locator('.map-error button').click();await expect(page.locator('.map-error')).toHaveCount(0);await expect(page.locator('.map-organization')).toHaveCount(6);
+ await page.route(/cartocdn\.com/,route=>route.abort());await page.goto('/');await expect(page.locator('.map-error')).toContainText('Basemap unavailable');await expect(page.locator('.map-organization')).toHaveCount(7);
+ await page.unrouteAll();await page.locator('.map-error button').click();await expect(page.locator('.map-error')).toHaveCount(0);await expect(page.locator('.map-organization')).toHaveCount(7);
 });
 
 test('missing portrait falls back and native search dialog supports Escape',async({page})=>{

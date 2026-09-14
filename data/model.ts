@@ -40,6 +40,8 @@ export interface MediaAsset {
   localPath?: string;
   capturedAt?: string;
   focalPoint?: [number, number];
+  displayScale?: number;
+  fit?: 'cover' | 'contain';
   identityNote?: string;
 }
 export interface Organization {
@@ -51,6 +53,7 @@ export interface Organization {
   level: Level;
   parentId: string | null;
   description: string;
+  summary?: string;
   aliases?: string[];
   historicalAsOf?: string;
   institutionalAffiliations?: {

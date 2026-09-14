@@ -43,10 +43,13 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
       </p>
       <h3>Evidence and gaps</h3>
       <p>
-        Leadership records show evidence or appointment dates, not live status.
-        Some subordinate relationships remain uncorroborated. Open Sources &
-        verification in a dossier for the record’s limitations and image
-        attribution.
+        The version-controlled dataset retains dated leadership records,
+        field-level evidence and unresolved research gaps.
+      </p>
+      <p>
+        <a href="/image-credits.html" target="_blank" rel="noreferrer">
+          Portrait credits and reuse attribution ↗
+        </a>
       </p>
       <a href="/data-coverage.md" target="_blank" rel="noreferrer">
         Read the coverage report ↗

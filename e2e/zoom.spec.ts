@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 const modes = [
-  ['army', 6],
-  ['navy', 3],
-  ['airforce', 5],
+  ['army', 7],
+  ['navy', 4],
+  ['airforce', 7],
 ] as const;
 for (const [service, count] of modes) {
   test(`${service}: desktop HQ names survive zoom cycles, detail changes and panning`, async ({

@@ -1,4 +1,4 @@
-# Data coverage review — 12 September 2026
+# Data coverage review — 14 September 2026
 
 This report describes a sourced snapshot and its remaining gaps, not a complete or live order of battle. Manual field review and structural validation serve different purposes. The user authorized implementation on 7 September 2026. Remaining factual gaps are explicit; publication requires implementation verification.
 
@@ -7,7 +7,8 @@ This report describes a sourced snapshot and its remaining gaps, not a complete 
 - Service commands: 17 documented commands plus the tri-service Andaman and Nicobar Command. Names, headquarters cities and service relationships manually cross-checked.
 - NCC: 17 documented combined/state directorates, plus 2 approved creations. Existing headquarters cities checked against the 2025 DGNCC circular; new directorates remain unmapped.
 - Leadership: 30 records with dated or explicitly undated evidence; 7 command/directorate identities or appointments remain unresolved.
-- Portraits: 15 identified command-leader photographs with source and reproduction attribution. The remaining records must not silently use a different officer.
+- Portraits: 17 identified command-leader photographs with source and reproduction attribution. The remaining records must not silently use a different officer.
+- Home leadership: all four service/DG portraits and the CDS portrait are included. See data/leadership.json and public/image-credits.html for individual provenance.
 - Subordinate formations: existing corps/division associations are explicitly marked as uncorroborated current relationships. Breadth does not establish completeness.
 
 ## Command and directorate matrix
@@ -16,7 +17,7 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 
 | Organization | HQ city / evidence | Leader / evidence | Assumed office | Portrait |
 |---|---|---|---|---|
-| army / Northern Command | Udhampur — supported | [Lt Gen Pratik Sharma](https://newsonair.gov.in/northern-command-to-confer-92-awards-on-soldiers-in-udhampur-tomorrow/) · dated-observation · 2026-03-27 | 2025-05-01 | Unavailable / verification pending |
+| army / Northern Command | Udhampur — supported | [Lt Gen Pratik Sharma](https://newsonair.gov.in/northern-command-to-confer-92-awards-on-soldiers-in-udhampur-tomorrow/) · dated-observation · 2026-03-27 | 2025-05-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257798) |
 | army / Western Command | Chandimandir — supported | [Lt Gen Pushpendra Pal Singh](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2247806) · appointment · 2026-04-01 | 2026-04-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2247806) |
 | army / Eastern Command | Kolkata — supported | [Lt Gen VMB Krishnan](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2247791) · appointment · 2026-04-01 | 2026-04-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2247791) |
 | army / Southern Command | Pune — supported | [Lt Gen Rajesh Pushkar](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279816) · appointment · 2026-07-01 | 2026-07-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279816) |
@@ -26,7 +27,7 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 | navy / Western Naval Command | Mumbai — supported | [Vice Admiral Sanjay Vatsayan](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267084) · appointment · 2026-05-30 | 2026-05-30 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267084) |
 | navy / Eastern Naval Command | Visakhapatnam — supported | [Vice Admiral Sanjay Bhalla](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2283586) · dated-observation · 2026-07-11 | Not verified | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020173) |
 | navy / Southern Naval Command | Kochi — supported | [Vice Admiral Sameer Saxena](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2184727) · appointment · 2025-10-31 | 2025-10-31 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2184727) |
-| airforce / Western Air Command | New Delhi — supported | [Air Marshal George Thomas](https://media.bharat-rakshak.com/indianairforce/database/20118) · appointment · 2026-05-01 | 2026-05-01 | Unavailable / verification pending |
+| airforce / Western Air Command | New Delhi — supported | [Air Marshal George Thomas](https://media.bharat-rakshak.com/indianairforce/database/20118) · appointment · 2026-05-01 | 2026-05-01 | [Verified official photo](https://commons.wikimedia.org/wiki/File:Air_Marshal_George_Thomas.jpg) |
 | airforce / Eastern Air Command | Shillong — supported | [Air Marshal Inderpal Singh Walia](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2221521) · appointment · 2026-02-01 | 2026-02-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2221521) |
 | airforce / Central Air Command | Prayagraj — supported | [Air Marshal Tarun Chaudhry](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267533) · appointment · 2026-06-01 | 2026-06-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267533) |
 | airforce / South Western Air Command | Gandhinagar — supported | [Air Marshal PV Shivanand](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2280104) · appointment · 2026-07-01 | 2026-07-01 | [Verified official photo](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2280104) |
@@ -82,7 +83,7 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 ### Northern Command (army)
 
 - A territorial boundary suitable for mapping has not been independently sourced.
-- Publishable portrait association is not yet verified; do not substitute another officer.
+- Official speaker photograph is low resolution; a higher-resolution portrait is still needed.
 
 ### Western Command (army)
 
@@ -129,7 +130,6 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 
 - Leadership relies on a secondary source; primary confirmation remains open.
 - A territorial boundary suitable for mapping has not been independently sourced.
-- Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Eastern Air Command (airforce)
 

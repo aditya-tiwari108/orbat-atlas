@@ -1,0 +1,16 @@
+[
+  {
+    "country": "IN",
+    "chiefOfDefenceStaff": {
+      "name": "General N. S. Raja Subramani",
+      "role": "Chief of Defence Staff",
+      "asOf": "2026-05-31",
+      "assumedOffice": "2026-05-31",
+      "evidenceKind": "appointment",
+      "sourceIds": [
+        "cds-2026"
+      ],
+      "portraitId": "portrait-in-cds"
+    }
+  }
+]

@@ -10,7 +10,6 @@ import {
   Anchor,
   ArrowLeft,
   ChevronRight,
-  ChevronDown,
   Compass,
   GraduationCap,
   Info,
@@ -27,7 +26,8 @@ import type { Organization, Service } from '../../data/model';
 import { countryPresentation } from '../../data/country-config';
 import { useNavigation } from './navigation';
 import Dossier from './Dossier';
-import Hierarchy, { OrganizationRow } from './Hierarchy';
+import LeadershipPanel from './LeadershipPanel';
+import Hierarchy from './Hierarchy';
 import SearchDialog from './SearchDialog';
 import AboutDialog from './AboutDialog';
 const MapView = lazy(() => import('./MapView'));
@@ -45,7 +45,7 @@ export default function Explorer() {
   const [layers, setLayers] = useState(false);
   const [about, setAbout] = useState(false);
   const [labels, setLabels] = useState(true);
-  const [support, setSupport] = useState(false);
+  const [homeOpen, setHomeOpen] = useState(true);
   const [reset, setReset] = useState(0);
   const nodes = useMemo(
     () =>
@@ -55,15 +55,11 @@ export default function Explorer() {
     [country.code, service],
   );
   const root = rootFor(country.code, service);
-  const nonTerritorial = nodes.filter(
-    (o) => o.function === 'training' || o.function === 'maintenance',
-  );
   const choose = useCallback(
     (o: Organization) => {
       navigate(o);
       setSearch(false);
       setBrowse(false);
-      setSupport(false);
     },
     [navigate],
   );
@@ -78,22 +74,24 @@ export default function Explorer() {
         if (about) setAbout(false);
         else if (browse) setBrowse(false);
         else if (layers) setLayers(false);
-        else if (support) setSupport(false);
-        else if (selected) navigate(null);
+        else if (selected) {
+          navigate(null);
+          setHomeOpen(true);
+        } else setHomeOpen(false);
       }
     }
     window.addEventListener('keydown', key);
     return () => window.removeEventListener('keydown', key);
-  }, [search, about, browse, layers, support, selected, navigate]);
+  }, [search, about, browse, layers, selected, navigate]);
   function switchService(s: Service) {
     navigate(null, s);
     setBrowse(false);
-    setSupport(false);
+    setHomeOpen(true);
     setReset((n) => n + 1);
   }
   return (
     <main
-      className={'atlas ' + (selected ? 'has-selection' : '')}
+      className={'atlas ' + (selected || homeOpen ? 'has-selection' : '')}
       style={{ '--service': serviceMeta[service].color } as React.CSSProperties}
     >
       <a className="skip-link" href="#browse-button">
@@ -112,6 +110,7 @@ export default function Explorer() {
           onBrowse={() => setBrowse(true)}
           labels={labels}
           reset={reset}
+          panelOpen={!!selected || homeOpen}
         />
       </Suspense>
       <header className="atlas-header">
@@ -119,6 +118,7 @@ export default function Explorer() {
           className="brand"
           onClick={() => {
             navigate(null);
+            setHomeOpen(true);
             setReset((n) => n + 1);
           }}
           aria-label="ORBAT Atlas overview"
@@ -147,7 +147,11 @@ export default function Explorer() {
             );
           })}
         </nav>
-        <button className="search-trigger" onClick={() => setSearch(true)}>
+        <button
+          className="search-trigger"
+          aria-label="Search the atlas"
+          onClick={() => setSearch(true)}
+        >
           <Search size={17} />
           <span>Search the atlas</span>
           <kbd>
@@ -163,15 +167,19 @@ export default function Explorer() {
           </button>
         ) : (
           <>
-            <span className="eyebrow">
-              {country.name.toUpperCase()} /{' '}
-              {service === 'ncc' ? 'NCC DIRECTORATES' : 'COMMAND OVERVIEW'}
-            </span>
-            <h2>{country.services[service]}</h2>
-            <p>
-              Select a {service === 'ncc' ? 'directorate' : 'command'} to
-              explore its organization.
-            </p>
+            {!homeOpen && (
+              <>
+                <span className="eyebrow">
+                  {country.name.toUpperCase()} /{' '}
+                  {service === 'ncc' ? 'NCC DIRECTORATES' : 'COMMAND OVERVIEW'}
+                </span>
+                <h2>{country.services[service]}</h2>
+                <p>
+                  Select a {service === 'ncc' ? 'directorate' : 'command'} to
+                  explore its organization.
+                </p>
+              </>
+            )}
             {service === 'ncc' && (
               <button className="text-link" onClick={() => setBrowse(true)}>
                 Browse all directorates <ChevronRight size={14} />
@@ -180,29 +188,6 @@ export default function Explorer() {
           </>
         )}
       </div>
-      {!!nonTerritorial.length && (
-        <div className="non-territorial">
-          <button
-            className="floating-button"
-            aria-expanded={support}
-            onClick={() => setSupport((s) => !s)}
-          >
-            <GraduationCap size={15} />
-            {nonTerritorial.length > 1
-              ? 'Training & maintenance'
-              : 'Training command'}
-            <ChevronDown size={14} />
-          </button>
-          {support && (
-            <div className="support-menu">
-              <span className="eyebrow">NON-TERRITORIAL COMMANDS</span>
-              {nonTerritorial.map((o) => (
-                <OrganizationRow key={o.id} org={o} onSelect={choose} />
-              ))}
-            </div>
-          )}
-        </div>
-      )}
       <div className="bottom-controls">
         <button
           id="browse-button"
@@ -310,12 +295,22 @@ export default function Explorer() {
           </div>
         </aside>
       )}
+      {!selected && homeOpen && root && (
+        <LeadershipPanel
+          root={root}
+          onSelect={choose}
+          onClose={() => setHomeOpen(false)}
+        />
+      )}
       {selected && (
         <Dossier
           key={selected.id}
           org={selected}
           onSelect={choose}
-          onClose={() => navigate(null)}
+          onClose={() => {
+            navigate(null);
+            setHomeOpen(true);
+          }}
         />
       )}
       {search && (

@@ -10,7 +10,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.32,
+      0.355
+    ],
+    "displayScale": 3.3
   },
   {
     "id": "portrait-in-army-eastern",
@@ -23,7 +28,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.425,
+      0.22
+    ],
+    "displayScale": 1.8
   },
   {
     "id": "portrait-in-army-southern",
@@ -36,7 +46,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.5,
+      0.47
+    ],
+    "displayScale": 1.55
   },
   {
     "id": "portrait-in-army-south-western",
@@ -49,7 +64,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.53,
+      0.43
+    ],
+    "displayScale": 1.6
   },
   {
     "id": "portrait-in-navy-western",
@@ -62,7 +82,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.535,
+      0.445
+    ],
+    "displayScale": 3.1
   },
   {
     "id": "portrait-in-navy-southern",
@@ -75,7 +100,8 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "fit": "contain"
   },
   {
     "id": "portrait-in-joint-andaman-nicobar",
@@ -88,7 +114,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.46,
+      0.47
+    ],
+    "displayScale": 1.35
   },
   {
     "id": "portrait-in-airforce-central",
@@ -101,7 +132,12 @@
     "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy; not a Creative Commons claim.",
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-06",
-    "identityStatus": "verified"
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.48,
+      0.39
+    ],
+    "displayScale": 1.35
   },
   {
     "id": "portrait-in-airforce-eastern",
@@ -115,8 +151,12 @@
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
-    "focalPoint": [0.56, 0.54],
-    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph."
+    "focalPoint": [
+      0.56,
+      0.54
+    ],
+    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph.",
+    "displayScale": 1.8
   },
   {
     "id": "portrait-in-airforce-maintenance",
@@ -130,8 +170,12 @@
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
-    "focalPoint": [0.47, 0.47],
-    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph."
+    "focalPoint": [
+      0.47,
+      0.47
+    ],
+    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph.",
+    "displayScale": 1.65
   },
   {
     "id": "portrait-in-airforce-training",
@@ -145,8 +189,12 @@
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
-    "focalPoint": [0.47, 0.51],
-    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph."
+    "focalPoint": [
+      0.47,
+      0.51
+    ],
+    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph.",
+    "displayScale": 2.1
   },
   {
     "id": "portrait-in-airforce-south-western",
@@ -160,8 +208,12 @@
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
-    "focalPoint": [0.405, 0.47],
-    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph."
+    "focalPoint": [
+      0.405,
+      0.47
+    ],
+    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph.",
+    "displayScale": 1.9
   },
   {
     "id": "portrait-in-airforce-southern",
@@ -175,8 +227,12 @@
     "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
-    "focalPoint": [0.5, 0.62],
-    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph."
+    "focalPoint": [
+      0.5,
+      0.62
+    ],
+    "identityNote": "Officer visually checked against the named appointment release; focal point identifies the principal officer in the original official photograph.",
+    "displayScale": 2.0
   },
   {
     "id": "portrait-in-navy-eastern",
@@ -191,7 +247,11 @@
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
     "identityNote": "Official named portrait in the 10 May 2024 Chief of Personnel appointment release; image predates the Eastern Command appointment.",
-    "focalPoint": [0.5, 0.38]
+    "focalPoint": [
+      0.5,
+      0.38
+    ],
+    "fit": "contain"
   },
   {
     "id": "portrait-in-army-central",
@@ -206,6 +266,119 @@
     "checkedAt": "2026-09-07",
     "identityStatus": "verified",
     "identityNote": "Named official portrait credited to Indian Army; file uploaded 11 August 2024. Visual name badge corroborates caption. Upload date is not asserted as capture date.",
-    "focalPoint": [0.5, 0.38]
+    "focalPoint": [
+      0.5,
+      0.38
+    ],
+    "fit": "contain"
+  },
+  {
+    "id": "portrait-in-army",
+    "subject": "General Dhiraj Seth",
+    "kind": "portrait",
+    "url": "https://static.pib.gov.in/WriteReadData/userfiles/image/GenDhirajSethYAXS.jpeg",
+    "localPath": "/portraits/portrait-in-army.jpg",
+    "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279326",
+    "credit": "Ministry of Defence / Press Information Bureau",
+    "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy.",
+    "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment."
+  },
+  {
+    "id": "portrait-in-navy",
+    "subject": "Admiral Krishna Swaminathan",
+    "kind": "portrait",
+    "url": "https://static.pib.gov.in/WriteReadData/userfiles/image/WhatsAppImage2026-05-31at4.19.24PMX0PF.jpeg",
+    "localPath": "/portraits/portrait-in-navy.jpg",
+    "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267227",
+    "credit": "Ministry of Defence / Press Information Bureau",
+    "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy.",
+    "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment.",
+    "focalPoint": [
+      0.36,
+      0.36
+    ],
+    "displayScale": 1.45
+  },
+  {
+    "id": "portrait-in-airforce",
+    "subject": "Air Chief Marshal AP Singh",
+    "kind": "portrait",
+    "url": "https://static.pib.gov.in/WriteReadData/Gallery/PhotoGallery/2024/Oct/H20241001167430.JPG",
+    "localPath": "/portraits/portrait-in-airforce.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_Chief_Marshal_Amar_Preet_Singh_-_2024.jpg",
+    "credit": "Ministry of Defence / Press Information Bureau",
+    "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy.",
+    "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment."
+  },
+  {
+    "id": "portrait-in-ncc",
+    "subject": "Lt Gen Virendra Vats",
+    "kind": "portrait",
+    "url": "https://nccindia.gov.in/static/media/new_dg_1.a6813d78c68179443d63.jpg",
+    "localPath": "/portraits/portrait-in-ncc.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lt_Gen_Virendra_Vats.jpg",
+    "credit": "NCC",
+    "rights": "Government Open Data License – India (GODL), as recorded on the linked Wikimedia Commons file page.",
+    "rightsUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment."
+  },
+  {
+    "id": "portrait-in-cds",
+    "subject": "General N. S. Raja Subramani",
+    "kind": "portrait",
+    "url": "https://static.pib.gov.in/WriteReadData/userfiles/image/PIC(7)DXG9.jpeg",
+    "localPath": "/portraits/portrait-in-cds.jpg",
+    "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2259242",
+    "credit": "Ministry of Defence / Press Information Bureau",
+    "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy.",
+    "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment."
+  },
+  {
+    "id": "portrait-in-airforce-western",
+    "subject": "Air Marshal George Thomas",
+    "kind": "portrait",
+    "url": "https://indianairforce.nic.in/admin/assets/images/outerimages/AOCWAC2.jpg",
+    "localPath": "/portraits/portrait-in-airforce-western.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_Marshal_George_Thomas.jpg",
+    "credit": "Indian Air Force",
+    "rights": "Government Open Data License – India (GODL), as recorded on the linked Wikimedia Commons file page.",
+    "rightsUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "identityNote": "Named official portrait/release visually checked against the identified officer. Resized and compressed for web display; image can predate the current appointment.",
+    "fit": "contain"
+  },
+  {
+    "id": "portrait-in-army-northern",
+    "subject": "Lt Gen Pratik Sharma",
+    "kind": "portrait",
+    "url": "https://static.pib.gov.in/WriteReadData/userfiles/image/image005RGK4.jpg",
+    "localPath": "/portraits/portrait-in-army-northern.jpg",
+    "sourceUrl": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2257798",
+    "credit": "Ministry of Defence / Press Information Bureau",
+    "rights": "Reproduction with accurate context and source acknowledgement under PIB copyright policy.",
+    "rightsUrl": "https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17",
+    "checkedAt": "2026-09-14",
+    "identityStatus": "verified",
+    "focalPoint": [
+      0.55,
+      0.35
+    ],
+    "identityNote": "Northern Army Commander speaking at the North Tech Symposium, as identified in the official release. The source supplies only a 252 × 246 photograph; a higher-resolution portrait remains a research gap.",
+    "fit": "contain"
   }
 ]

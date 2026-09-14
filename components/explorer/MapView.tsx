@@ -22,6 +22,7 @@ interface Props {
   onBrowse: () => void;
   labels: boolean;
   reset: number;
+  panelOpen: boolean;
 }
 function viewportPadding(selected: boolean) {
   const mobile = window.innerWidth < 760;
@@ -41,6 +42,7 @@ export default function MapView({
   onBrowse,
   labels,
   reset,
+  panelOpen,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const map = useRef<LibreMap | null>(null);
@@ -63,6 +65,10 @@ export default function MapView({
   const [detail, setDetail] = useState<Detail>(0);
   const [overlap, setOverlap] = useState<Organization[]>([]);
   const selectRef = useRef(onSelect);
+  const panelOpenRef = useRef(panelOpen);
+  useEffect(() => {
+    panelOpenRef.current = panelOpen;
+  }, [panelOpen]);
   useEffect(() => {
     selectRef.current = onSelect;
   }, [onSelect]);
@@ -128,7 +134,7 @@ export default function MapView({
           if (cancelled || !instance) return;
           setReady(true);
           instance.fitBounds(country.bounds, {
-            padding: viewportPadding(false),
+            padding: viewportPadding(panelOpenRef.current),
             duration: 0,
           });
         });
@@ -213,10 +219,10 @@ export default function MapView({
         );
     } else if (!selected)
       m.fitBounds(country.bounds, {
-        padding: viewportPadding(false),
+        padding: viewportPadding(panelOpen),
         duration: reduced ? 0 : 950,
       });
-  }, [ready, selected, service, reset, country, nodes]);
+  }, [ready, selected, service, reset, country, nodes, panelOpen]);
   useEffect(() => {
     if (!ready || !map.current) return;
     const m = map.current;
@@ -391,8 +397,8 @@ export default function MapView({
       const viewport = {
         left: 24,
         top: 110,
-        right: width - (selected && width >= 760 ? 425 : 65),
-        bottom: height - (selected && width < 760 ? height * 0.54 + 20 : 80),
+        right: width - (panelOpen && width >= 760 ? 425 : 65),
+        bottom: height - (panelOpen && width < 760 ? height * 0.54 + 20 : 80),
       };
       // Fixed geographic order prevents data ordering or newly visible units from
       // changing which command gets first choice of space.
@@ -467,7 +473,7 @@ export default function MapView({
       m.off('move', layoutLabels);
       m.off('resize', layoutLabels);
     };
-  }, [ready, nodes, selected, detail, labels, country, service]);
+  }, [ready, nodes, selected, detail, labels, country, service, panelOpen]);
   const move = (delta: number) =>
     map.current?.zoomTo((map.current?.getZoom() || 4) + delta, {
       duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches

@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-09-12",
+  "reviewedAt": "2026-09-14",
   "organizations": [
     {
       "id": "in-army",
@@ -31,11 +31,15 @@
         "role": "Chief of the Army Staff",
         "asOf": "2026-08-19",
         "sourceIds": [
-          "coas-2026"
-        ]
+          "coas-2026",
+          "coas-assumption-2026"
+        ],
+        "portraitId": "portrait-in-army",
+        "assumedOffice": "2026-06-30"
       },
       "wikipedia": "https://en.wikipedia.org/wiki/Indian_Army",
-      "relationshipKind": "command"
+      "relationshipKind": "command",
+      "summary": "The Indian Army is the land warfare branch of the Indian Armed Forces. Its organization includes six regional commands and the Army Training Command."
     },
     {
       "id": "in-army-northern",
@@ -80,7 +84,8 @@
           "appointment-in-army-northern"
         ],
         "evidenceKind": "dated-observation",
-        "assumedOffice": "2025-05-01"
+        "assumedOffice": "2025-05-01",
+        "portraitId": "portrait-in-army-northern"
       },
       "relationshipKind": "command",
       "evidence": {
@@ -120,10 +125,11 @@
       },
       "verificationGaps": [
         "A territorial boundary suitable for mapping has not been independently sourced.",
-        "Publishable portrait association is not yet verified; do not substitute another officer."
+        "Official speaker photograph is low resolution; a higher-resolution portrait is still needed."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Based in Udhampur, Northern Command is one of the Indian Army’s regional commands. Its organization includes XIV, XV and XVI Corps."
     },
     {
       "id": "in-army-western",
@@ -208,7 +214,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Western Command is headquartered at Chandimandir, near Chandigarh. It is one of the Indian Army’s six regional commands."
     },
     {
       "id": "in-army-eastern",
@@ -293,7 +300,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Eastern Command is headquartered at Fort William in Kolkata. It brings together Army formations in eastern and northeastern India."
     },
     {
       "id": "in-army-southern",
@@ -378,7 +386,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Southern Command is headquartered in Pune. One of the Indian Army’s oldest commands, it traces its origins to 1895."
     },
     {
       "id": "in-army-south-western",
@@ -463,7 +472,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "South Western Command, also known as Sapta Shakti Command, is headquartered in Jaipur. It was raised in 2005."
     },
     {
       "id": "in-army-central",
@@ -548,7 +558,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Central Command is headquartered in Lucknow. Established in 1963, it is one of the Indian Army’s six regional commands."
     },
     {
       "id": "in-army-training",
@@ -634,7 +645,8 @@
         "Publishable portrait association is not yet verified; do not substitute another officer."
       ],
       "classification": "service",
-      "function": "training"
+      "function": "training",
+      "summary": "The Army Training Command, or ARTRAC, is headquartered in Shimla. It develops Army training policy and doctrine and oversees training establishments."
     },
     {
       "id": "in-army-corps-i",
@@ -2629,10 +2641,13 @@
         "asOf": "2026-05-31",
         "sourceIds": [
           "cns-2026"
-        ]
+        ],
+        "portraitId": "portrait-in-navy",
+        "assumedOffice": "2026-05-31"
       },
       "wikipedia": "https://en.wikipedia.org/wiki/Indian_Navy",
-      "relationshipKind": "command"
+      "relationshipKind": "command",
+      "summary": "The Indian Navy is the maritime branch of the Indian Armed Forces. Its three commands oversee naval operations, fleets and training."
     },
     {
       "id": "in-navy-western",
@@ -2716,7 +2731,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Headquartered in Mumbai, Western Naval Command is one of the Indian Navy’s two operational commands. The Western Fleet is part of its organization."
     },
     {
       "id": "in-navy-eastern",
@@ -2800,7 +2816,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Eastern Naval Command is headquartered in Visakhapatnam. It is one of the Navy’s two operational commands and includes the Eastern Fleet."
     },
     {
       "id": "in-navy-southern",
@@ -2884,7 +2901,8 @@
         "Geographic coverage is distinct from headquarters location."
       ],
       "classification": "service",
-      "function": "training"
+      "function": "training",
+      "summary": "Southern Naval Command, headquartered in Kochi, is the Indian Navy’s training command. Its establishments provide professional training for naval personnel."
     },
     {
       "id": "in-navy-fleet-western",
@@ -3195,11 +3213,15 @@
         "role": "Chief of the Air Staff",
         "asOf": "2026-02-16",
         "sourceIds": [
-          "cas-2026"
-        ]
+          "cas-2026",
+          "cas-assumption-2024"
+        ],
+        "portraitId": "portrait-in-airforce",
+        "assumedOffice": "2024-09-30"
       },
       "wikipedia": "https://en.wikipedia.org/wiki/Indian_Air_Force",
-      "relationshipKind": "command"
+      "relationshipKind": "command",
+      "summary": "The Indian Air Force is the air arm of the Indian Armed Forces. Five operational commands and two functional commands organize its operations, training and maintenance."
     },
     {
       "id": "in-airforce-western",
@@ -3245,7 +3267,8 @@
           "leadership-in-airforce-western"
         ],
         "evidenceKind": "appointment",
-        "assumedOffice": "2026-05-01"
+        "assumedOffice": "2026-05-01",
+        "portraitId": "portrait-in-airforce-western"
       },
       "evidence": {
         "commander": {
@@ -3283,11 +3306,11 @@
       },
       "verificationGaps": [
         "Leadership relies on a secondary source; primary confirmation remains open.",
-        "A territorial boundary suitable for mapping has not been independently sourced.",
-        "Publishable portrait association is not yet verified; do not substitute another officer."
+        "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Western Air Command is headquartered in New Delhi. It is one of the Indian Air Force’s five operational commands."
     },
     {
       "id": "in-airforce-eastern",
@@ -3374,7 +3397,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Eastern Air Command is headquartered in Shillong. It is one of the Indian Air Force’s five operational commands."
     },
     {
       "id": "in-airforce-central",
@@ -3461,7 +3485,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Central Air Command is headquartered in Prayagraj. It is one of the Indian Air Force’s five operational commands."
     },
     {
       "id": "in-airforce-south-western",
@@ -3548,7 +3573,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "South Western Air Command is headquartered in Gandhinagar. It is one of the Indian Air Force’s five operational commands."
     },
     {
       "id": "in-airforce-southern",
@@ -3635,7 +3661,8 @@
         "A territorial boundary suitable for mapping has not been independently sourced."
       ],
       "classification": "service",
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Southern Air Command is headquartered in Thiruvananthapuram. Established in 1984, it is one of the Indian Air Force’s five operational commands."
     },
     {
       "id": "in-airforce-training",
@@ -3719,7 +3746,8 @@
         "Geographic coverage is distinct from headquarters location."
       ],
       "classification": "service",
-      "function": "training"
+      "function": "training",
+      "summary": "Training Command is headquartered in Bengaluru. It oversees the Indian Air Force’s flying and ground training establishments."
     },
     {
       "id": "in-airforce-maintenance",
@@ -3807,7 +3835,8 @@
         "Geographic coverage is distinct from headquarters location."
       ],
       "classification": "service",
-      "function": "maintenance"
+      "function": "maintenance",
+      "summary": "Maintenance Command is headquartered in Nagpur. It oversees the repair, overhaul and technical support of Air Force aircraft and equipment."
     },
     {
       "id": "in-airforce-academy",
@@ -3874,12 +3903,16 @@
         "role": "Director General NCC",
         "asOf": "2025-10-01",
         "sourceIds": [
-          "ncc-dg"
-        ]
+          "ncc-dg",
+          "dg-ncc-assumption-2025"
+        ],
+        "portraitId": "portrait-in-ncc",
+        "assumedOffice": "2025-10-01"
       },
       "note": "Two new state directorates were approved in June 2026, bringing the announced total to 19. Detailed implementation is not independently confirmed.",
       "wikipedia": "https://en.wikipedia.org/wiki/National_Cadet_Corps_(India)",
-      "relationshipKind": "administrative"
+      "relationshipKind": "administrative",
+      "summary": "The National Cadet Corps brings together Army, Navy and Air Wing cadets from schools and colleges across India. Its directorates connect regional groups and local units."
     },
     {
       "id": "in-ncc-telangana",
@@ -7012,7 +7045,8 @@
           "note": "The June 2026 appointment release explicitly identifies the tri-service command and Sri Vijaya Puram. Navy-mode placement is a presentation association, not a naval parent claim."
         }
       },
-      "function": "territorial"
+      "function": "territorial",
+      "summary": "Andaman and Nicobar Command is a joint command of the Army, Navy and Air Force, headquartered in Port Blair. It was established in 2001."
     },
     {
       "id": "in-ncc-group-bengaluru-a",
@@ -12313,6 +12347,42 @@
       "publisher": "Times of India",
       "accessed": "2026-09-12",
       "kind": "reference"
+    },
+    {
+      "id": "cds-2026",
+      "title": "General NS Raja Subramani assumes charge as Chief of Defence Staff",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2267339",
+      "publisher": "Ministry of Defence / Press Information Bureau",
+      "accessed": "2026-09-14",
+      "published": "2026-05-31",
+      "kind": "official"
+    },
+    {
+      "id": "coas-assumption-2026",
+      "title": "General Dhiraj Seth takes over as Chief of Army Staff",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279326",
+      "publisher": "Press Information Bureau / Ministry of Defence",
+      "accessed": "2026-09-14",
+      "published": "2026-06-30",
+      "kind": "official"
+    },
+    {
+      "id": "cas-assumption-2024",
+      "title": "Air Marshal AP Singh appointed Chief of the Air Staff",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2057269&lang=2&reg=48",
+      "publisher": "Press Information Bureau / Ministry of Defence",
+      "accessed": "2026-09-14",
+      "published": "2024-09-21",
+      "kind": "official"
+    },
+    {
+      "id": "dg-ncc-assumption-2025",
+      "title": "Lt Gen Virendra Vats takes over as DG NCC",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173448",
+      "publisher": "Press Information Bureau / Ministry of Defence",
+      "accessed": "2026-09-14",
+      "published": "2025-10-01",
+      "kind": "official"
     }
   ]
 }
