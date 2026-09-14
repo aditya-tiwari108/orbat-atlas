@@ -21,7 +21,8 @@ test('HQ staff tips stay on geographic anchors through zoom, label toggles and f
         );
       }),
     );
-  await expect(corps).toBeAttached();
+  // Initial remote module/tile loading may outlast the normal interaction timeout.
+  await expect(corps).toBeAttached({ timeout: 20000 });
   for (const direction of ['Zoom out', 'Zoom in', 'Zoom in', 'Zoom out']) {
     await page.getByRole('button', { name: direction, exact: true }).click();
     await expect
