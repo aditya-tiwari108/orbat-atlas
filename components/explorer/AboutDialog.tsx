@@ -55,6 +55,11 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
         Read the coverage report ↗
       </a>
       <p>
+        <a href="/navy-airforce-audit.md" target="_blank" rel="noreferrer">
+          Navy &amp; Air Force: ships, bases and squadrons ↗
+        </a>
+      </p>
+      <p>
         <a href="/ncc-karnataka-goa-audit.md" target="_blank" rel="noreferrer">
           Karnataka &amp; Goa NCC: group and unit research ↗
         </a>

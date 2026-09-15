@@ -21,3 +21,7 @@ Service emblems have separate credits in `data/insignia.ts`. They are labeled se
 - MapLibre GL JS: BSD-3-Clause.
 
 Source material retains its respective rights. A public source URL does not itself imply unrestricted image reuse.
+
+## Organizational reference data
+
+The Navy/Air Force extension in `data/india-naval-air.json` attributes Wikipedia contributors through individual article links and source records, supplemented by dated Ministry of Defence/PIB releases. Descriptions are condensed in original wording; Wikipedia text is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). See the [field audit](docs/navy-airforce-audit.md) for source conflicts and exclusions. No new imagery is imported by this extension.

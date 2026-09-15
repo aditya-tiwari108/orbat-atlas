@@ -55,6 +55,20 @@ export interface Organization {
   description: string;
   summary?: string;
   aliases?: string[];
+  category?:
+    | 'air-station'
+    | 'naval-establishment'
+    | 'flying-squadron'
+    | 'training-squadron'
+    | 'ship';
+  role?: string;
+  aviation?: {
+    aircraft: string[];
+    baseId: string;
+    commandId: string;
+    nickname?: string;
+  };
+  vessel?: { shipClass: string; pennant?: string };
   historicalAsOf?: string;
   institutionalAffiliations?: {
     name: string;
@@ -90,7 +104,15 @@ export interface Organization {
   };
   evidence?: Partial<
     Record<
-      'identity' | 'headquarters' | 'parent' | 'commander' | 'coverage',
+      | 'identity'
+      | 'headquarters'
+      | 'parent'
+      | 'commander'
+      | 'coverage'
+      | 'base'
+      | 'aircraft'
+      | 'command'
+      | 'vessel',
       Evidence
     >
   >;
@@ -108,6 +130,7 @@ export interface Organization {
     | 'command'
     | 'administrative'
     | 'service-affiliation'
+    | 'base-association'
     | 'asset-association';
   symbol?: 'infantry' | 'armor' | 'artillery' | 'headquarters';
   wikipedia?: string;

@@ -2983,7 +2983,12 @@
       "coverage": "leaf",
       "wikipedia": "https://en.wikipedia.org/wiki/INS_Vikramaditya",
       "note": "Fleet association is a dated public observation. No live position, route, home-port coordinate, or current tasking is recorded.",
-      "relationshipKind": "asset-association"
+      "relationshipKind": "asset-association",
+      "category": "ship",
+      "vessel": {
+        "shipClass": "Modified Kiev-class"
+      },
+      "role": "Aircraft carrier"
     },
     {
       "id": "in-navy-ship-vikrant",
@@ -3004,31 +3009,69 @@
       "coverage": "leaf",
       "wikipedia": "https://en.wikipedia.org/wiki/INS_Vikrant_(2013)",
       "note": "Fleet association is a dated public observation. No live position, route, home-port coordinate, or current tasking is recorded.",
-      "relationshipKind": "asset-association"
+      "relationshipKind": "asset-association",
+      "category": "ship",
+      "vessel": {
+        "shipClass": "Vikrant-class"
+      },
+      "role": "Aircraft carrier"
     },
     {
       "id": "in-navy-ship-delhi",
       "country": "IN",
       "service": "navy",
-      "name": "INS Delhi (D61)",
+      "name": "INS Delhi",
       "shortName": "INS Delhi",
       "level": "asset",
-      "parentId": "in-navy",
-      "description": "Guided-missile destroyer.",
+      "parentId": "in-navy-fleet-eastern",
+      "description": "INS Delhi is a Delhi-class guided-missile destroyer of the Indian Navy.",
       "location": null,
       "sourceIds": [
-        "navy-year-2025"
+        "navy-year-2025",
+        "na-ship-delhi",
+        "na-eastern-2025"
       ],
       "relationshipSourceIds": [
-        "navy-year-2025"
+        "na-eastern-2025"
       ],
       "coverage": "leaf",
       "wikipedia": "https://en.wikipedia.org/wiki/INS_Delhi_(D61)",
-      "note": "Shown as a Navy organizational asset. A 2025 exercise report does not establish permanent fleet assignment. No current position is asserted.",
+      "note": "Fleet association follows an explicit public membership statement in the dated parent evidence. The earlier exercise-only inference has been replaced. No ship position is asserted.",
       "relationshipKind": "asset-association",
       "verificationGaps": [
-        "Permanent fleet membership not established by the cited exercise report."
-      ]
+        "Fleet assignment is a sourced snapshot and is not a current operational deployment record."
+      ],
+      "category": "ship",
+      "role": "Guided-missile destroyer",
+      "vessel": {
+        "shipClass": "Delhi-class"
+      },
+      "summary": "INS Delhi is a Delhi-class guided-missile destroyer of the Indian Navy.",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "na-ship-delhi"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        },
+        "parent": {
+          "sourceIds": [
+            "na-eastern-2025"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported",
+          "note": "Public organizational association; not a live position or a complete fleet roster.",
+          "asOf": "2025-08-01"
+        },
+        "vessel": {
+          "sourceIds": [
+            "na-ship-delhi"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        }
+      }
     },
     {
       "id": "in-navy-ship-satpura",
@@ -3037,46 +3080,112 @@
       "name": "INS Satpura",
       "shortName": "INS Satpura",
       "level": "asset",
-      "parentId": "in-navy",
-      "description": "Shivalik-class frigate.",
+      "parentId": "in-navy-fleet-eastern",
+      "description": "INS Satpura is a Shivalik-class guided-missile frigate of the Indian Navy.",
       "location": null,
       "sourceIds": [
-        "navy-year-2025"
+        "navy-year-2025",
+        "na-ship-satpura",
+        "na-satpura"
       ],
       "relationshipSourceIds": [
-        "navy-year-2025"
+        "na-satpura"
       ],
       "coverage": "leaf",
       "wikipedia": "https://en.wikipedia.org/wiki/INS_Satpura",
-      "note": "Shown as a Navy organizational asset. A 2025 exercise report does not establish permanent fleet assignment. No current position is asserted.",
+      "note": "Fleet association follows an explicit public membership statement in the dated parent evidence. The earlier exercise-only inference has been replaced. No ship position is asserted.",
       "relationshipKind": "asset-association",
       "verificationGaps": [
-        "Permanent fleet membership not established by the cited exercise report."
-      ]
+        "Fleet assignment is a sourced snapshot and is not a current operational deployment record."
+      ],
+      "category": "ship",
+      "role": "Guided-missile frigate",
+      "vessel": {
+        "shipClass": "Shivalik-class"
+      },
+      "summary": "INS Satpura is a Shivalik-class guided-missile frigate of the Indian Navy.",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "na-ship-satpura"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        },
+        "parent": {
+          "sourceIds": [
+            "na-satpura"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported",
+          "note": "Public organizational association; not a live position or a complete fleet roster.",
+          "asOf": "2023-05-01"
+        },
+        "vessel": {
+          "sourceIds": [
+            "na-ship-satpura"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        }
+      }
     },
     {
       "id": "in-navy-ship-shakti",
       "country": "IN",
       "service": "navy",
-      "name": "INS Shakti (A57)",
+      "name": "INS Shakti",
       "shortName": "INS Shakti",
       "level": "asset",
-      "parentId": "in-navy",
-      "description": "Fleet replenishment tanker.",
+      "parentId": "in-navy-fleet-eastern",
+      "description": "INS Shakti is a Deepak-class fleet tanker of the Indian Navy.",
       "location": null,
       "sourceIds": [
-        "navy-year-2025"
+        "navy-year-2025",
+        "na-ship-shakti",
+        "na-eastern-2025"
       ],
       "relationshipSourceIds": [
-        "navy-year-2025"
+        "na-eastern-2025"
       ],
       "coverage": "leaf",
       "wikipedia": "https://en.wikipedia.org/wiki/INS_Shakti_(A57)",
-      "note": "Shown as a Navy organizational asset. A 2025 exercise report does not establish permanent fleet assignment. No current position is asserted.",
+      "note": "Fleet association follows an explicit public membership statement in the dated parent evidence. The earlier exercise-only inference has been replaced. No ship position is asserted.",
       "relationshipKind": "asset-association",
       "verificationGaps": [
-        "Permanent fleet membership not established by the cited exercise report."
-      ]
+        "Fleet assignment is a sourced snapshot and is not a current operational deployment record."
+      ],
+      "category": "ship",
+      "role": "Fleet tanker",
+      "vessel": {
+        "shipClass": "Deepak-class"
+      },
+      "summary": "INS Shakti is a Deepak-class fleet tanker of the Indian Navy.",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "na-ship-shakti"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        },
+        "parent": {
+          "sourceIds": [
+            "na-eastern-2025"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported",
+          "note": "Public organizational association; not a live position or a complete fleet roster.",
+          "asOf": "2025-08-01"
+        },
+        "vessel": {
+          "sourceIds": [
+            "na-ship-shakti"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        }
+      }
     },
     {
       "id": "in-navy-ship-kiltan",
@@ -3085,22 +3194,55 @@
       "name": "INS Kiltan",
       "shortName": "INS Kiltan",
       "level": "asset",
-      "parentId": "in-navy",
-      "description": "Anti-submarine warfare corvette.",
+      "parentId": "in-navy-fleet-eastern",
+      "description": "INS Kiltan is a Kamorta-class anti-submarine corvette of the Indian Navy.",
       "location": null,
       "sourceIds": [
-        "navy-year-2025"
+        "navy-year-2025",
+        "na-ship-kiltan",
+        "na-eastern-2025"
       ],
       "relationshipSourceIds": [
-        "navy-year-2025"
+        "na-eastern-2025"
       ],
       "coverage": "leaf",
-      "wikipedia": "https://en.wikipedia.org/wiki/INS_Kiltan",
-      "note": "Shown as a Navy organizational asset. A 2025 exercise report does not establish permanent fleet assignment. No current position is asserted.",
+      "wikipedia": "https://en.wikipedia.org/wiki/INS_Kiltan_(P30)",
+      "note": "Fleet association follows an explicit public membership statement in the dated parent evidence. The earlier exercise-only inference has been replaced. No ship position is asserted.",
       "relationshipKind": "asset-association",
       "verificationGaps": [
-        "Permanent fleet membership not established by the cited exercise report."
-      ]
+        "Fleet assignment is a sourced snapshot and is not a current operational deployment record."
+      ],
+      "category": "ship",
+      "role": "Anti-submarine corvette",
+      "vessel": {
+        "shipClass": "Kamorta-class"
+      },
+      "summary": "INS Kiltan is a Kamorta-class anti-submarine corvette of the Indian Navy.",
+      "evidence": {
+        "identity": {
+          "sourceIds": [
+            "na-ship-kiltan"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        },
+        "parent": {
+          "sourceIds": [
+            "na-eastern-2025"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported",
+          "note": "Public organizational association; not a live position or a complete fleet roster.",
+          "asOf": "2025-08-01"
+        },
+        "vessel": {
+          "sourceIds": [
+            "na-ship-kiltan"
+          ],
+          "checkedAt": "2026-09-15",
+          "status": "supported"
+        }
+      }
     },
     {
       "id": "in-navy-shivaji",

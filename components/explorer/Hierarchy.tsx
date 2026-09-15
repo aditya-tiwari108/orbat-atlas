@@ -20,8 +20,10 @@ export function OrganizationRow({
             : org.status === 'newly-approved'
               ? 'Approved · opening not verified'
               : org.level === 'asset'
-                ? 'Organizational asset'
-                : org.location?.name || 'Available in tree'}
+                ? org.vessel?.shipClass || 'Organizational asset'
+                : org.aviation
+                  ? `${org.aviation.nickname || org.role} · ${org.aviation.aircraft.join(' / ')}`
+                  : org.location?.name || 'Available in tree'}
         </small>
       </span>
       <ChevronRight size={16} />
@@ -50,8 +52,10 @@ export default function Hierarchy({
       {!!children.length && (
         <details open={depth < 1}>
           <summary>
-            {children.length} documented{' '}
-            {children.length === 1 ? 'organization' : 'organizations'}
+            {children.length}{' '}
+            {root.category === 'air-station'
+              ? 'squadrons based here'
+              : `documented ${children.length === 1 ? 'organization' : 'organizations'}`}
             <ChevronRight size={13} />
           </summary>
           <div className="tree-connector">

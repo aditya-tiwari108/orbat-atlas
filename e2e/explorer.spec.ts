@@ -11,8 +11,8 @@ test('national overview and keyboard search reach an unmapped division and suppo
 });
 
 test('Navy shares HQ cities, keeps ships unlocated and labels the tri-service command',async({page})=>{
- await page.goto('/?org=in-navy-western');await expect(page.getByRole('button',{name:'2 headquarters in Mumbai',exact:true})).toBeVisible();
- await page.getByRole('button',{name:'2 headquarters in Mumbai',exact:true}).click();await page.locator('.overlap-picker').getByRole('button',{name:'Western Fleet',exact:true}).click();
+ await page.goto('/?org=in-navy-western');await expect(page.getByRole('button',{name:/^\d+ headquarters in Mumbai$/})).toBeVisible();
+ await page.getByRole('button',{name:/^\d+ headquarters in Mumbai$/}).click();await page.locator('.overlap-picker').getByRole('button',{name:'Western Fleet',exact:true}).click();
  await expect(page.locator('#dossier-title')).toHaveText('Western Fleet');await expect(page.locator('.map-organization[aria-label*="Vikram"]')).toHaveCount(0);
  await page.goto('/?org=in-joint-andaman-nicobar');await expect(page.locator('.dossier-kicker')).toContainText('TRI-SERVICE COMMAND');await expect(page.locator('.service-switch button[aria-pressed=true]')).toHaveText('Navy');
 });

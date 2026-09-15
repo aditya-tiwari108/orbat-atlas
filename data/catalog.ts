@@ -56,6 +56,9 @@ export function searchOrganizations(
       o.shortName,
       o.location?.name || '',
       o.commander?.name || '',
+      o.role || '',
+      o.vessel?.shipClass || '',
+      ...(o.aviation?.aircraft || []),
       ...(o.aliases || []),
     ]
       .join(' ')

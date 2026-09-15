@@ -122,7 +122,7 @@ test('4 Kar Eng Coy is discoverable, sourced and linked to Mangaluru Group', asy
   await expect(page.locator('#dossier-title')).toHaveText(
     'Mangaluru NCC Group',
   );
-  await page.getByRole('button', { name: 'View all in tree' }).click();
+  await page.getByRole('button', { name: 'Organization tree', exact: true }).click();
   await expect(page.locator('.dossier')).toContainText(
     '9 documented organizations',
   );

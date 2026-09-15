@@ -172,6 +172,9 @@ export default function MapView({
   useEffect(() => {
     if (!ready || !map.current) return;
     const m = map.current;
+    const destination = selected?.aviation
+      ? nodes.find((o) => o.id === selected.aviation?.baseId)
+      : selected;
     const reduced = window.matchMedia(
       '(prefers-reduced-motion: reduce)',
     ).matches;
@@ -181,8 +184,8 @@ export default function MapView({
         maxZoom: 6.5,
         duration: reduced ? 0 : 1100,
       });
-    } else if (selected?.location) {
-      const [lat, lng] = selected.location.coordinates;
+    } else if (destination?.location && selected) {
+      const [lat, lng] = destination.location.coordinates;
       const children = nodes.filter(
         (o) => o.parentId === selected.id && o.location && o.level !== 'asset',
       );
@@ -246,11 +249,12 @@ export default function MapView({
   useEffect(() => {
     if (!ready || !map.current) return;
     const m = map.current;
+    const focusId = selected?.aviation?.baseId || selected?.id;
     const shown = mapOrganizations(nodes, selected, detail).filter(
       (o) =>
         !country.regions?.[service] ||
         o.level !== 'directorate' ||
-        o.id === selected?.id,
+        o.id === focusId,
     );
     const groups = new Map<string, Organization[]>();
     for (const org of shown) {
@@ -262,11 +266,11 @@ export default function MapView({
       // A colocated fleet/corps must not replace its command when detail appears.
       const o =
         group.find((x) => x.level === 'command' || x.level === 'directorate') ||
-        group.find((x) => x.id === selected?.id) ||
+        group.find((x) => x.id === focusId) ||
         group[0];
       retained.add(key);
       const signature =
-        group.map((x) => x.id).join('|') + ':' + selected?.id + ':' + labels;
+        group.map((x) => x.id).join('|') + ':' + focusId + ':' + labels;
       const existing = markers.current.get(key);
       if (existing?.signature === signature) continue;
       if (existing && existing.org.id === o.id) {
@@ -274,7 +278,7 @@ export default function MapView({
         existing.signature = signature;
         existing.el.classList.toggle(
           'active',
-          group.some((x) => x.id === selected?.id),
+          group.some((x) => x.id === focusId),
         );
         existing.el.classList.toggle('no-label', !labels);
         existing.el.setAttribute(
@@ -300,7 +304,7 @@ export default function MapView({
       const command = o.level === 'command' || o.level === 'directorate';
       const el = document.createElement('button');
       el.type = 'button';
-      el.className = `map-organization ${command ? 'command-label' : 'formation-label'} ${group.some((x) => x.id === selected?.id) ? 'active' : ''} ${labels ? '' : 'no-label'}`;
+      el.className = `map-organization ${command ? 'command-label' : 'formation-label'} ${group.some((x) => x.id === focusId) ? 'active' : ''} ${labels ? '' : 'no-label'}`;
       el.dataset.organizationId = o.id;
       el.setAttribute(
         'aria-label',
@@ -404,8 +408,7 @@ export default function MapView({
       // changing which command gets first choice of space.
       const entries = [...markers.current.values()].sort(
         (a, b) =>
-          Number(b.org.id === selected?.id) -
-            Number(a.org.id === selected?.id) ||
+          Number(b.org.id === focusId) - Number(a.org.id === focusId) ||
           Number(b.command) - Number(a.command) ||
           b.org.location!.coordinates[0] - a.org.location!.coordinates[0],
       );

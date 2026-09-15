@@ -13,6 +13,7 @@ export function mapOrganizations(
   selected: Organization | null,
   detail: Detail,
 ) {
+  const selectedBaseId = selected?.aviation?.baseId;
   return nodes.filter((o) => {
     if (
       !o.location ||
@@ -22,6 +23,7 @@ export function mapOrganizations(
     )
       return false;
     if (o.id === selected?.id) return true;
+    if (o.id === selectedBaseId) return true;
     if (o.historicalAsOf) return false;
     if (o.parentId === selected?.id) return true;
     if (o.level === 'command' || o.level === 'directorate') return true;

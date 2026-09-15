@@ -1,4 +1,4 @@
-# Data coverage review — 14 September 2026
+# Data coverage review — 15 September 2026
 
 This report describes a sourced snapshot and its remaining gaps, not a complete or live order of battle. Manual field review and structural validation serve different purposes. The user authorized implementation on 7 September 2026. Remaining factual gaps are explicit; publication requires implementation verification.
 
@@ -66,8 +66,12 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 - Added Andaman and Nicobar Command as tri-service. Navy is a browsing category, not its chain of command.
 - Restored combined AP–Telangana and Bihar–Jharkhand entries during the documented transition; preserved existing shared-link IDs.
 - Replaced stale service-command leadership with dated evidence. Kept conflicting NCC names unresolved.
-- Removed four permanent fleet-parent claims inferred from a 2025 exercise. Those ships remain unlocated Navy assets.
+- Replaced four previously unsupported fleet-parent claims with explicit fleet-membership statements from PIB releases. Delhi, Shakti, Kiltan and Satpura remain unlocated assets. See the Navy/Air Force audit for dates.
 - Added field evidence, separate assumption dates, portrait attribution, image focal points and explicit verification gaps.
+
+## Navy and Air Force expansion
+
+40 flying squadrons at 23 air stations; 21 additional ships (27 total), 19 additional naval shore establishments and the 1st Training Squadron. See [field audit](navy-airforce-audit.md) for base, aircraft and command evidence and excluded conflicts. Squadron-to-base links represent basing, not direct operational command.
 
 ## Remaining data work
 

@@ -12,8 +12,10 @@ import type { Organization } from '../../data/model';
 import { organizations, sources, getAncestors } from '../../data/catalog';
 import { insignia } from '../../data/insignia';
 import { byId } from './navigation';
-import Hierarchy, { OrganizationRow } from './Hierarchy';
+import Hierarchy from './Hierarchy';
 import CommanderCard from './CommanderCard';
+import OrganizationFacts from './OrganizationFacts';
+import OrganizationChildren from './OrganizationChildren';
 import { accuracyNote } from './LeadershipPanel';
 export default function Dossier({
   org,
@@ -92,7 +94,9 @@ export default function Dossier({
                       ? 'HISTORICAL RECORD'
                       : org.status === 'newly-approved'
                         ? 'ANNOUNCED'
-                        : org.level.toUpperCase()}
+                        : (org.category || org.level)
+                            .replaceAll('-', ' ')
+                            .toUpperCase()}
             </span>
             {emblem && (
               <img
@@ -108,7 +112,9 @@ export default function Dossier({
             <MapPin size={14} />
             {org.level === 'asset'
               ? 'Fleet asset'
-              : org.location?.name || 'Headquarters not verified'}
+              : org.aviation
+                ? `Based at ${byId.get(org.aviation.baseId)?.shortName || 'unresolved base'}`
+                : org.location?.name || 'Headquarters not verified'}
           </div>
         </div>
         <nav className="dossier-tabs" aria-label="Dossier views">
@@ -145,32 +151,20 @@ export default function Dossier({
                 </a>
               )}
             </div>
-            {children.length > 0 && (
-              <section className="dossier-section">
-                <div className="section-heading">
-                  <h2>
-                    {org.service === 'navy'
-                      ? 'Organizations & assets'
-                      : 'Subordinate organizations'}
-                  </h2>
-                  <span>{String(children.length).padStart(2, '0')}</span>
-                </div>
-                {children.slice(0, 6).map((c) => (
-                  <OrganizationRow key={c.id} org={c} onSelect={onSelect} />
-                ))}
-                {children.length > 6 && (
-                  <button
-                    className="text-link"
-                    onClick={() => setTab('structure')}
-                  >
-                    View all in tree <ChevronRight size={14} />
-                  </button>
-                )}
-              </section>
-            )}
+            <OrganizationFacts org={org} onSelect={onSelect} />
+            <OrganizationChildren
+              key={org.id}
+              org={org}
+              items={children}
+              onSelect={onSelect}
+            />
             {parent && parent.level !== 'headquarters' && (
               <div className="parent-block">
-                <span className="eyebrow">Parent organization</span>
+                <span className="eyebrow">
+                  {org.relationshipKind === 'base-association'
+                    ? 'Home base'
+                    : 'Parent organization'}
+                </span>
                 <button onClick={() => onSelect(parent)}>
                   {parent.name}
                   <ArrowUpRight size={16} />

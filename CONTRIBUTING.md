@@ -13,3 +13,5 @@ For each change:
 7. Run `npm test`, `npm run lint` and `npm run build`. Regenerate the coverage report. Manually check the affected record and image in the browser.
 
 An empty branch means missing dataset coverage, not that an organization has no subordinates. Data validation tests establish structural consistency; they do not establish factual truth.
+
+For Navy/Air Force expansion records, use `data/india-naval-air.json` and its source registry. Preserve existing records in `data/india.json`. Flying squadrons use `location: null`, `relationshipKind: base-association`, and a separately sourced `aviation.baseId` / `aviation.commandId`; add evidence for base, aircraft and command individually. Do not infer command affiliation from the base's city. Update `docs/navy-airforce-audit.md` and its public copy when coverage changes.
