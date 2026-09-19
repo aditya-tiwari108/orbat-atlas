@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { countryPresentation } from '../../data/country-config';
 import { organizations } from '../../data/catalog';
 import type { Organization, Service } from '../../data/model';
 export const byId = new Map(organizations.map((o) => [o.id, o]));
@@ -7,12 +8,18 @@ export function readLocation() {
   const q = new URLSearchParams(window.location.search);
   const selected = byId.get(q.get('org') || '') || null;
   const mode = q.get('service') as Service;
+  const requestedCountry = selected?.country || q.get('country') || 'IN';
+  const country = countryPresentation[requestedCountry]
+    ? requestedCountry
+    : 'IN';
   return {
     selected,
     service:
       selected?.service ||
-      ((services.includes(mode) ? mode : 'army') as Service),
-    country: selected?.country || q.get('country') || 'IN',
+      ((services.includes(mode) && countryPresentation[country].services[mode]
+        ? mode
+        : 'army') as Service),
+    country,
   };
 }
 export function useNavigation() {
@@ -29,6 +36,8 @@ export function useNavigation() {
         service: selected?.service || service || state.service,
         country: selected?.country || country || state.country,
       };
+      if (!countryPresentation[next.country]?.services[next.service])
+        next.service = 'army';
       const url = new URL(window.location.href);
       url.searchParams.set('service', next.service);
       url.searchParams.set('country', next.country);

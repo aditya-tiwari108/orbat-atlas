@@ -35,7 +35,7 @@ export default function Dossier({
   }, [org.id]);
   const children = organizations.filter((o) => o.parentId === org.id);
   const parent = org.parentId ? byId.get(org.parentId) : undefined;
-  const emblem = insignia[org.service];
+  const emblem = org.country === 'IN' ? insignia[org.service] : undefined;
   const more =
     org.wikipedia || sources.find((s) => org.sourceIds.includes(s.id))?.url;
   return (
@@ -93,7 +93,7 @@ export default function Dossier({
                     : org.historicalAsOf
                       ? 'HISTORICAL RECORD'
                       : org.status === 'newly-approved'
-                        ? 'ANNOUNCED'
+                        ? 'APPROVED · OPENING UNVERIFIED'
                         : (org.category || org.level)
                             .replaceAll('-', ' ')
                             .toUpperCase()}

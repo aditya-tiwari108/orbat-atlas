@@ -489,8 +489,8 @@ export default function MapView({
       {fatal && (
         <div className="map-fallback">
           <img
-            src="/geography/india-context.svg"
-            alt="Survey of India national outline"
+            src={country.fallbackImage}
+            alt={`${country.name} national outline · ${country.outlineCredit}`}
           />
           <button onClick={onBrowse}>Explore organizational hierarchy</button>
         </div>
@@ -509,10 +509,10 @@ export default function MapView({
         </button>
         <span />
         <button
-          aria-label="Show all India"
+          aria-label={`Show all ${country.name}`}
           onClick={() =>
             map.current?.fitBounds(country.bounds, {
-              padding: viewportPadding(!!selected),
+              padding: viewportPadding(panelOpen),
               duration: window.matchMedia('(prefers-reduced-motion: reduce)')
                 .matches
                 ? 0

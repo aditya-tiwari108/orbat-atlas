@@ -39,7 +39,9 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
         These are presentation conventions, not NATO affiliation. Command
         territory is never inferred from headquarters. The Survey of India
         overview replaces competing administrative border and region-label
-        layers.
+        layers for India. Pakistan uses Natural Earth’s de facto boundary
+        convention, including disputed territories; it does not represent a
+        position on sovereignty.
       </p>
       <h3>Evidence and gaps</h3>
       <p>
@@ -57,6 +59,16 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
       <p>
         <a href="/navy-airforce-audit.md" target="_blank" rel="noreferrer">
           Navy &amp; Air Force: ships, bases and squadrons ↗
+        </a>
+      </p>
+      <p>
+        <a href="/pakistan-audit.md" target="_blank" rel="noreferrer">
+          Pakistan: coverage and unresolved fields ↗
+        </a>
+      </p>
+      <p>
+        <a href="/ncc-reorganization.md" target="_blank" rel="noreferrer">
+          NCC: the 19-directorate transition ↗
         </a>
       </p>
       <p>

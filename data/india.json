@@ -4054,7 +4054,7 @@
       "note": "Two new state directorates were approved in June 2026, bringing the announced total to 19. Detailed implementation is not independently confirmed.",
       "wikipedia": "https://en.wikipedia.org/wiki/National_Cadet_Corps_(India)",
       "relationshipKind": "administrative",
-      "summary": "The National Cadet Corps brings together Army, Navy and Air Wing cadets from schools and colleges across India. Its directorates connect regional groups and local units."
+      "summary": "The National Cadet Corps connects Army, Navy and Air Wing cadets through 19 approved directorates. Andhra Pradesh and Jharkhand were approved as independent directorates on 15 June 2026; their office activation and group transfers are not yet verified."
     },
     {
       "id": "in-ncc-telangana",
@@ -4136,10 +4136,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4158,17 +4159,18 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Andhra Pradesh, Telangana. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Telangana. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
-          76.76057,
-          12.62403,
-          84.76146,
-          19.91675
+          77.23576,
+          15.83633,
+          81.32264,
+          19.91469
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4251,10 +4253,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4267,17 +4270,18 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Bihar, Jharkhand. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Bihar. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           83.32022,
-          21.97067,
+          24.25968,
           88.29353,
-          27.52178
+          27.51917
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4351,10 +4355,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
@@ -4363,9 +4368,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Delhi. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Delhi. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           76.83953,
@@ -4373,7 +4379,7 @@
           77.34741,
           28.8835
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4455,10 +4461,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4471,9 +4478,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Gujarat, Dadra & Nagar Haveli & Daman & Diu. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Gujarat, Dadra & Nagar Haveli & Daman & Diu. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           68.17751,
@@ -4481,7 +4489,7 @@
           74.47643,
           24.71211
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4563,10 +4571,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4579,9 +4588,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Jammu And Kashmir, Ladakh. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Jammu And Kashmir, Ladakh. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           72.51308,
@@ -4589,7 +4599,7 @@
           80.34508,
           37.08729
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4672,10 +4682,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4688,9 +4699,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Karnataka, Goa. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Karnataka, Goa. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           73.67699,
@@ -4698,7 +4710,7 @@
           78.5877,
           18.47773
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       },
       "note": "Six documented groups are included. Unit records mix recent institutional corroboration and explicitly dated historical evidence; the register is not a certified current strength return. No separate Goa Group is asserted operational without a dated official confirmation."
     },
@@ -4781,10 +4793,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4798,9 +4811,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Kerala, Lakshadweep. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Kerala, Lakshadweep. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           72.16457,
@@ -4808,7 +4822,7 @@
           77.4124,
           12.79546
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4890,10 +4904,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -4906,9 +4921,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Madhya Pradesh, Chhattisgarh. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Madhya Pradesh, Chhattisgarh. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           74.02938,
@@ -4916,7 +4932,7 @@
           84.39555,
           26.86956
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -4998,10 +5014,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -5014,9 +5031,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Maharashtra. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Maharashtra. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           72.64199,
@@ -5024,7 +5042,7 @@
           80.89768,
           22.03027
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5106,10 +5124,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -5123,9 +5142,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Tripura. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           89.6986,
@@ -5133,7 +5153,7 @@
           97.4129,
           29.46595
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5207,10 +5227,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
@@ -5219,9 +5240,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Odisha. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Odisha. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           81.38907,
@@ -5229,7 +5251,7 @@
           87.48611,
           22.56751
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5303,10 +5325,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
@@ -5315,9 +5338,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Punjab, Haryana, Himachal Pradesh, Chandigarh. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Punjab, Haryana, Himachal Pradesh, Chandigarh. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           73.87978,
@@ -5325,7 +5349,7 @@
           79.00892,
           33.25636
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5399,10 +5423,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
@@ -5411,9 +5436,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Rajasthan. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Rajasthan. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           69.48443,
@@ -5421,7 +5447,7 @@
           78.27226,
           30.19815
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5495,10 +5521,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
@@ -5507,9 +5534,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Tamil Nadu, Puducherry, Andaman & Nicobar. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Tamil Nadu, Puducherry, Andaman & Nicobar. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           75.52669,
@@ -5517,7 +5545,7 @@
           94.26733,
           16.76073
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5599,10 +5627,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -5615,9 +5644,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Uttarakhand. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Uttarakhand. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           77.57232,
@@ -5625,7 +5655,7 @@
           81.04661,
           31.46208
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5707,10 +5737,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -5724,9 +5755,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: Uttar Pradesh. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: Uttar Pradesh. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           77.08395,
@@ -5734,7 +5766,7 @@
           84.63465,
           30.40628
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5816,10 +5848,11 @@
           "status": "supported",
           "sourceIds": [
             "soi-abdb-states-2025",
-            "ncc-state-remit"
+            "ncc-state-remit",
+            "ncc-reorganization"
           ],
-          "checkedAt": "2026-09-08",
-          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational."
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "verificationGaps": [
@@ -5832,9 +5865,10 @@
         "kind": "published-area",
         "sourceIds": [
           "soi-abdb-states-2025",
-          "ncc-state-remit"
+          "ncc-state-remit",
+          "ncc-reorganization"
         ],
-        "description": "Administrative remit: West Bengal, Sikkim. State boundaries are generalized for overview display; no group territories are inferred.",
+        "description": "Approved 19-directorate administrative geography: West Bengal, Sikkim. State boundaries are generalized for overview display; no group territories are inferred.",
         "geometryPath": "/geography/india-ncc-regions.geojson",
         "bounds": [
           85.81972,
@@ -5842,7 +5876,7 @@
           89.8826,
           28.12869
         ],
-        "asOf": "2026-09-08"
+        "asOf": "2026-09-15"
       }
     },
     {
@@ -5853,7 +5887,7 @@
       "shortName": "Andhra Pradesh",
       "level": "directorate",
       "parentId": "in-ncc",
-      "description": "Regional administration of NCC cadet training and youth development.",
+      "description": "Andhra Pradesh was approved as an independent NCC directorate on 15 June 2026. Its approved state territory is shown on the map; headquarters, leadership and transferred groups await confirmation.",
       "location": null,
       "sourceIds": [
         "ncc-reorganization",
@@ -5865,11 +5899,10 @@
       ],
       "coverage": "partial",
       "status": "newly-approved",
-      "note": "Independent state directorate approved on 15 June 2026. Headquarters and subordinate allocations are not verified; no marker is placed.",
+      "note": "Approved state territory is shown separately. No headquarters point or group transfers are inferred.",
       "relationshipKind": "administrative",
       "verificationGaps": [
         "Creation approved; operational headquarters and leader not verified. Do not geocode the suggested future headquarters.",
-        "Geographic coverage is distinct from headquarters location.",
         "Publishable portrait association is not yet verified; do not substitute another officer."
       ],
       "evidence": {
@@ -5903,10 +5936,38 @@
           "checkedAt": "2026-09-07",
           "status": "supported",
           "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+        },
+        "coverage": {
+          "status": "supported",
+          "sourceIds": [
+            "soi-abdb-states-2025",
+            "ncc-state-remit",
+            "ncc-reorganization"
+          ],
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
-      "function": "youth-development"
+      "function": "youth-development",
+      "summary": "Andhra Pradesh was approved as an independent NCC directorate on 15 June 2026. Its approved state territory is shown on the map; headquarters, leadership and transferred groups await confirmation.",
+      "geographicCoverage": {
+        "kind": "published-area",
+        "sourceIds": [
+          "soi-abdb-states-2025",
+          "ncc-state-remit",
+          "ncc-reorganization"
+        ],
+        "description": "Approved 19-directorate administrative geography: Andhra Pradesh. State boundaries are generalized for overview display; no group territories are inferred.",
+        "geometryPath": "/geography/india-ncc-regions.geojson",
+        "bounds": [
+          76.76057,
+          12.62403,
+          84.76146,
+          19.16691
+        ],
+        "asOf": "2026-09-15"
+      }
     },
     {
       "id": "in-ncc-jharkhand",
@@ -5916,7 +5977,7 @@
       "shortName": "Jharkhand",
       "level": "directorate",
       "parentId": "in-ncc",
-      "description": "Regional administration of NCC cadet training and youth development.",
+      "description": "Jharkhand was approved as an independent NCC directorate on 15 June 2026. Its approved state territory is shown on the map; headquarters, leadership and transferred groups await confirmation.",
       "location": null,
       "sourceIds": [
         "ncc-reorganization",
@@ -5928,11 +5989,10 @@
       ],
       "coverage": "partial",
       "status": "newly-approved",
-      "note": "Independent state directorate approved on 15 June 2026. Headquarters and subordinate allocations are not verified; no marker is placed.",
+      "note": "Approved state territory is shown separately. No headquarters point or group transfers are inferred.",
       "relationshipKind": "administrative",
       "verificationGaps": [
         "Creation approved; operational headquarters and leader not verified.",
-        "Geographic coverage is distinct from headquarters location.",
         "Publishable portrait association is not yet verified; do not substitute another officer."
       ],
       "evidence": {
@@ -5966,10 +6026,38 @@
           "checkedAt": "2026-09-07",
           "status": "supported",
           "note": "Approval identifies an announced directorate. Operational headquarters and leader remain unverified; no map location is assigned."
+        },
+        "coverage": {
+          "status": "supported",
+          "sourceIds": [
+            "soi-abdb-states-2025",
+            "ncc-state-remit",
+            "ncc-reorganization"
+          ],
+          "checkedAt": "2026-09-15",
+          "note": "Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance."
         }
       },
       "classification": "service",
-      "function": "youth-development"
+      "function": "youth-development",
+      "summary": "Jharkhand was approved as an independent NCC directorate on 15 June 2026. Its approved state territory is shown on the map; headquarters, leadership and transferred groups await confirmation.",
+      "geographicCoverage": {
+        "kind": "published-area",
+        "sourceIds": [
+          "soi-abdb-states-2025",
+          "ncc-state-remit",
+          "ncc-reorganization"
+        ],
+        "description": "Approved 19-directorate administrative geography: Jharkhand. State boundaries are generalized for overview display; no group territories are inferred.",
+        "geometryPath": "/geography/india-ncc-regions.geojson",
+        "bounds": [
+          83.32935,
+          21.97067,
+          87.9628,
+          25.34918
+        ],
+        "asOf": "2026-09-15"
+      }
     },
     {
       "id": "in-ncc-group-thiruvananthapuram",

@@ -12,7 +12,7 @@ for (const viewport of [
     await page.setViewportSize(viewport);
     await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto('/?service=ncc');
-    await expect(page.locator('.region-label')).toHaveCount(17);
+    await expect(page.locator('.region-label')).toHaveCount(19);
     await expect(page.locator('.command-label')).toHaveCount(0);
     await page.evaluate(() => document.fonts.ready);
     for (const step of [
@@ -106,8 +106,8 @@ test('4 Kar Eng Coy is discoverable, sourced and linked to Mangaluru Group', asy
 }) => {
   await page.goto('/');
   await page.keyboard.press('Control+k');
-  await page.getByRole('combobox').fill('4 Kar Eng Coy');
-  await page.getByRole('option').first().click();
+  await page.getByRole('combobox', { name: 'Search organizations' }).fill('4 Kar Eng Coy');
+  await page.getByRole('listbox', { name: 'Organizations' }).getByRole('option').first().click();
   await expect(page).toHaveURL(/org=in-ncc-4-kar-engineer/);
   await expect(page.locator('#dossier-title')).toHaveText(
     '4 Karnataka Engineer Company NCC',

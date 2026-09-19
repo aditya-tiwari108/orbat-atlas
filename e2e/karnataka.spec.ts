@@ -39,7 +39,7 @@ test('clicking the Karnataka region opens its six-group dossier, and service swi
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?service=ncc');
-  await expect(page.locator('.region-label')).toHaveCount(17);
+  await expect(page.locator('.region-label')).toHaveCount(19);
   // The label box is generated wholly inside Karnataka; click its corner after
   // disabling label pointer events to independently exercise polygon hit-testing.
   const label = page.locator('[data-region-id="in-ncc-karnataka-goa"]');

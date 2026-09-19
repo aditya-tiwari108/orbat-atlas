@@ -11,8 +11,10 @@ from shapely.ops import unary_union,transform
 from shapely import make_valid
 root=pathlib.Path(sys.argv[1]);out=pathlib.Path('public/geography');data=pathlib.Path('data/india.json')
 remit={
-'in-ncc-telangana':['ANDHRA PRADESH','TELANGANA'],
-'in-ncc-bihar':['BIHAR','JHARKHAND'],
+'in-ncc-telangana':['TELANGANA'],
+'in-ncc-andhra-pradesh':['ANDHRA PRADESH'],
+'in-ncc-bihar':['BIHAR'],
+'in-ncc-jharkhand':['JHARKHAND'],
 'in-ncc-delhi':['DELHI'],
 'in-ncc-gujarat':['GUJARAT','DADRA & NAGAR HAVELI & DAMAN & DIU'],
 'in-ncc-jammu-kashmir':['JAMMU AND KASHMIR','LADAKH'],
@@ -40,12 +42,14 @@ features=[]
 for i,(oid,names) in enumerate(remit.items()):
  projected=unary_union([states[s] for s in names])
  geom=transform(t.transform,projected.simplify(250,preserve_topology=True))
- org=byid[oid];lat,lng=org['location']['coordinates']
- assert geom.buffer(.02).covers(Point(lng,lat)),(oid,'HQ outside its administrative remit')
+ org=byid[oid]
+ if org['location']:
+  lat,lng=org['location']['coordinates']
+  assert geom.buffer(.02).covers(Point(lng,lat)),(oid,'HQ outside its administrative remit')
  bounds=[round(n,5) for n in geom.bounds]
- features.append(dict(type='Feature',id=oid,properties=dict(organizationId=oid,name=org['name'],states=names,color=colors[i],source='Survey of India ABDB, 2025 edition',generalizationMetres=250),geometry=mapping(geom)))
- org['geographicCoverage']=dict(kind='published-area',sourceIds=['soi-abdb-states-2025','ncc-state-remit'],description='Administrative remit: '+', '.join(s.title() for s in names)+'. State boundaries are generalized for overview display; no group territories are inferred.',geometryPath='/geography/india-ncc-regions.geojson',bounds=bounds,asOf='2026-09-08')
- org.setdefault('evidence',{})['coverage']=dict(status='supported',sourceIds=['soi-abdb-states-2025','ncc-state-remit'],checkedAt='2026-09-08',note='Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. Newly approved AP/Jharkhand reorganizations are not treated as operational.')
+ features.append(dict(type='Feature',id=oid,properties=dict(organizationId=oid,name=org['name'],states=names,color=colors[i % len(colors)],status=org.get('status','documented'),source='Survey of India ABDB, 2025 edition',generalizationMetres=250),geometry=mapping(geom)))
+ org['geographicCoverage']=dict(kind='published-area',sourceIds=['soi-abdb-states-2025','ncc-state-remit','ncc-reorganization'],description='Approved 19-directorate administrative geography: '+', '.join(s.title() for s in names)+'. State boundaries are generalized for overview display; no group territories are inferred.',geometryPath='/geography/india-ncc-regions.geojson',bounds=bounds,asOf='2026-09-15')
+ org.setdefault('evidence',{})['coverage']=dict(status='supported',sourceIds=['soi-abdb-states-2025','ncc-state-remit','ncc-reorganization'],checkedAt='2026-09-15',note='Published directorate state/UT remit joined to separately sourced SOI state geometry. Interstate disputed areas remain unassigned. The map shows the approved 19-directorate geography. Separate AP/Jharkhand office activation, leaders and group transfers remain unverified; existing combined-office records retain their provenance.')
  org['verificationGaps']=[g for g in org.get('verificationGaps',[]) if g!='Geographic coverage is distinct from headquarters location.']
 for name,g in states.items():
  if name.startswith('DISPUTED'):

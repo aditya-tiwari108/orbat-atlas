@@ -128,11 +128,11 @@ export default function Explorer() {
           </span>
           <span>
             ORBAT <b>ATLAS</b>
-            <small>INDIA / ORGANIZATIONAL ATLAS</small>
+            <small>{country.name.toUpperCase()} / ORGANIZATIONAL ATLAS</small>
           </span>
         </button>
         <nav className="service-switch" aria-label="Service mode">
-          {(Object.keys(serviceMeta) as Service[]).map((s) => {
+          {(Object.keys(country.services) as Service[]).map((s) => {
             const Icon = icons[s];
             return (
               <button
@@ -223,7 +223,13 @@ export default function Explorer() {
           <select
             aria-label="Country"
             value={country.code}
-            onChange={(e) => navigate(null, service, e.target.value)}
+            onChange={(e) => {
+              navigate(null, service, e.target.value);
+              setHomeOpen(true);
+              setBrowse(false);
+              setLayers(false);
+              setReset((n) => n + 1);
+            }}
           >
             {countries.map((c) => (
               <option key={c.code} value={c.code}>
@@ -246,13 +252,13 @@ export default function Explorer() {
           </label>
           <p>
             {service === 'ncc'
-              ? 'Directorate regions follow published state and union-territory administration. Select a region to explore. Small regions use abbreviated names as space permits; all directorates remain in the hierarchy.'
+              ? 'The map shows 19 approved directorate territories. Andhra Pradesh and Jharkhand are approved additions; office activation and group transfers remain unverified. Select a region to explore. Small regions use abbreviated names as space permits; all directorates remain in the hierarchy.'
               : 'Headquarters are city-level points. Command areas are only shown when published geography supports them.'}
           </p>
           <p>
             {service === 'ncc'
               ? 'Regions: Survey of India ABDB states, 2025 edition, generalized to 250 metres. Interstate disputed areas remain unassigned. Headquarters markers indicate cities.'
-              : 'India outline: Survey of India, 1:16 million. Hidden at close zoom to respect its scale.'}
+              : `${country.outlineCredit}. Hidden at close zoom to respect its scale.`}
           </p>
           <a
             href={

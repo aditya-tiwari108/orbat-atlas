@@ -11,12 +11,14 @@ const byId = new Map(organizations.map((o) => [o.id, o]));
 const sourceIds = new Set(sources.map((s) => s.id));
 
 void test('flying units have independently sourced base, command and aircraft associations', () => {
-  const squadrons = organizations.filter((o) => o.aviation);
+  const squadrons = organizations.filter(
+    (o) => o.country === 'IN' && o.aviation,
+  );
   assert.equal(squadrons.length, 40);
   for (const org of squadrons) {
     const aviation = org.aviation!;
     const base = byId.get(aviation.baseId)!;
-    const command = byId.get(aviation.commandId)!;
+    const command = byId.get(aviation.commandId!)!;
     assert.equal(base.category, 'air-station', org.id);
     assert.equal(command.level, 'command', org.id);
     assert.equal(command.service, org.service);
@@ -40,7 +42,9 @@ void test('flying units have independently sourced base, command and aircraft as
 });
 
 void test('ships remain unlocated, document fleet associations and never use their namesake as a location', () => {
-  const ships = organizations.filter((o) => o.category === 'ship');
+  const ships = organizations.filter(
+    (o) => o.country === 'IN' && o.category === 'ship',
+  );
   assert.equal(ships.length, 27);
   for (const ship of ships) {
     assert.equal(ship.location, null);
@@ -66,7 +70,7 @@ void test('new detail does not crowd the national view and is discoverable by ai
     ['airforce', 7],
   ] as const) {
     const visible = mapOrganizations(
-      organizations.filter((o) => o.service === service),
+      organizations.filter((o) => o.country === 'IN' && o.service === service),
       null,
       0,
     );

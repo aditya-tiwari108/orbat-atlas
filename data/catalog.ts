@@ -2,10 +2,17 @@ import {
   organizations as indiaOrganizations,
   sources as indiaSources,
 } from './india';
+import {
+  organizations as pakistanOrganizations,
+  sources as pakistanSources,
+} from './pakistan';
 import type { Organization, Service } from './model';
 // Register additional country datasets here. IDs are globally unique and country scoped.
-export const organizations: Organization[] = [...indiaOrganizations];
-export const sources = [...indiaSources];
+export const organizations: Organization[] = [
+  ...indiaOrganizations,
+  ...pakistanOrganizations,
+];
+export const sources = [...indiaSources, ...pakistanSources];
 export function rootFor(country: string, service: Service) {
   return organizations.find(
     (o) =>

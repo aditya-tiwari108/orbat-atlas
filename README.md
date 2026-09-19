@@ -2,7 +2,7 @@
 
 [Open the live atlas](https://orbat-atlas.vercel.app) · [Public dataset](https://github.com/aditya-tiwari108/orbat-atlas/tree/main/data)
 
-A map-first explorer of publicly documented Indian Army, Navy, Air Force and NCC organizations. Built with React, TypeScript, MapLibre and CARTO vector basemaps.
+A map-first explorer of publicly documented Indian and Pakistani Army, Navy and Air Force organizations, plus India’s NCC. Built with React, TypeScript, MapLibre and CARTO vector basemaps.
 
 ## Run locally
 
@@ -19,7 +19,7 @@ npm run dev
 
 ## Explore
 
-Switch service modes, select a command or directorate, then browse subordinate formations in its dossier or connected tree. Search across services with Ctrl/⌘ K. Share the address bar URL (`?org=organization-id`); browser Back restores earlier selections. Headquarters sharing a city open a chooser.
+Switch service modes, select a command or directorate, then browse subordinate formations in its dossier or connected tree. Select India or Pakistan with the country control. Pakistan has three service modes. Search across countries and services with Ctrl/⌘ K. Share the address bar URL (`?org=organization-id`); browser Back restores earlier selections. Headquarters sharing a city open a chooser.
 
 Commands use geographic names; corps and divisions use generated APP-6-style headquarters symbols. Training and maintenance commands appear on the map alongside the other command headquarters. Each service opens a dismissible leadership panel with its chief and the CDS (NCC shows its Director General). Command dossiers emphasize a large commander photograph, short overview, Wikipedia link and subordinate organizations. Ships are organizational assets and have no map positions.
 
@@ -33,7 +33,7 @@ No territorial polygons are inferred from HQ points. India's national outline is
 
 ## Data architecture
 
-- `data/india.json`: organizations and source registry, with stable IDs.
+- `data/india.json` and `data/pakistan.json`: country organizations and source registries, with stable IDs.
 - `data/model.ts`: typed records, field evidence, dated leadership, sourced geography and verification gaps.
 - `data/media.json`: exact leader-to-portrait associations, source and reproduction attribution.
 - `data/leadership.json`: country-level defence leadership, independent of service command hierarchies.
@@ -58,7 +58,7 @@ Production is deployed through the Vercel CLI. The attempted GitHub integration 
 
 ### NCC regions
 
-NCC mode joins the 17 documented directorate remits to Survey of India's 2025 ABDB state/UT boundaries. Karnataka & Goa is a single combined region; selecting it reveals six group headquarters. Group boundaries are not inferred. Four disputed interstate polygons from the source remain neutral. The layer is generalized by 250 metres and stops at zoom 10; headquarters and the organizational tree remain accessible.
+NCC mode joins the 19 approved directorate remits to Survey of India's 2025 ABDB state/UT boundaries. Andhra Pradesh and Jharkhand were approved on 15 June 2026; their operational opening and new headquarters remain unverified. The predecessor office records retain their sourced combined names during the transition. Karnataka & Goa is a single combined region; selecting it reveals six group headquarters. Group boundaries are not inferred. Four disputed interstate polygons from the source remain neutral. The layer is generalized by 250 metres and stops at zoom 10; headquarters and the organizational tree remain accessible.
 
 To regenerate the region file, download the state archive from [SOI ABDB](https://surveyofindia.gov.in/pages/administrative-boundary-data-base-abdb-), extract `State Boundary.shp` and its companion files, install `pyshp`, `shapely` and `pyproj` in a Python environment, then run:
 
@@ -77,3 +77,7 @@ The September 12 research expansion documents six Karnataka & Goa groups and 55 
 ### Navy and Air Force detail
 
 The [September 15 field audit](docs/navy-airforce-audit.md) documents 40 flying squadrons linked to 23 air stations, 27 ships in total, 19 additional naval shore establishments and the 1st Training Squadron. `data/india-naval-air.json` extends the original dataset through `data/india.ts`. Squadron parent edges mean **based at**; separately sourced `aviation.commandId` and field evidence preserve the command relationship. Ships remain unlocated assets. Dossiers support aircraft/class facts, base navigation and expandable, filterable child lists. Coverage remains partial and the audit lists excluded conflicting records.
+
+### Pakistan
+
+The [Pakistan audit](docs/pakistan-audit.md) describes 117 organizations: field corps and divisions, naval commands and ships, and air commands, bases and squadrons. This is partial public reference coverage. Three service-chief portraits have identified Commons sources and reuse licenses; command-level portraits remain research gaps. Pakistan uses Natural Earth’s public-domain 1:50 million **de facto** outline, including its disputed-boundary convention. No military territorial boundaries are inferred. The outline is hidden above zoom 7.

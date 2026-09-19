@@ -1,5 +1,6 @@
 import { X } from 'lucide-react';
-import { serviceMeta, type Organization } from '../../data/model';
+import { type Organization } from '../../data/model';
+import { countryPresentation } from '../../data/country-config';
 import { organizations } from '../../data/catalog';
 import leadership from '../../data/leadership.json';
 import CommanderCard from './CommanderCard';
@@ -21,9 +22,7 @@ export default function LeadershipPanel({
       chiefOfDefenceStaff: Organization['commander'];
     }[]
   ).find((entry) => entry.country === root.country)?.chiefOfDefenceStaff;
-  const children = organizations.filter(
-    (org) => org.parentId === root.id && org.status !== 'newly-approved',
-  );
+  const children = organizations.filter((org) => org.parentId === root.id);
   return (
     <aside className="dossier home-panel" aria-labelledby="leadership-title">
       <header className="dossier-toolbar">
@@ -38,11 +37,16 @@ export default function LeadershipPanel({
       </header>
       <div className="dossier-scroll">
         <div className="dossier-heading">
-          <h1 id="leadership-title">{serviceMeta[root.service].name}</h1>
+          <h1 id="leadership-title">
+            {countryPresentation[root.country].services[root.service]}
+          </h1>
         </div>
         <div
           className={
-            'chief-grid ' + (root.service === 'ncc' ? 'single-chief' : '')
+            'chief-grid ' +
+            (root.service === 'ncc' || !cds || cds.name === root.commander?.name
+              ? 'single-chief'
+              : '')
           }
         >
           <CommanderCard
@@ -50,9 +54,11 @@ export default function LeadershipPanel({
             commander={root.commander}
             compact={root.service !== 'ncc'}
           />
-          {root.service !== 'ncc' && cds && (
-            <CommanderCard key={cds.name} commander={cds} compact />
-          )}
+          {root.service !== 'ncc' &&
+            cds &&
+            cds.name !== root.commander?.name && (
+              <CommanderCard key={cds.name} commander={cds} compact />
+            )}
         </div>
         <div className="dossier-intro">
           <p>{root.summary || root.description}</p>
@@ -69,7 +75,13 @@ export default function LeadershipPanel({
         </div>
         <section className="dossier-section">
           <div className="section-heading">
-            <h2>{root.service === 'ncc' ? 'Directorates' : 'Commands'}</h2>
+            <h2>
+              {root.service === 'ncc'
+                ? '19 approved directorates'
+                : root.country === 'PK' && root.service === 'army'
+                  ? 'Corps & commands'
+                  : 'Commands'}
+            </h2>
           </div>
           {children.map((org) => (
             <OrganizationRow key={org.id} org={org} onSelect={onSelect} />

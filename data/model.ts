@@ -65,7 +65,7 @@ export interface Organization {
   aviation?: {
     aircraft: string[];
     baseId: string;
-    commandId: string;
+    commandId?: string;
     nickname?: string;
   };
   vessel?: { shipClass: string; pennant?: string };
@@ -149,6 +149,15 @@ export const countries: Country[] = [
     bounds: [
       [6, 67],
       [36, 98],
+    ],
+  },
+  {
+    code: 'PK',
+    name: 'Pakistan',
+    center: [30.4, 69.4],
+    bounds: [
+      [23.5, 60.5],
+      [37.3, 77.5],
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { searchOrganizations } from '../../data/catalog';
-import { serviceMeta } from '../../data/model';
+import { countries, serviceMeta } from '../../data/model';
 import type { Organization } from '../../data/model';
 import Symbol from './Symbol';
 export default function SearchDialog({
@@ -99,7 +99,8 @@ export default function SearchDialog({
             <span>
               <strong>{o.name}</strong>
               <small>
-                {serviceMeta[o.service].label} /{' '}
+                {countries.find((country) => country.code === o.country)?.name}{' '}
+                / {serviceMeta[o.service].label} /{' '}
                 {o.location?.name || 'Organizational tree'}
               </small>
             </span>

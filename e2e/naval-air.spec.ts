@@ -72,7 +72,7 @@ test('search discovers aircraft and training ships; joint installations retain t
 }) => {
   await page.goto('/?service=airforce');
   await page.keyboard.press('Control+k');
-  await page.getByRole('combobox').fill('Golden Arrows');
+  await page.getByRole('combobox', { name: 'Search organizations' }).fill('Golden Arrows');
   await page.keyboard.press('Enter');
   await expect(page.locator('#dossier-title')).toContainText('No. 17 Squadron');
   await page.goto('/?org=in-navy-training-squadron-1');

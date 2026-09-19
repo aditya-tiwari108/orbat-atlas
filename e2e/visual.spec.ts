@@ -114,7 +114,7 @@ test('short desktop shared-HQ menu stays on screen and search returns to its fir
   await page
     .locator('.search-results')
     .evaluate((el) => (el.scrollTop = el.scrollHeight));
-  await page.getByRole('combobox').fill('NCC');
+  await page.getByRole('combobox', { name: 'Search organizations' }).fill('NCC');
   await expect
     .poll(() =>
       page.locator('.search-results').evaluate((el) => {

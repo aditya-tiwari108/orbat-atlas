@@ -380,5 +380,50 @@
     ],
     "identityNote": "Northern Army Commander speaking at the North Tech Symposium, as identified in the official release. The source supplies only a 252 × 246 photograph; a higher-resolution portrait remains a research gap.",
     "fit": "contain"
+  },
+  {
+    "id": "portrait-pk-army",
+    "subject": "Field Marshal Asim Munir",
+    "kind": "portrait",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Field_Marshal_Asim_Munir.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_Marshal_Asim_Munir.jpg",
+    "credit": "ISPR Pakistan",
+    "rights": "CC BY-SA 4.0",
+    "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "checkedAt": "2026-09-15",
+    "identityStatus": "verified",
+    "localPath": "/portraits/pk-army.jpg",
+    "fit": "contain",
+    "identityNote": "Official portrait explicitly identifies this service chief in the Wikimedia Commons description and linked ISPR profile. No image alteration; contain fit."
+  },
+  {
+    "id": "portrait-pk-navy",
+    "subject": "Admiral Naveed Ashraf",
+    "kind": "portrait",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Chief_of_The_Naval_Staff_Admiral_Naveed_Ashraf_NI%28M%29_08-09-25.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chief_of_The_Naval_Staff_Admiral_Naveed_Ashraf_NI%28M%29_08-09-25.jpg",
+    "credit": "ISPR Pakistan",
+    "rights": "CC BY 4.0",
+    "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "checkedAt": "2026-09-15",
+    "identityStatus": "verified",
+    "localPath": "/portraits/pk-navy.jpg",
+    "fit": "contain",
+    "identityNote": "Official portrait explicitly identifies this service chief in the Wikimedia Commons description and linked ISPR profile. No image alteration; contain fit."
+  },
+  {
+    "id": "portrait-pk-airforce",
+    "subject": "Air Chief Marshal Zaheer Ahmed Baber Sidhu",
+    "kind": "portrait",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AIR_CHIEF_MARSHAL_ZAHEER_AHMED_BABER_SIDHU.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AIR_CHIEF_MARSHAL_ZAHEER_AHMED_BABER_SIDHU.jpg",
+    "credit": "ISPR / Pakistan Air Force",
+    "rights": "CC BY-SA 4.0",
+    "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "checkedAt": "2026-09-15",
+    "identityStatus": "verified",
+    "localPath": "/portraits/pk-airforce.jpg",
+    "fit": "contain",
+    "identityNote": "Official portrait explicitly identifies the service chief in the Wikimedia Commons description and linked ISPR profile. Wikimedia 960px thumbnail; proportional resizing only, contain fit."
   }
 ]

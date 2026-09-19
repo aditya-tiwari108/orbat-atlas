@@ -41,7 +41,7 @@ test('service home panels show the correct chiefs, large loaded portraits and a 
     );
     await expect(
       page.locator(service === 'ncc' ? '.region-label' : '.command-label'),
-    ).toHaveCount(service === 'ncc' ? 17 : service === 'navy' ? 4 : 7);
+    ).toHaveCount(service === 'ncc' ? 19 : service === 'navy' ? 4 : 7);
     await page.waitForLoadState('networkidle');
     await page.screenshot({
       path: `test-results/${service}-leadership-home.png`,

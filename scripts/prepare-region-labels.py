@@ -15,12 +15,12 @@ labels = {
  'jammu-kashmir': ['Jammu, Kashmir', '& Ladakh'],
  'punjab': ['Punjab, Haryana', '& Himachal'],
  'delhi': ['Delhi'], 'uttarakhand': ['Uttarakhand'],
- 'uttar-pradesh': ['Uttar Pradesh'], 'bihar': ['Bihar &', 'Jharkhand'],
+ 'uttar-pradesh': ['Uttar Pradesh'], 'bihar': ['Bihar'], 'jharkhand': ['Jharkhand'],
  'west-bengal': ['West Bengal', '& Sikkim'], 'north-east': ['North Eastern', 'Region'],
  'odisha': ['Odisha'], 'mp-cg': ['Madhya Pradesh', '& Chhattisgarh'],
  'rajasthan': ['Rajasthan'], 'gujarat': ['Gujarat', '& DNH / DD'],
  'maharashtra': ['Maharashtra'], 'karnataka-goa': ['Karnataka', '& Goa'],
- 'telangana': ['Andhra Pradesh', '& Telangana'],
+ 'telangana': ['Telangana'], 'andhra-pradesh': ['Andhra', 'Pradesh'],
  'tamil-nadu': ['Tamil Nadu', 'Puducherry / A&N'],
  'kerala': ['Kerala &', 'Lakshadweep'],
 }
@@ -56,9 +56,9 @@ for f in data['features']:
     assert polygon.covers(rect), org
     compact = {
         'jammu-kashmir':['J&K','Ladakh'], 'punjab':['PB/HR/HP'],
-        'uttarakhand':['UK'], 'uttar-pradesh':['UP'], 'bihar':['BR/JH'],
+        'uttarakhand':['UK'], 'uttar-pradesh':['UP'], 'bihar':['Bihar'], 'jharkhand':['JH'],
         'mp-cg':['MP & CG'], 'north-east':['NER'], 'gujarat':['Gujarat'],
-        'karnataka-goa':['KA/GA'], 'telangana':['AP & T'],
+        'karnataka-goa':['KA/GA'], 'telangana':['TG'], 'andhra-pradesh':['AP'],
         'tamil-nadu':['TN/P/AN'], 'west-bengal':['WB'],
         'kerala':['KL']}.get(org.removeprefix('in-ncc-'),lines)
     compact_aspect = max(map(len, compact)) * .56 / (len(compact) * 1.3)

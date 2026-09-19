@@ -9,7 +9,7 @@ export default function OrganizationFacts({
   org: Organization;
   onSelect: (org: Organization) => void;
 }) {
-  const command = org.aviation && byId.get(org.aviation.commandId);
+  const command = org.aviation?.commandId && byId.get(org.aviation.commandId);
   if (!org.role && !org.vessel && !org.aviation) return null;
   return (
     <dl className="organization-facts">

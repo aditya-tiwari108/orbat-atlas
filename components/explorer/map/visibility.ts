@@ -28,6 +28,11 @@ export function mapOrganizations(
     if (o.parentId === selected?.id) return true;
     if (o.level === 'command' || o.level === 'directorate') return true;
     if (
+      o.level === 'corps' &&
+      nodes.some((p) => p.id === o.parentId && p.level === 'headquarters')
+    )
+      return true;
+    if (
       selected &&
       selected.level !== 'command' &&
       selected.level !== 'directorate' &&

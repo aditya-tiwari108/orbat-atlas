@@ -104,7 +104,7 @@ void test('NCC regions cover each state once, preserve disputed areas and match 
     readFileSync('public/geography/india-ncc-regions.geojson', 'utf8'),
   );
   const regions = geo.features.filter((f) => f.properties.organizationId);
-  assert.equal(regions.length, 17);
+  assert.equal(regions.length, 19);
   const states = regions.flatMap((f) => f.properties.states || []);
   assert.equal(states.length, 36);
   assert.equal(new Set(states).size, 36);
@@ -114,7 +114,12 @@ void test('NCC regions cover each state once, preserve disputed areas and match 
       (o) => o.id === feature.properties.organizationId,
     )!;
     assert.equal(org.level, 'directorate');
-    assert.notEqual(org.status, 'newly-approved');
+    if (org.status === 'newly-approved') {
+      assert.equal(org.location, null);
+      assert.ok(
+        org.geographicCoverage?.sourceIds.includes('ncc-reorganization'),
+      );
+    }
     assert.equal(org.evidence?.coverage?.status, 'supported');
     assert.equal(org.geographicCoverage?.bounds?.length, 4);
     assert.ok(
@@ -144,11 +149,11 @@ void test('interior labels cover all published directorates separately from HQ p
   const labels = JSON.parse(
     readFileSync('public/geography/india-ncc-labels.json', 'utf8'),
   );
-  assert.equal(labels.length, 17);
+  assert.equal(labels.length, 19);
   assert.equal(
     new Set(labels.map((l: { organizationId: string }) => l.organizationId))
       .size,
-    17,
+    19,
   );
   for (const label of labels) {
     const [lng, lat] = label.coordinates;

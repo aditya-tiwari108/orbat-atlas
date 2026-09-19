@@ -4,10 +4,11 @@ export interface CountryPresentation {
   name: string;
   bounds: [number, number, number, number];
   outline: string;
+  fallbackImage: string;
   outlineSource: string;
   outlineCredit: string;
   outlineMaxZoom: number;
-  services: Record<Service, string>;
+  services: Partial<Record<Service, string>>;
   mapLabels?: Record<string, string>;
   regions?: Record<
     string,
@@ -21,7 +22,24 @@ export interface CountryPresentation {
   >;
 }
 export const countryPresentation: Record<string, CountryPresentation> = {
+  PK: {
+    code: 'PK',
+    name: 'Pakistan',
+    bounds: [60.5, 23.5, 77.5, 37.3],
+    outline: '/geography/pakistan-natural-earth.geojson',
+    fallbackImage: '/geography/pakistan-context.svg',
+    outlineSource:
+      'https://www.naturalearthdata.com/about/disputed-boundaries-policy/',
+    outlineCredit: 'Natural Earth · de facto boundaries · 1:50 million',
+    outlineMaxZoom: 7,
+    services: {
+      army: 'Pakistan Army',
+      navy: 'Pakistan Navy',
+      airforce: 'Pakistan Air Force',
+    },
+  },
   IN: {
+    fallbackImage: '/geography/india-context.svg',
     regions: {
       ncc: {
         path: '/geography/india-ncc-regions.geojson',
@@ -37,8 +55,8 @@ export const countryPresentation: Record<string, CountryPresentation> = {
       'in-ncc-jammu-kashmir': 'Jammu, Kashmir & Ladakh',
       'in-ncc-mp-cg': 'MP & Chhattisgarh',
       'in-ncc-tamil-nadu': 'Tamil Nadu · Puducherry · A&N',
-      'in-ncc-telangana': 'AP & Telangana',
-      'in-ncc-bihar': 'Bihar & Jharkhand',
+      'in-ncc-telangana': 'Telangana',
+      'in-ncc-bihar': 'Bihar',
       'in-ncc-kerala': 'Kerala & Lakshadweep',
       'in-ncc-west-bengal': 'West Bengal & Sikkim',
     },

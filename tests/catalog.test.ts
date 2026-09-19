@@ -63,7 +63,7 @@ void test('all four modes have an independently traversable national root', () =
     const root = rootFor('IN', svc);
     assert.ok(root);
     for (const n of organizations.filter(
-      (o) => o.service === svc && o.id !== root.id,
+      (o) => o.country === 'IN' && o.service === svc && o.id !== root.id,
     )) {
       assert.equal(getAncestors(n)[0]?.id, root.id);
     }

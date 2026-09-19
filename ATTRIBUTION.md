@@ -7,6 +7,8 @@
 - Vector basemap: [CARTO](https://carto.com/attributions), based on [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Attribution remains visible on the map.
 - Portable review-map context: Natural Earth 1:110m public-domain country polygons, clipped against the Survey of India outline for the design overview.
 
+- Pakistan outline and WebGL fallback: [Natural Earth 1:50 million admin-0 countries](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/), public domain. The PAK feature follows Natural Earth’s [de facto disputed-boundary policy](https://www.naturalearthdata.com/about/disputed-boundaries-policy/).
+
 ## Photographs and insignia
 
 Every included portrait has its own source, identity association and reuse statement in `data/media.json`. Ministry of Defence/PIB images are reproduced with source acknowledgement under the [PIB copyright policy](https://www.pib.gov.in/content/3622_2_CopyrightPolicy.aspx?lang=6&reg=17); third-party exceptions are respected. Anindya Sengupta's portrait is credited to Indian Army via Wikimedia Commons under the CC BY 4.0 declaration on its file page. Source URLs are preserved; local copies may be resized and compressed, and the interface crops some images for display. NCC and Indian Air Force official portraits additionally retain their GODL-India declarations and file-page attribution. The public [portrait-credit page](https://orbat-atlas.vercel.app/image-credits.html), linked from About, lists every displayed leader photograph.
@@ -25,3 +27,5 @@ Source material retains its respective rights. A public source URL does not itse
 ## Organizational reference data
 
 The Navy/Air Force extension in `data/india-naval-air.json` attributes Wikipedia contributors through individual article links and source records, supplemented by dated Ministry of Defence/PIB releases. Descriptions are condensed in original wording; Wikipedia text is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). See the [field audit](docs/navy-airforce-audit.md) for source conflicts and exclusions. No new imagery is imported by this extension.
+
+Pakistan reference data in `data/pakistan.json` similarly attributes individual Wikipedia articles and dated Radio Pakistan reports. The three official-origin service-chief portraits are attributed to ISPR / the relevant service via Wikimedia Commons: Asim Munir and Zaheer Ahmed Baber Sidhu under CC BY-SA 4.0; Naveed Ashraf under CC BY 4.0. The air-chief image uses Wikimedia’s proportionally resized 960px thumbnail. See each exact source and license in `data/media.json`.

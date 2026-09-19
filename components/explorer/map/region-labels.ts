@@ -56,7 +56,11 @@ export function connectRegionLabels(
         Math.min(
           20,
           area.width / Math.max(...lines.map(textWidth)),
-          area.height / (lines.length * 1.2),
+          Math.max(
+            0,
+            area.height - (el.dataset.status === 'newly-approved' ? 12 : 0),
+          ) /
+            (lines.length * 1.2),
         );
       const compact = size(label.lines, box) < 12;
       const lines = compact ? label.compactLines : label.lines;
@@ -91,10 +95,17 @@ export function connectRegionLabels(
         if (!org) continue;
         const el = document.createElement('button');
         el.type = 'button';
-        el.className = 'region-label';
+        el.className =
+          'region-label' +
+          (org.status === 'newly-approved' ? ' region-approved' : '');
+        el.dataset.status = org.status || 'documented';
         el.dataset.regionId = org.id;
         el.setAttribute('aria-label', `${org.name}, geographic region`);
-        el.title = org.name;
+        el.title =
+          org.name +
+          (org.status === 'newly-approved'
+            ? ' — approved; opening not verified'
+            : '');
         for (const text of label.lines) {
           const line = document.createElement('span');
           line.textContent = text;

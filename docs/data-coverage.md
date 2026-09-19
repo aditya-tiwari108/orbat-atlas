@@ -1,11 +1,11 @@
-# Data coverage review — 15 September 2026
+# India data coverage review — 19 September 2026
 
 This report describes a sourced snapshot and its remaining gaps, not a complete or live order of battle. Manual field review and structural validation serve different purposes. The user authorized implementation on 7 September 2026. Remaining factual gaps are explicit; publication requires implementation verification.
 
 ## Field coverage
 
 - Service commands: 17 documented commands plus the tri-service Andaman and Nicobar Command. Names, headquarters cities and service relationships manually cross-checked.
-- NCC: 17 documented combined/state directorates, plus 2 approved creations. Existing headquarters cities checked against the 2025 DGNCC circular; new directorates remain unmapped.
+- NCC: 17 documented combined/state directorates, plus 2 approved creations. Existing headquarters cities checked against the 2025 DGNCC circular; new directorate headquarters remain unverified. All 19 approved geographic remits are selectable; see ncc-reorganization.md.
 - Leadership: 30 records with dated or explicitly undated evidence; 7 command/directorate identities or appointments remain unresolved.
 - Portraits: 17 identified command-leader photographs with source and reproduction attribution. The remaining records must not silently use a different officer.
 - Home leadership: all four service/DG portraits and the CDS portrait are included. See data/leadership.json and public/image-credits.html for individual provenance.
@@ -80,7 +80,7 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 - Corroborate current corps/division parents and expand subordinate coverage. Existing uncertain relationships must be displayed as reported associations, not current command facts.
 - Source authentic formation insignia and published geographic coverage. Do not derive territorial polygons from headquarters points.
 - Karnataka & Goa: six groups and 55 unit records, including two explicitly historical-only records. Current parent/HQ and leadership coverage remains partial. See ncc-karnataka-goa-audit.md.
-- NCC administrative regions: 17 mapped directorate remits use separately sourced SOI ABDB state geometry; operational transitions remain explicit.
+- NCC administrative regions: 19 approved directorate remits use separately sourced SOI ABDB state geometry; operational transitions remain explicit.
 
 ## Record-specific gaps
 
@@ -251,13 +251,11 @@ Dates below describe evidence; they are not a guarantee of present incumbency. A
 ### Andhra Pradesh Directorate (ncc)
 
 - Creation approved; operational headquarters and leader not verified. Do not geocode the suggested future headquarters.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Jharkhand Directorate (ncc)
 
 - Creation approved; operational headquarters and leader not verified.
-- Geographic coverage is distinct from headquarters location.
 - Publishable portrait association is not yet verified; do not substitute another officer.
 
 ### Andaman and Nicobar Command (navy)
