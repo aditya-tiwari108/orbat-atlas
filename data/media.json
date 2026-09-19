@@ -425,5 +425,24 @@
     "localPath": "/portraits/pk-airforce.jpg",
     "fit": "contain",
     "identityNote": "Official portrait explicitly identifies the service chief in the Wikimedia Commons description and linked ISPR profile. Wikimedia 960px thumbnail; proportional resizing only, contain fit."
+  },
+  {
+    "id": "portrait-cn-xi",
+    "subject": "Xi Jinping",
+    "kind": "portrait",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Prime_Minister_Keir_Starmer_visits_China_%2855066713683%29_%28cropped%2Bangle%29.jpg/500px-Prime_Minister_Keir_Starmer_visits_China_%2855066713683%29_%28cropped%2Bangle%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_visits_China_(55066713683)_(cropped%2Bangle).jpg",
+    "credit": "Simon Dawson / No 10 Downing Street; crop and angle derivative by Nagae Iku (Wikimedia Commons)",
+    "rights": "Crown copyright, OGL v3.0; derivative CC BY 4.0. Contains public sector information licensed under the Open Government Licence v3.0.",
+    "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "checkedAt": "2026-09-19",
+    "capturedAt": "2026-01-29",
+    "identityStatus": "verified",
+    "localPath": "/portraits/cn-xi-jinping.jpg",
+    "focalPoint": [
+      0.5,
+      0.35
+    ],
+    "identityNote": "Commons description identifies Xi Jinping at the 29 January 2026 meeting with Keir Starmer. Existing Commons derivative; no local alterations. Original license: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
   }
 ]

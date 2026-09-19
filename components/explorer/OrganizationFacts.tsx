@@ -10,7 +10,8 @@ export default function OrganizationFacts({
   onSelect: (org: Organization) => void;
 }) {
   const command = org.aviation?.commandId && byId.get(org.aviation.commandId);
-  if (!org.role && !org.vessel && !org.aviation) return null;
+  const joint = org.jointCommandId && byId.get(org.jointCommandId);
+  if (!org.role && !org.vessel && !org.aviation && !joint) return null;
   return (
     <dl className="organization-facts">
       {org.role && (
@@ -19,7 +20,7 @@ export default function OrganizationFacts({
           <dd>{org.role}</dd>
         </div>
       )}
-      {org.aviation && (
+      {!!org.aviation?.aircraft.length && (
         <div>
           <dt>Aircraft</dt>
           <dd>{org.aviation.aircraft.join(' · ')}</dd>
@@ -29,6 +30,17 @@ export default function OrganizationFacts({
         <div>
           <dt>Class</dt>
           <dd>{org.vessel.shipClass}</dd>
+        </div>
+      )}
+      {joint && (
+        <div>
+          <dt>Joint theater</dt>
+          <dd>
+            <button onClick={() => onSelect(joint)}>
+              {joint.name}
+              <ArrowUpRight size={14} />
+            </button>
+          </dd>
         </div>
       )}
       {command && (

@@ -33,7 +33,7 @@ void test('published portraits match the named leader and retain attribution and
     ...organizations,
     ...leadership.map((entry) => ({
       id: entry.country + '-cds',
-      commander: entry.chiefOfDefenceStaff,
+      commander: entry.defenceLeadership,
     })),
   ]) {
     if (!org.commander?.portraitId) continue;
@@ -72,8 +72,9 @@ void test('joint browsing and announced NCC transitions do not imply operational
 void test('country defence leadership retains dated primary evidence independently of service parents', () => {
   for (const entry of leadership) {
     assert.ok(organizations.some((o) => o.country === entry.country));
-    const chief = entry.chiefOfDefenceStaff;
-    assert.ok(Date.parse(chief.assumedOffice) <= Date.parse(chief.asOf));
+    const chief = entry.defenceLeadership;
+    if ('assumedOffice' in chief && chief.assumedOffice)
+      assert.ok(Date.parse(chief.assumedOffice) <= Date.parse(chief.asOf));
     assert.ok(chief.sourceIds.length > 0);
     for (const id of chief.sourceIds)
       assert.equal(sources.find((s) => s.id === id)?.kind, 'official');

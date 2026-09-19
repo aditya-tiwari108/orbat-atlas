@@ -25,7 +25,12 @@ export function mapOrganizations(
     if (o.id === selected?.id) return true;
     if (o.id === selectedBaseId) return true;
     if (o.historicalAsOf) return false;
-    if (o.parentId === selected?.id) return true;
+    if (
+      selected &&
+      (o.parentId === selected.id || o.jointCommandId === selected.id)
+    )
+      return true;
+    if (o.mapTier === 'subordinate' && detail < 1) return false;
     if (o.level === 'command' || o.level === 'directorate') return true;
     if (
       o.level === 'corps' &&

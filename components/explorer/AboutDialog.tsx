@@ -41,7 +41,14 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
         overview replaces competing administrative border and region-label
         layers for India. Pakistan uses Natural Earth’s de facto boundary
         convention, including disputed territories; it does not represent a
-        position on sovereignty.
+        position on sovereignty. China uses a Natural Earth overview with Survey
+        of India Ladakh and Arunachal Pradesh overlap excluded. Organizational
+        affiliation is separate from territorial presentation.
+      </p>
+      <p>
+        China’s joint theaters are browsed in Army mode. Linked service
+        components retain their separate administrative parents. PLA group
+        armies use corps-level symbols.
       </p>
       <h3>Evidence and gaps</h3>
       <p>
@@ -59,6 +66,11 @@ export default function AboutDialog({ onClose }: { onClose: () => void }) {
       <p>
         <a href="/navy-airforce-audit.md" target="_blank" rel="noreferrer">
           Navy &amp; Air Force: ships, bases and squadrons ↗
+        </a>
+      </p>
+      <p>
+        <a href="/china-audit.md" target="_blank" rel="noreferrer">
+          China: evidence, leadership gaps and geography ↗
         </a>
       </p>
       <p>

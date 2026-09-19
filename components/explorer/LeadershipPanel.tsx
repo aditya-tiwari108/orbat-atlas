@@ -1,7 +1,7 @@
 import { X } from 'lucide-react';
 import { type Organization } from '../../data/model';
 import { countryPresentation } from '../../data/country-config';
-import { organizations } from '../../data/catalog';
+import { getChildren } from '../../data/catalog';
 import leadership from '../../data/leadership.json';
 import CommanderCard from './CommanderCard';
 import { OrganizationRow } from './Hierarchy';
@@ -19,10 +19,10 @@ export default function LeadershipPanel({
   const cds = (
     leadership as {
       country: string;
-      chiefOfDefenceStaff: Organization['commander'];
+      defenceLeadership: Organization['commander'];
     }[]
-  ).find((entry) => entry.country === root.country)?.chiefOfDefenceStaff;
-  const children = organizations.filter((org) => org.parentId === root.id);
+  ).find((entry) => entry.country === root.country)?.defenceLeadership;
+  const children = getChildren(root.id);
   return (
     <aside className="dossier home-panel" aria-labelledby="leadership-title">
       <header className="dossier-toolbar">
@@ -44,7 +44,10 @@ export default function LeadershipPanel({
         <div
           className={
             'chief-grid ' +
-            (root.service === 'ncc' || !cds || cds.name === root.commander?.name
+            (root.service === 'ncc' ||
+            !cds ||
+            !root.commander?.portraitId ||
+            cds.name === root.commander?.name
               ? 'single-chief'
               : '')
           }
@@ -80,7 +83,9 @@ export default function LeadershipPanel({
                 ? '19 approved directorates'
                 : root.country === 'PK' && root.service === 'army'
                   ? 'Corps & commands'
-                  : 'Commands'}
+                  : root.country === 'CN' && root.service === 'army'
+                    ? 'Joint theaters & districts'
+                    : 'Commands & organizations'}
             </h2>
           </div>
           {children.map((org) => (

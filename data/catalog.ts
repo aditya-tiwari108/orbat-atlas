@@ -1,4 +1,8 @@
 import {
+  organizations as chinaOrganizations,
+  sources as chinaSources,
+} from './china';
+import {
   organizations as indiaOrganizations,
   sources as indiaSources,
 } from './india';
@@ -11,8 +15,9 @@ import type { Organization, Service } from './model';
 export const organizations: Organization[] = [
   ...indiaOrganizations,
   ...pakistanOrganizations,
+  ...chinaOrganizations,
 ];
-export const sources = [...indiaSources, ...pakistanSources];
+export const sources = [...indiaSources, ...pakistanSources, ...chinaSources];
 export function rootFor(country: string, service: Service) {
   return organizations.find(
     (o) =>
@@ -71,5 +76,20 @@ export function searchOrganizations(
       .join(' ')
       .toLowerCase()
       .includes(q),
+  );
+}
+
+/** A joint command exposes service components without changing their administrative parents. */
+export function getChildren(
+  id: string,
+  catalog: Organization[] = organizations,
+) {
+  return catalog.filter(
+    (org) =>
+      org.jointCommandId === id ||
+      (org.parentId === id &&
+        !catalog.some(
+          (joint) => joint.id === org.jointCommandId && joint.parentId === id,
+        )),
   );
 }

@@ -1,7 +1,7 @@
 [
   {
     "country": "IN",
-    "chiefOfDefenceStaff": {
+    "defenceLeadership": {
       "name": "General N. S. Raja Subramani",
       "role": "Chief of Defence Staff",
       "asOf": "2026-05-31",
@@ -15,7 +15,7 @@
   },
   {
     "country": "PK",
-    "chiefOfDefenceStaff": {
+    "defenceLeadership": {
       "name": "Field Marshal Asim Munir",
       "role": "Chief of Defence Forces",
       "asOf": "2025-12-05",
@@ -25,6 +25,19 @@
       "evidenceKind": "dated-observation",
       "assumedOffice": "2025-12-04",
       "portraitId": "portrait-pk-army"
+    }
+  },
+  {
+    "country": "CN",
+    "defenceLeadership": {
+      "name": "Xi Jinping",
+      "role": "Chairman, Central Military Commission",
+      "asOf": "2026-07-03",
+      "sourceIds": [
+        "cn-wang-2026"
+      ],
+      "evidenceKind": "dated-observation",
+      "portraitId": "portrait-cn-xi"
     }
   }
 ]

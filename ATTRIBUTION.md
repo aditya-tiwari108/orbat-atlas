@@ -29,3 +29,11 @@ Source material retains its respective rights. A public source URL does not itse
 The Navy/Air Force extension in `data/india-naval-air.json` attributes Wikipedia contributors through individual article links and source records, supplemented by dated Ministry of Defence/PIB releases. Descriptions are condensed in original wording; Wikipedia text is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). See the [field audit](docs/navy-airforce-audit.md) for source conflicts and exclusions. No new imagery is imported by this extension.
 
 Pakistan reference data in `data/pakistan.json` similarly attributes individual Wikipedia articles and dated Radio Pakistan reports. The three official-origin service-chief portraits are attributed to ISPR / the relevant service via Wikimedia Commons: Asim Munir and Zaheer Ahmed Baber Sidhu under CC BY-SA 4.0; Naveed Ashraf under CC BY 4.0. The air-chief image uses Wikimedia’s proportionally resized 960px thumbnail. See each exact source and license in `data/media.json`.
+
+## China expansion (19 September 2026)
+
+China organization references and field-level evidence are in `data/china.json`; limitations and dated official releases are listed in [the China audit](docs/china-audit.md). Descriptions are concise original summaries of the linked references. Wikipedia references remain linked to their articles.
+
+China's overview derives from public-domain Natural Earth 1:50m data with Survey of India ABDB Ladakh/Arunachal overlap removed for the configured presentation. Pakistan retains its separate de facto outline. See the audit for source scale, processing and boundary policy.
+
+The Xi Jinping portrait uses an existing Wikimedia Commons derivative of Simon Dawson / No 10 Downing Street's 29 January 2026 photograph. Attribution, source and license links are in `data/media.json` and the generated image-credits page. Unverified or unavailable commander portraits are not substituted.

@@ -9,7 +9,7 @@ import {
   X,
 } from 'lucide-react';
 import type { Organization } from '../../data/model';
-import { organizations, sources, getAncestors } from '../../data/catalog';
+import { getChildren, sources, getAncestors } from '../../data/catalog';
 import { insignia } from '../../data/insignia';
 import { byId } from './navigation';
 import Hierarchy from './Hierarchy';
@@ -33,8 +33,10 @@ export default function Dossier({
   useEffect(() => {
     heading.current?.focus({ preventScroll: true });
   }, [org.id]);
-  const children = organizations.filter((o) => o.parentId === org.id);
+  const children = getChildren(org.id);
   const parent = org.parentId ? byId.get(org.parentId) : undefined;
+  const backTarget =
+    (org.jointCommandId && byId.get(org.jointCommandId)) || parent;
   const emblem = org.country === 'IN' ? insignia[org.service] : undefined;
   const more =
     org.wikipedia || sources.find((s) => org.sourceIds.includes(s.id))?.url;
@@ -45,14 +47,14 @@ export default function Dossier({
         <button
           className="back-link"
           onClick={() =>
-            parent && parent.level !== 'headquarters'
-              ? onSelect(parent)
+            backTarget && backTarget.level !== 'headquarters'
+              ? onSelect(backTarget)
               : onClose()
           }
         >
           <ArrowLeft size={15} />
-          {parent && parent.level !== 'headquarters'
-            ? parent.shortName
+          {backTarget && backTarget.level !== 'headquarters'
+            ? backTarget.shortName
             : 'Overview'}
         </button>
         <div>
@@ -85,7 +87,9 @@ export default function Dossier({
           <div className="dossier-kicker">
             <span>
               {org.classification === 'tri-service'
-                ? 'TRI-SERVICE COMMAND'
+                ? org.country === 'CN'
+                  ? 'JOINT THEATER COMMAND'
+                  : 'TRI-SERVICE COMMAND'
                 : org.function === 'training'
                   ? 'TRAINING COMMAND'
                   : org.function === 'maintenance'

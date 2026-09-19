@@ -2,7 +2,7 @@
 
 [Open the live atlas](https://orbat-atlas.vercel.app) · [Public dataset](https://github.com/aditya-tiwari108/orbat-atlas/tree/main/data)
 
-A map-first explorer of publicly documented Indian and Pakistani Army, Navy and Air Force organizations, plus India’s NCC. Built with React, TypeScript, MapLibre and CARTO vector basemaps.
+A map-first explorer of publicly documented Indian, Pakistani and Chinese Army, Navy and Air Force organizations, plus India’s NCC. Built with React, TypeScript, MapLibre and CARTO vector basemaps.
 
 ## Run locally
 
@@ -19,7 +19,7 @@ npm run dev
 
 ## Explore
 
-Switch service modes, select a command or directorate, then browse subordinate formations in its dossier or connected tree. Select India or Pakistan with the country control. Pakistan has three service modes. Search across countries and services with Ctrl/⌘ K. Share the address bar URL (`?org=organization-id`); browser Back restores earlier selections. Headquarters sharing a city open a chooser.
+Switch service modes, select a command or directorate, then browse subordinate formations in its dossier or connected tree. Select India, Pakistan or China with the country control. Pakistan and China have three service modes. China’s five joint theaters are browsed in Army mode, with linked service components. See [the China audit](docs/china-audit.md) for dated evidence and unresolved fields. Search across countries and services with Ctrl/⌘ K. Share the address bar URL (`?org=organization-id`); browser Back restores earlier selections. Headquarters sharing a city open a chooser.
 
 Commands use geographic names; corps and divisions use generated APP-6-style headquarters symbols. Training and maintenance commands appear on the map alongside the other command headquarters. Each service opens a dismissible leadership panel with its chief and the CDS (NCC shows its Director General). Command dossiers emphasize a large commander photograph, short overview, Wikipedia link and subordinate organizations. Ships are organizational assets and have no map positions.
 
@@ -81,3 +81,7 @@ The [September 15 field audit](docs/navy-airforce-audit.md) documents 40 flying 
 ### Pakistan
 
 The [Pakistan audit](docs/pakistan-audit.md) describes 117 organizations: field corps and divisions, naval commands and ships, and air commands, bases and squadrons. This is partial public reference coverage. Three service-chief portraits have identified Commons sources and reuse licenses; command-level portraits remain research gaps. Pakistan uses Natural Earth’s public-domain 1:50 million **de facto** outline, including its disputed-boundary convention. No military territorial boundaries are inferred. The outline is hidden above zoom 7.
+
+### China
+
+The [China audit](docs/china-audit.md) documents five joint theaters, linked service components, all thirteen group armies, selected commissioned ships and twenty published aviation-brigade/base associations. Leadership is dated individually; unresolved current appointments and portraits are withheld. Aircraft/base coverage is partial and underlying evidence is sometimes older than the review date. `jointCommandId` preserves operational theater links independently of administrative `parentId` trees. China uses a documented Natural Earth/SOI-clipped overview; it does not merge Aksai Chin or Arunachal Pradesh into its outline. Pakistan's de facto geography and India's separate SOI presentation are retained.

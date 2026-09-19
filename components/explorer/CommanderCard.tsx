@@ -45,7 +45,7 @@ export default function CommanderCard({
         <span className="eyebrow">
           {commander?.role || 'Commanding officer'}
         </span>
-        <h2>{commander?.name || 'Name unavailable'}</h2>
+        <h2>{commander?.name || 'Current commander unconfirmed'}</h2>
       </div>
     </section>
   );

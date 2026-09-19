@@ -18,15 +18,21 @@ export default function OrganizationChildren({
   const matches = searchOrganizations(query, items);
   const shown = query || expanded ? matches : matches.slice(0, 6);
   const title =
-    org.category === 'air-station'
-      ? 'Squadrons based here'
-      : org.level === 'fleet' || org.category === 'training-squadron'
-        ? 'Ships'
-        : org.service === 'navy'
-          ? 'Fleets & establishments'
-          : org.service === 'airforce'
-            ? 'Bases & organizations'
-            : 'Subordinate organizations';
+    org.classification === 'tri-service' && org.country === 'CN'
+      ? 'Service components'
+      : org.category === 'air-station'
+        ? org.country === 'CN'
+          ? 'Flying units based here'
+          : 'Squadrons based here'
+        : org.level === 'fleet' || org.category === 'training-squadron'
+          ? 'Ships'
+          : org.service === 'navy'
+            ? org.country === 'CN'
+              ? 'Ships & establishments'
+              : 'Fleets & establishments'
+            : org.service === 'airforce'
+              ? 'Bases & organizations'
+              : 'Subordinate organizations';
   return (
     <section className="dossier-section organization-children">
       <div className="section-heading">

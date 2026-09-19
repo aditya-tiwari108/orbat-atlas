@@ -20,7 +20,9 @@ export default function Symbol({ org }: { org: Organization }) {
       />
     );
   const Icon =
-    org.category === 'flying-squadron' || org.category === 'air-station'
+    org.aviation ||
+    org.category === 'flying-squadron' ||
+    org.category === 'air-station'
       ? Plane
       : org.level === 'asset' || org.level === 'fleet'
         ? Anchor

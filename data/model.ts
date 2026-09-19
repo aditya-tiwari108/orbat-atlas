@@ -4,6 +4,7 @@ export type Level =
   | 'command'
   | 'corps'
   | 'division'
+  | 'brigade'
   | 'fleet'
   | 'directorate'
   | 'group'
@@ -52,6 +53,10 @@ export interface Organization {
   shortName: string;
   level: Level;
   parentId: string | null;
+  /** Operational joint command; separate from the administrative parent tree. */
+  jointCommandId?: string;
+  /** Components appear after selecting their theater or at detailed zoom. */
+  mapTier?: 'subordinate';
   description: string;
   summary?: string;
   aliases?: string[];
@@ -59,6 +64,7 @@ export interface Organization {
     | 'air-station'
     | 'naval-establishment'
     | 'flying-squadron'
+    | 'aviation-brigade'
     | 'training-squadron'
     | 'ship';
   role?: string;
@@ -112,7 +118,8 @@ export interface Organization {
       | 'base'
       | 'aircraft'
       | 'command'
-      | 'vessel',
+      | 'vessel'
+      | 'jointCommand',
       Evidence
     >
   >;
@@ -158,6 +165,15 @@ export const countries: Country[] = [
     bounds: [
       [23.5, 60.5],
       [37.3, 77.5],
+    ],
+  },
+  {
+    code: 'CN',
+    name: 'China',
+    center: [35, 104],
+    bounds: [
+      [17, 73],
+      [54, 135],
     ],
   },
 ];

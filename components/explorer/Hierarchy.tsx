@@ -1,5 +1,5 @@
 import { ChevronRight } from 'lucide-react';
-import { organizations } from '../../data/catalog';
+import { getChildren } from '../../data/catalog';
 import type { Organization } from '../../data/model';
 import Symbol from './Symbol';
 export function OrganizationRow({
@@ -22,7 +22,12 @@ export function OrganizationRow({
               : org.level === 'asset'
                 ? org.vessel?.shipClass || 'Organizational asset'
                 : org.aviation
-                  ? `${org.aviation.nickname || org.role} · ${org.aviation.aircraft.join(' / ')}`
+                  ? [
+                      org.aviation.nickname || org.role,
+                      org.aviation.aircraft.join(' / '),
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')
                   : org.location?.name || 'Available in tree'}
         </small>
       </span>
@@ -41,7 +46,7 @@ export default function Hierarchy({
   selectedId?: string;
   depth?: number;
 }) {
-  const children = organizations.filter((o) => o.parentId === root.id);
+  const children = getChildren(root.id);
   return (
     <div
       className={
@@ -54,7 +59,9 @@ export default function Hierarchy({
           <summary>
             {children.length}{' '}
             {root.category === 'air-station'
-              ? 'squadrons based here'
+              ? root.country === 'CN'
+                ? 'flying units based here'
+                : 'squadrons based here'
               : `documented ${children.length === 1 ? 'organization' : 'organizations'}`}
             <ChevronRight size={13} />
           </summary>

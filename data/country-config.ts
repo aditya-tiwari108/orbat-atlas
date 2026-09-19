@@ -8,6 +8,8 @@ export interface CountryPresentation {
   outlineSource: string;
   outlineCredit: string;
   outlineMaxZoom: number;
+  /** Compensate label density for countries with a wider overview extent. */
+  labelZoomOffset?: number;
   services: Partial<Record<Service, string>>;
   mapLabels?: Record<string, string>;
   regions?: Record<
@@ -22,6 +24,29 @@ export interface CountryPresentation {
   >;
 }
 export const countryPresentation: Record<string, CountryPresentation> = {
+  CN: {
+    labelZoomOffset: 1.3,
+    code: 'CN',
+    name: 'China',
+    bounds: [73, 17, 135, 54],
+    outline: '/geography/china-overview.geojson',
+    fallbackImage: '/geography/china-context.svg',
+    outlineSource: '/china-audit.md#geography',
+    outlineCredit: 'Natural Earth · SOI exclusions · 1:50 million',
+    outlineMaxZoom: 7,
+    services: {
+      army: 'PLA Army & Joint Theaters',
+      navy: 'PLA Navy',
+      airforce: 'PLA Air Force',
+    },
+    mapLabels: {
+      'cn-airforce-eastern': 'Eastern',
+      'cn-airforce-southern': 'Southern',
+      'cn-airforce-western': 'Western',
+      'cn-airforce-northern': 'Northern',
+      'cn-airforce-central': 'Central',
+    },
+  },
   PK: {
     code: 'PK',
     name: 'Pakistan',

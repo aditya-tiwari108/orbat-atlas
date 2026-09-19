@@ -351,7 +351,9 @@ export default function MapView({
       const sub = document.createElement('small');
       sub.textContent =
         o.classification === 'tri-service'
-          ? 'TRI-SERVICE COMMAND'
+          ? o.country === 'CN'
+            ? 'JOINT THEATER COMMAND'
+            : 'TRI-SERVICE COMMAND'
           : `${o.location!.name}${command ? ' · HQ' : ''}`;
       text.appendChild(title);
       text.appendChild(sub);
@@ -385,8 +387,9 @@ export default function MapView({
       }
     }
     function layoutLabels() {
-      host.current!.classList.toggle('compact-map-labels', m.getZoom() < 4.3);
-      host.current!.classList.toggle('minimal-map-labels', m.getZoom() < 3.5);
+      const labelZoom = m.getZoom() + (country.labelZoomOffset || 0);
+      host.current!.classList.toggle('compact-map-labels', labelZoom < 4.3);
+      host.current!.classList.toggle('minimal-map-labels', labelZoom < 3.5);
       const occupied: LabelRect[] = [];
       const context = document
         .querySelector('.map-context')
