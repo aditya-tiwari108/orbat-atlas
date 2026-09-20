@@ -37,3 +37,9 @@ China organization references and field-level evidence are in `data/china.json`;
 China's overview derives from public-domain Natural Earth 1:50m data with Survey of India ABDB Ladakh/Arunachal overlap removed for the configured presentation. Pakistan retains its separate de facto outline. See the audit for source scale, processing and boundary policy.
 
 The Xi Jinping portrait uses an existing Wikimedia Commons derivative of Simon Dawson / No 10 Downing Street's 29 January 2026 photograph. Attribution, source and license links are in `data/media.json` and the generated image-credits page. Unverified or unavailable commander portraits are not substituted.
+
+## Rank insignia
+
+`public/rank-insignia/` contains unchanged artwork from Wikimedia Commons. Exact source pages, creators and per-file reuse licenses are recorded in `data/ranks/assets.json` and accessible from each rank comparison's **References & image credits** section. These artwork licenses are separate from the application's code license. Insignia illustrations may represent shoulder boards, sleeve braid or arm badges as identified in the service reference, rather than one standardized uniform.
+
+Rank names and equivalence references are in `data/ranks/sources.json`. Research notes and unresolved mappings are documented in `public/ranks-coverage.md`. No ANO-specific insignia has been fabricated from regular-service badges.

@@ -1,0 +1,128 @@
+{
+  "in-army": {
+    "id": "in-army",
+    "title": "Indian Army ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indian_Army_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "in-navy": {
+    "id": "in-navy",
+    "title": "Indian Navy ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indian_Navy_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "in-air": {
+    "id": "in-air",
+    "title": "Indian Air Force ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Indian_Air_Force_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "pk-army": {
+    "id": "pk-army",
+    "title": "Pakistan Army ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pakistan_Army_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "pk-navy": {
+    "id": "pk-navy",
+    "title": "Pakistan Navy ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pakistan_Navy_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "pk-air": {
+    "id": "pk-air",
+    "title": "Pakistan Air Force ranks and insignia — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pakistan_Air_Force_ranks_and_insignia",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "cn-army": {
+    "id": "cn-army",
+    "title": "Ranks of the People's Liberation Army Ground Force — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranks_of_the_People%27s_Liberation_Army_Ground_Force",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "cn-navy": {
+    "id": "cn-navy",
+    "title": "Ranks of the People's Liberation Army Navy — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranks_of_the_People%27s_Liberation_Army_Navy",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "cn-air": {
+    "id": "cn-air",
+    "title": "Ranks of the People's Liberation Army Air Force — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ranks_of_the_People%27s_Liberation_Army_Air_Force",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "ncc": {
+    "id": "ncc",
+    "title": "National Cadet Corps (India) — Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/National_Cadet_Corps_(India)",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "in-equivalence": {
+    "id": "in-equivalence",
+    "title": "DG NCC Army handbook · equivalent ranks, pp. 20–21",
+    "url": "https://ncc.kerala.gov.in/images/pdf/handbook/army_jr/ARMY_JD_JW_WEB_FINAL.pdf#page=29",
+    "kind": "official",
+    "checked": "2026-09-20"
+  },
+  "ncc-equivalence": {
+    "id": "ncc-equivalence",
+    "title": "NIT Puducherry · NCC senior-division equivalents",
+    "url": "https://www.nitpy.ac.in/students/studentActivities/NCC",
+    "kind": "institutional",
+    "checked": "2026-09-20"
+  },
+  "ncc-rules": {
+    "id": "ncc-rules",
+    "title": "NCC Act and Rules · Schedule III, officer ranks",
+    "url": "https://www.ncc.du.ac.in/downloads/NCC%20ACT%20and%20Rules%20%20Dec%201948.pdf",
+    "kind": "official",
+    "checked": "2026-09-20"
+  },
+  "ncc-current-ano": {
+    "id": "ncc-current-ano",
+    "title": "Kerala Government · ANO categories, 2024 order",
+    "url": "https://document.kerala.gov.in/documents/governmentorders/govtorder3011202412%3A52%3A44.pdf",
+    "kind": "official",
+    "checked": "2026-09-20"
+  },
+  "cn-reform": {
+    "id": "cn-reform",
+    "title": "Ministry of Veterans Affairs · 2022 soldier rank reform",
+    "url": "https://www.mva.gov.cn/sy/xx/gfxx/202204/t20220426_59960.html",
+    "kind": "official",
+    "checked": "2026-09-20"
+  },
+  "pk-handbook": {
+    "id": "pk-handbook",
+    "title": "US Marine Corps · Pakistan country handbook, rank charts",
+    "url": "https://info.publicintelligence.net/MCIA-PakistanHandbook.pdf",
+    "kind": "official",
+    "checked": "2026-09-20"
+  },
+  "pk-senior-tech": {
+    "id": "pk-senior-tech",
+    "title": "Senior technician · Pakistan equivalents",
+    "url": "https://en.wikipedia.org/wiki/Senior_technician",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  },
+  "pk-corporal-tech": {
+    "id": "pk-corporal-tech",
+    "title": "Corporal technician · Pakistan equivalents",
+    "url": "https://en.wikipedia.org/wiki/Corporal_technician",
+    "kind": "reference",
+    "checked": "2026-09-20"
+  }
+}

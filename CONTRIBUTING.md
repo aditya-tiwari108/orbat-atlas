@@ -15,3 +15,11 @@ For each change:
 An empty branch means missing dataset coverage, not that an organization has no subordinates. Data validation tests establish structural consistency; they do not establish factual truth.
 
 For Navy/Air Force expansion records, use `data/india-naval-air.json` and its source registry. Preserve existing records in `data/india.json`. Flying squadrons use `location: null`, `relationshipKind: base-association`, and a separately sourced `aviation.baseId` / `aviation.commandId`; add evidence for base, aircraft and command individually. Do not infer command affiliation from the base's city. Update `docs/navy-airforce-audit.md` and its public copy when coverage changes.
+
+## Rank comparisons and branding
+
+- Change the umbrella name and tagline only in `data/platform.ts`; the public UI and HTML metadata read it automatically.
+- Add or correct rank rows in `data/ranks/rows.json`, with explicit evidence for equivalence within the same country and category. A missing equivalent is `null`, not a best guess based on seniority or a similar English name.
+- Keep armed-forces, NCC cadet and NCC ANO ladders separate. Chinese native grades, not English translations, anchor China comparisons.
+- Every insignia file needs a creator, reuse license, source page and checked date in `data/ranks/assets.json`. Preserve the distinction between `noInsignia: true` and an unverified image.
+- Run `npm test`, `npm run lint`, `npm run build` and `npx playwright test`. Rank UI tests cover hover, keyboard focus, direct links, empty cells, image failures and narrow layouts; Atlas tests retain legacy root query URLs.

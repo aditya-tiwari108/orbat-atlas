@@ -1,0 +1,2193 @@
+[
+  {
+    "id": "in-officers-0",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Admiral",
+        "file": "Indian_Navy_Admiral_rank.svg",
+        "id": "in-officers-0-navy"
+      },
+      "army": {
+        "name": "General",
+        "file": "General_of_the_Indian_Army.svg",
+        "id": "in-officers-0-army"
+      },
+      "air": {
+        "name": "Air Chief Marshal",
+        "file": "Indian_IAF_OF-9.svg",
+        "id": "in-officers-0-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-1",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Vice Admiral",
+        "file": "Indian_Navy_Vice_Admiral_rank.svg",
+        "id": "in-officers-1-navy"
+      },
+      "army": {
+        "name": "Lieutenant General",
+        "file": "Lieutenant_General_of_the_Indian_Army.svg",
+        "id": "in-officers-1-army"
+      },
+      "air": {
+        "name": "Air Marshal",
+        "file": "Indian_IAF_OF-8.svg",
+        "id": "in-officers-1-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-2",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Rear Admiral",
+        "file": "Indian_Navy_Rear_Admiral_rank.svg",
+        "id": "in-officers-2-navy"
+      },
+      "army": {
+        "name": "Major General",
+        "file": "Major_General_of_the_Indian_Army.svg",
+        "id": "in-officers-2-army"
+      },
+      "air": {
+        "name": "Air Vice Marshal",
+        "file": "Indian_IAF_OF-7.svg",
+        "id": "in-officers-2-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-3",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Commodore",
+        "file": "Generic-Navy-9b.svg",
+        "id": "in-officers-3-navy"
+      },
+      "army": {
+        "name": "Brigadier",
+        "file": "Brigadier_of_the_Indian_Army.svg",
+        "id": "in-officers-3-army"
+      },
+      "air": {
+        "name": "Air Commodore",
+        "file": "Indian_IAF_OF-6.svg",
+        "id": "in-officers-3-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-4",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Captain",
+        "file": "Generic-Navy-8.svg",
+        "id": "in-officers-4-navy"
+      },
+      "army": {
+        "name": "Colonel",
+        "file": "Colonel_of_the_Indian_Army.svg",
+        "id": "in-officers-4-army"
+      },
+      "air": {
+        "name": "Group Captain",
+        "file": "Indian_IAF_OF-5.svg",
+        "id": "in-officers-4-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-5",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Commander",
+        "file": "Generic-Navy-6.svg",
+        "id": "in-officers-5-navy"
+      },
+      "army": {
+        "name": "Lieutenant Colonel",
+        "file": "Lieutenant_Colonel_of_the_Indian_Army.svg",
+        "id": "in-officers-5-army"
+      },
+      "air": {
+        "name": "Wing Commander",
+        "file": "Indian_IAF_OF-4.svg",
+        "id": "in-officers-5-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-6",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant Commander",
+        "file": "Generic-Navy-5.svg",
+        "id": "in-officers-6-navy"
+      },
+      "army": {
+        "name": "Major",
+        "file": "Major_of_the_Indian_Army.svg",
+        "id": "in-officers-6-army"
+      },
+      "air": {
+        "name": "Squadron Leader",
+        "file": "Indian_IAF_OF-3.svg",
+        "id": "in-officers-6-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-7",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant",
+        "file": "Generic-Navy-4.svg",
+        "id": "in-officers-7-navy"
+      },
+      "army": {
+        "name": "Captain",
+        "file": "Captain_of_the_Indian_Army.svg",
+        "id": "in-officers-7-army"
+      },
+      "air": {
+        "name": "Flight Lieutenant",
+        "file": "Indian_IAF_OF-2.svg",
+        "id": "in-officers-7-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-officers-8",
+    "country": "IN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Sub Lieutenant",
+        "file": "Generic-Navy-2.svg",
+        "id": "in-officers-8-navy"
+      },
+      "army": {
+        "name": "Lieutenant",
+        "file": "Lieutenant_of_the_Indian_Army.svg",
+        "id": "in-officers-8-army"
+      },
+      "air": {
+        "name": "Flying Officer",
+        "file": "Indian_IAF_OF-1b.svg",
+        "id": "in-officers-8-air"
+      }
+    },
+    "sources": [
+      "in-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-special-marshal",
+    "country": "IN",
+    "category": "special",
+    "cells": {
+      "navy": {
+        "id": "in-special-marshal-navy",
+        "name": "Admiral of the Fleet",
+        "note": "Listed in the DG NCC handbook; never conferred. Insignia has not been verified."
+      },
+      "army": {
+        "name": "Field Marshal",
+        "file": "Field_Marshal_of_the_Indian_Army.svg",
+        "note": "Five-star rank; outside the ordinary promotion ladder.",
+        "id": "in-special-marshal-army"
+      },
+      "air": {
+        "name": "Marshal of the Indian Air Force",
+        "file": "Indian_IAF_OF-10.svg",
+        "note": "Honorary five-star rank.",
+        "id": "in-special-marshal-air"
+      }
+    },
+    "sources": [
+      "in-army",
+      "in-air",
+      "in-equivalence"
+    ],
+    "note": "Exceptional five-star ranks, separate from the ordinary promotion ladder. No naval appointment or insignia is asserted."
+  },
+  {
+    "id": "in-training-midshipman",
+    "country": "IN",
+    "category": "training",
+    "cells": {
+      "navy": {
+        "name": "Midshipman",
+        "file": "British_Royal_Navy_OF-1a.svg",
+        "note": "Training rank; kept separate from commissioned officers.",
+        "id": "in-training-midshipman-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "in-navy"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-0",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Master Chief Petty Officer I",
+        "file": "India-Navy-OR-9.svg",
+        "id": "in-other-0-navy"
+      },
+      "army": {
+        "name": "Subedar Major",
+        "file": "Subedar_Major_-_Risaldar_Major_of_the_Indian_Army.svg",
+        "id": "in-other-0-army"
+      },
+      "air": {
+        "name": "Master Warrant Officer",
+        "file": "Indian_IAF_OR-9.svg",
+        "id": "in-other-0-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-1",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Master Chief Petty Officer II",
+        "file": "India-Navy-OR-8.svg",
+        "id": "in-other-1-navy"
+      },
+      "army": {
+        "name": "Subedar",
+        "file": "Subedar_-_Risaldar_of_the_Indian_Army.svg",
+        "id": "in-other-1-army"
+      },
+      "air": {
+        "name": "Warrant Officer",
+        "file": "Indian_IAF_OR-8.svg",
+        "id": "in-other-1-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-2",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Chief Petty Officer",
+        "file": "India-Navy-OR-7.svg",
+        "id": "in-other-2-navy"
+      },
+      "army": {
+        "name": "Naib Subedar",
+        "file": "Naib_Subedar_-_Naib_Risaldar_of_the_Indian_Army.svg",
+        "id": "in-other-2-army"
+      },
+      "air": {
+        "name": "Junior Warrant Officer",
+        "file": "Indian_IAF_OR-7.svg",
+        "id": "in-other-2-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-3",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer",
+        "file": "PO_Indian_Navy.svg",
+        "id": "in-other-3-navy"
+      },
+      "army": {
+        "name": "Havildar",
+        "file": "India-Army-OR-6.svg",
+        "id": "in-other-3-army"
+      },
+      "air": {
+        "name": "Sergeant",
+        "file": "India-AirForce-OR-6.svg",
+        "id": "in-other-3-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-4",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Leading Seaman",
+        "file": "Leading_Seaman_Indian_Navy.svg",
+        "id": "in-other-4-navy"
+      },
+      "army": {
+        "name": "Naik",
+        "file": "India-Army-OR-4.svg",
+        "id": "in-other-4-army"
+      },
+      "air": {
+        "name": "Corporal",
+        "file": "India-AirForce-OR-4.svg",
+        "id": "in-other-4-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-5",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Seaman I",
+        "noInsignia": true,
+        "id": "in-other-5-navy"
+      },
+      "army": {
+        "name": "Lance Naik",
+        "file": "India-Army-OR-3.svg",
+        "id": "in-other-5-army"
+      },
+      "air": {
+        "name": "Leading Aircraftsman",
+        "file": "India-AirForce-OR-2.svg",
+        "id": "in-other-5-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "in-other-6",
+    "country": "IN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Seaman II",
+        "noInsignia": true,
+        "id": "in-other-6-navy"
+      },
+      "army": {
+        "name": "Sepoy",
+        "noInsignia": true,
+        "id": "in-other-6-army"
+      },
+      "air": {
+        "name": "Aircraftsman",
+        "noInsignia": true,
+        "id": "in-other-6-air"
+      }
+    },
+    "sources": [
+      "in-equivalence",
+      "in-army",
+      "in-navy",
+      "in-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-0",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Admiral",
+        "file": "15-Pakistan_Navy-ADM.svg",
+        "id": "pk-officers-0-navy"
+      },
+      "army": {
+        "name": "General",
+        "file": "OF-9_Pakistan_Army.svg",
+        "id": "pk-officers-0-army"
+      },
+      "air": {
+        "name": "Air Chief Marshal",
+        "file": "Pak-air-force-OF-9.svg",
+        "id": "pk-officers-0-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-1",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Vice Admiral",
+        "file": "14-Pakistan_Navy-VADM.svg",
+        "id": "pk-officers-1-navy"
+      },
+      "army": {
+        "name": "Lieutenant General",
+        "file": "OF-8_PakistanArmy.svg",
+        "id": "pk-officers-1-army"
+      },
+      "air": {
+        "name": "Air Marshal",
+        "file": "Pak-air-force-OF-8.svg",
+        "id": "pk-officers-1-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-2",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Rear Admiral",
+        "file": "13-Pakistan_Navy-RADM.svg",
+        "id": "pk-officers-2-navy"
+      },
+      "army": {
+        "name": "Major General",
+        "file": "OF-7_Pakistan_Army.svg",
+        "id": "pk-officers-2-army"
+      },
+      "air": {
+        "name": "Air Vice Marshal",
+        "file": "Pak-air-force-OF-7.svg",
+        "id": "pk-officers-2-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-3",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Commodore",
+        "file": "Pakistan_Navy-CDRE.png",
+        "id": "pk-officers-3-navy"
+      },
+      "army": {
+        "name": "Brigadier",
+        "file": "OF-6_Pakistan_Army.svg",
+        "id": "pk-officers-3-army"
+      },
+      "air": {
+        "name": "Air Commodore",
+        "file": "Pak-air-force-OF-6.svg",
+        "id": "pk-officers-3-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-4",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Captain",
+        "file": "Generic-Navy-8.svg",
+        "id": "pk-officers-4-navy"
+      },
+      "army": {
+        "name": "Colonel",
+        "file": "OF-5_Pakistan_Army.svg",
+        "id": "pk-officers-4-army"
+      },
+      "air": {
+        "name": "Group Captain",
+        "file": "Pak-air-force-OF-5.svg",
+        "id": "pk-officers-4-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-5",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Commander",
+        "file": "Generic-Navy-6.svg",
+        "id": "pk-officers-5-navy"
+      },
+      "army": {
+        "name": "Lieutenant Colonel",
+        "file": "OF-4_Pakistan_Army.svg",
+        "id": "pk-officers-5-army"
+      },
+      "air": {
+        "name": "Wing Commander",
+        "file": "Pak-air-force-OF-4.svg",
+        "id": "pk-officers-5-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-6",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant Commander",
+        "file": "Generic-Navy-5.svg",
+        "id": "pk-officers-6-navy"
+      },
+      "army": {
+        "name": "Major",
+        "file": "OF-3_Pakistan_Army.svg",
+        "id": "pk-officers-6-army"
+      },
+      "air": {
+        "name": "Squadron Leader",
+        "file": "Pak-air-force-OF-3.svg",
+        "id": "pk-officers-6-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-7",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant",
+        "file": "Generic-Navy-4.svg",
+        "id": "pk-officers-7-navy"
+      },
+      "army": {
+        "name": "Captain",
+        "file": "OF-2_Pakistan_Army.svg",
+        "id": "pk-officers-7-army"
+      },
+      "air": {
+        "name": "Flight Lieutenant",
+        "file": "Pak-air-force-OF-2.svg",
+        "id": "pk-officers-7-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-8",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Sub Lieutenant",
+        "file": "Generic-Navy-2.svg",
+        "id": "pk-officers-8-navy"
+      },
+      "army": {
+        "name": "Lieutenant",
+        "file": "OF-1(B)_Pakistan_Army.svg",
+        "id": "pk-officers-8-army"
+      },
+      "air": {
+        "name": "Flying Officer",
+        "file": "Pak-air-force-OF-1b.svg",
+        "id": "pk-officers-8-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-officers-9",
+    "country": "PK",
+    "category": "officers",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Second Lieutenant",
+        "file": "OF-1(A)_Pakistan_Army.svg",
+        "id": "pk-officers-9-army"
+      },
+      "air": {
+        "name": "Pilot Officer",
+        "file": "Pak-air-force-OF-1a.svg",
+        "id": "pk-officers-9-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air",
+      "pk-handbook"
+    ],
+    "note": "No commissioned naval equivalent is asserted here; Midshipman appears separately under training."
+  },
+  {
+    "id": "pk-special-marshal",
+    "country": "PK",
+    "category": "special",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Field Marshal",
+        "file": "OF-10_Pakistan_Army.svg",
+        "note": "Five-star rank; outside the ordinary promotion ladder.",
+        "id": "pk-special-marshal-army"
+      },
+      "air": {
+        "name": "Marshal of the Pakistan Air Force",
+        "file": "Pak-air-force-OF-10.svg",
+        "note": "Listed five-star rank; no holder verified.",
+        "id": "pk-special-marshal-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-air"
+    ],
+    "note": "Exceptional five-star ranks. No naval insignia or current naval appointment is asserted."
+  },
+  {
+    "id": "pk-training-midshipman",
+    "country": "PK",
+    "category": "training",
+    "cells": {
+      "navy": {
+        "name": "Midshipman",
+        "file": "07.RNO-MIDN.svg",
+        "note": "Training rank; kept separate from commissioned officers.",
+        "id": "pk-training-midshipman-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "pk-navy"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-0",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Master Chief Petty Officer",
+        "file": "10_Pakistan_Navy.svg",
+        "id": "pk-other-0-navy"
+      },
+      "army": {
+        "name": "Subedar Major",
+        "file": "10.Pakistan_Army-SMCWO.svg",
+        "id": "pk-other-0-army"
+      },
+      "air": {
+        "name": "Chief Warrant Officer",
+        "file": "PAK-CWO.svg",
+        "id": "pk-other-0-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-1",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Fleet Chief Petty Officer",
+        "file": "9_Pakistan_Navy.svg",
+        "id": "pk-other-1-navy"
+      },
+      "army": {
+        "name": "Subedar",
+        "file": "09.Pakistan_Army-MCWO.svg",
+        "id": "pk-other-1-army"
+      },
+      "air": {
+        "name": "Warrant Officer",
+        "file": "PAK-WO.svg",
+        "id": "pk-other-1-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-2",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Chief Petty Officer",
+        "file": "7_Pakistan_Navy.svg",
+        "id": "pk-other-2-navy"
+      },
+      "army": {
+        "name": "Naib Subedar",
+        "file": "08.Pakistan_Army-CWO.svg",
+        "id": "pk-other-2-army"
+      },
+      "air": {
+        "name": "Assistant Warrant Officer",
+        "file": "PAK-AWO.svg",
+        "id": "pk-other-2-air"
+      }
+    },
+    "sources": [
+      "pk-army",
+      "pk-navy",
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-chief-tech",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": null,
+      "air": {
+        "name": "Chief Technician",
+        "file": "Chief_Technician.webp",
+        "id": "pk-other-chief-tech-air"
+      }
+    },
+    "sources": [
+      "pk-air"
+    ],
+    "note": "No exact Army or Navy counterpart established by the reviewed references."
+  },
+  {
+    "id": "pk-other-3",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer",
+        "file": "6_Pakistan_Navy.svg",
+        "id": "pk-other-3-navy"
+      },
+      "army": {
+        "name": "Havildar",
+        "file": "03.Pakistan_Army-SGT.svg",
+        "id": "pk-other-3-army"
+      },
+      "air": {
+        "name": "Senior Technician",
+        "file": "Pak-air-force-OR-6.svg",
+        "id": "pk-other-3-air"
+      }
+    },
+    "sources": [
+      "pk-senior-tech",
+      "pk-army",
+      "pk-navy",
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-4",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Leading Seaman",
+        "file": "British_Royal_Navy_OR-4.svg",
+        "id": "pk-other-4-navy"
+      },
+      "army": {
+        "name": "Naik",
+        "file": "02.Pakistan_Army-CPL.svg",
+        "id": "pk-other-4-army"
+      },
+      "air": {
+        "name": "Corporal Technician",
+        "file": "Pak-air-force-OR-5.svg",
+        "id": "pk-other-4-air"
+      }
+    },
+    "sources": [
+      "pk-corporal-tech",
+      "pk-army",
+      "pk-navy",
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-lance-naik",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Lance Naik",
+        "file": "01.Pakistan_Army-PFC.svg",
+        "id": "pk-other-lance-naik-army"
+      },
+      "air": null
+    },
+    "sources": [
+      "pk-army"
+    ],
+    "note": "Remaining lower enlisted grades are shown independently: sources disagree about exact cross-service matches."
+  },
+  {
+    "id": "pk-other-air-6",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": null,
+      "air": {
+        "name": "Junior Technician",
+        "file": "Pak-air-force-OR-3.svg",
+        "id": "pk-other-air-6-air"
+      }
+    },
+    "sources": [
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-air-7",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": null,
+      "air": {
+        "name": "Senior Aircraftman",
+        "file": "Pak-air-force-OR-2b.svg",
+        "id": "pk-other-air-7-air"
+      }
+    },
+    "sources": [
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-air-8",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": null,
+      "air": {
+        "name": "Leading Aircraftman",
+        "file": "Pak-air-force-OR-2a.svg",
+        "id": "pk-other-air-8-air"
+      }
+    },
+    "sources": [
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-air-9",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": null,
+      "air": {
+        "name": "Aircraftman",
+        "file": "Pak-air-force-OR-1.svg",
+        "id": "pk-other-air-9-air"
+      }
+    },
+    "sources": [
+      "pk-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-sepoy",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Sepoy",
+        "noInsignia": true,
+        "id": "pk-other-sepoy-army"
+      },
+      "air": null
+    },
+    "sources": [
+      "pk-army"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-navy-5",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Able Seaman",
+        "noInsignia": true,
+        "id": "pk-other-navy-5-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "pk-navy"
+    ],
+    "note": null
+  },
+  {
+    "id": "pk-other-navy-6",
+    "country": "PK",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Ordinary Seaman",
+        "noInsignia": true,
+        "id": "pk-other-navy-6-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "pk-navy"
+    ],
+    "note": null
+  },
+  {
+    "id": "cn-officers-0",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Admiral",
+        "file": "PLANF-0720-GEN.png",
+        "native": "海军上将",
+        "id": "cn-officers-0-navy"
+      },
+      "army": {
+        "name": "General",
+        "file": "PLAGF-0720-GEN.png",
+        "native": "上将",
+        "id": "cn-officers-0-army"
+      },
+      "air": {
+        "name": "General",
+        "file": "PLAAF-0720-GEN.png",
+        "native": "空军上将",
+        "id": "cn-officers-0-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-1",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Vice Admiral",
+        "file": "PLANF-0719-LTG.png",
+        "native": "海军中将",
+        "id": "cn-officers-1-navy"
+      },
+      "army": {
+        "name": "Lieutenant General",
+        "file": "PLAGF-0719-LTG.png",
+        "native": "中将",
+        "id": "cn-officers-1-army"
+      },
+      "air": {
+        "name": "Lieutenant General",
+        "file": "PLAAF-0719-LTG.png",
+        "native": "空军中将",
+        "id": "cn-officers-1-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-2",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Rear Admiral",
+        "file": "PLANF-0718-MG.png",
+        "native": "海军少将",
+        "id": "cn-officers-2-navy"
+      },
+      "army": {
+        "name": "Major General",
+        "file": "PLAGF-0718-MG.png",
+        "native": "少将",
+        "id": "cn-officers-2-army"
+      },
+      "air": {
+        "name": "Major General",
+        "file": "PLAAF-0718-MG.png",
+        "native": "空军少将",
+        "id": "cn-officers-2-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-3",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Senior Captain",
+        "file": "PLANF-0717-SNC.png",
+        "native": "海军大校",
+        "id": "cn-officers-3-navy"
+      },
+      "army": {
+        "name": "Senior Colonel",
+        "file": "PLAGF-0717-SNC.png",
+        "native": "大校",
+        "id": "cn-officers-3-army"
+      },
+      "air": {
+        "name": "Senior Colonel",
+        "file": "PLAAF-0717-SNC.png",
+        "native": "空军大校",
+        "id": "cn-officers-3-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-4",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Captain",
+        "file": "PLANF-0716-COL.png",
+        "native": "海军上校",
+        "id": "cn-officers-4-navy"
+      },
+      "army": {
+        "name": "Colonel",
+        "file": "PLAGF-0716-COL.png",
+        "native": "上校",
+        "id": "cn-officers-4-army"
+      },
+      "air": {
+        "name": "Colonel",
+        "file": "PLAAF-0716-COL.png",
+        "native": "空军上校",
+        "id": "cn-officers-4-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-5",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Commander",
+        "file": "PLANF-0715-LTC.png",
+        "native": "海军中校",
+        "id": "cn-officers-5-navy"
+      },
+      "army": {
+        "name": "Lieutenant Colonel",
+        "file": "PLAGF-0715-LTC.png",
+        "native": "中校",
+        "id": "cn-officers-5-army"
+      },
+      "air": {
+        "name": "Lieutenant Colonel",
+        "file": "PLAAF-0715-LTC.png",
+        "native": "空军中校",
+        "id": "cn-officers-5-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-6",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant Commander",
+        "file": "PLANF-0714-MAJ.png",
+        "native": "海军少校",
+        "id": "cn-officers-6-navy"
+      },
+      "army": {
+        "name": "Major",
+        "file": "PLAGF-0714-MAJ.png",
+        "native": "少校",
+        "id": "cn-officers-6-army"
+      },
+      "air": {
+        "name": "Major",
+        "file": "PLAAF-0714-MAJ.png",
+        "native": "空军少校",
+        "id": "cn-officers-6-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-7",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant",
+        "file": "PLANF-0713-CPT.png",
+        "native": "海军上尉",
+        "id": "cn-officers-7-navy"
+      },
+      "army": {
+        "name": "Captain",
+        "file": "PLAGF-0713-CPT.png",
+        "native": "上尉",
+        "id": "cn-officers-7-army"
+      },
+      "air": {
+        "name": "Captain",
+        "file": "PLAAF-0713-CPT.png",
+        "native": "空军上尉",
+        "id": "cn-officers-7-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-8",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant (junior grade)",
+        "file": "PLANF-0712-1LT.png",
+        "native": "海军中尉",
+        "id": "cn-officers-8-navy"
+      },
+      "army": {
+        "name": "First Lieutenant",
+        "file": "PLAGF-0712-1LT.png",
+        "native": "中尉",
+        "id": "cn-officers-8-army"
+      },
+      "air": {
+        "name": "First Lieutenant",
+        "file": "PLAAF-0712-1LT.png",
+        "native": "空军中尉",
+        "id": "cn-officers-8-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-officers-9",
+    "country": "CN",
+    "category": "officers",
+    "cells": {
+      "navy": {
+        "name": "Ensign",
+        "file": "PLANF-0711-2LT.png",
+        "native": "海军少尉",
+        "id": "cn-officers-9-navy"
+      },
+      "army": {
+        "name": "Second Lieutenant",
+        "file": "PLAGF-0711-2LT.png",
+        "native": "少尉",
+        "id": "cn-officers-9-army"
+      },
+      "air": {
+        "name": "Second Lieutenant",
+        "file": "PLAAF-0711-2LT.png",
+        "native": "空军少尉",
+        "id": "cn-officers-9-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Aligned by the shared Chinese rank grade, not by NATO codes or an English translation."
+  },
+  {
+    "id": "cn-training-cadet",
+    "country": "CN",
+    "category": "training",
+    "cells": {
+      "navy": {
+        "name": "Officer Cadet",
+        "file": "PLANF-0710-CDT.png",
+        "native": "海军学员",
+        "id": "cn-training-cadet-navy"
+      },
+      "army": {
+        "name": "Officer Cadet",
+        "file": "PLAGF-0710-CDT.png",
+        "native": "学员",
+        "id": "cn-training-cadet-army"
+      },
+      "air": {
+        "name": "Officer Cadet",
+        "file": "PLAAF-0710-CDT.png",
+        "native": "空军学员",
+        "id": "cn-training-cadet-air"
+      }
+    },
+    "sources": [
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": null
+  },
+  {
+    "id": "cn-other-0",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Command Master Chief Petty Officer",
+        "file": "PLANF-0709-1CSGT.png",
+        "native": "海军一级军士长",
+        "id": "cn-other-0-navy"
+      },
+      "army": {
+        "name": "Master Sergeant First Class",
+        "file": "PLAGF-0709-1CSGT.png",
+        "native": "一级军士长",
+        "id": "cn-other-0-army"
+      },
+      "air": {
+        "name": "Master Sergeant First Class",
+        "file": "PLAAF-0709-1CSGT.png",
+        "native": "空军一级军士长",
+        "id": "cn-other-0-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-1",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Master Chief Petty Officer",
+        "file": "PLANF-0708-2CSGT.png",
+        "native": "海军二级军士长",
+        "id": "cn-other-1-navy"
+      },
+      "army": {
+        "name": "Master Sergeant Second Class",
+        "file": "PLAGF-0708-2CSGT.png",
+        "native": "二级军士长",
+        "id": "cn-other-1-army"
+      },
+      "air": {
+        "name": "Master Sergeant Second Class",
+        "file": "PLAAF-0708-2CSGT.png",
+        "native": "空军二级军士长",
+        "id": "cn-other-1-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-2",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Senior Chief Petty Officer",
+        "file": "PLANF-0707-3CSGT.png",
+        "native": "海军三级军士长",
+        "id": "cn-other-2-navy"
+      },
+      "army": {
+        "name": "Master Sergeant Third Class",
+        "file": "PLAGF-0707-3CSGT.png",
+        "native": "三级军士长",
+        "id": "cn-other-2-army"
+      },
+      "air": {
+        "name": "Master Sergeant Third Class",
+        "file": "PLAAF-0707-3CSGT.png",
+        "native": "空军三级军士长",
+        "id": "cn-other-2-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-3",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Chief Petty Officer",
+        "file": "PLANF-0706-4CSGT.png",
+        "native": "海军一级上士",
+        "id": "cn-other-3-navy"
+      },
+      "army": {
+        "name": "Sergeant First Class",
+        "file": "PLAGF-0706-4CSGT.png",
+        "native": "一级上士",
+        "id": "cn-other-3-army"
+      },
+      "air": {
+        "name": "Technical Sergeant",
+        "file": "PLAAF-0706-4CSGT.png",
+        "native": "空军一级上士",
+        "id": "cn-other-3-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-4",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer First Class",
+        "file": "PLANF-0705-SSG.png",
+        "native": "海军二级上士",
+        "id": "cn-other-4-navy"
+      },
+      "army": {
+        "name": "Sergeant Second Class",
+        "file": "PLAGF-0705-SSG.png",
+        "native": "二级上士",
+        "id": "cn-other-4-army"
+      },
+      "air": {
+        "name": "Staff Sergeant",
+        "file": "PLAAF-0705-SSG.png",
+        "native": "空军二级上士",
+        "id": "cn-other-4-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-5",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer Second Class",
+        "file": "PLANF-0704-SGT.png",
+        "native": "海军中士",
+        "id": "cn-other-5-navy"
+      },
+      "army": {
+        "name": "Sergeant",
+        "file": "PLAGF-0704-SGT.png",
+        "native": "中士",
+        "id": "cn-other-5-army"
+      },
+      "air": {
+        "name": "Sergeant",
+        "file": "PLAAF-0704-SGT.png",
+        "native": "空军中士",
+        "id": "cn-other-5-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-6",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer Third Class",
+        "file": "PLANF-0703-CPL.png",
+        "native": "海军下士",
+        "id": "cn-other-6-navy"
+      },
+      "army": {
+        "name": "Corporal",
+        "file": "PLAGF-0703-CPL.png",
+        "native": "下士",
+        "id": "cn-other-6-army"
+      },
+      "air": {
+        "name": "Corporal",
+        "file": "PLAAF-0703-CPL.png",
+        "native": "空军下士",
+        "id": "cn-other-6-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-7",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Seaman",
+        "file": "PLANF-0702-PFC.png",
+        "native": "海军上等兵",
+        "id": "cn-other-7-navy"
+      },
+      "army": {
+        "name": "Private First Class",
+        "file": "PLAGF-0702-PFC.png",
+        "native": "上等兵",
+        "id": "cn-other-7-army"
+      },
+      "air": {
+        "name": "Airman First Class",
+        "file": "PLAAF-0702-PFC.png",
+        "native": "空军上等兵",
+        "id": "cn-other-7-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "cn-other-8",
+    "country": "CN",
+    "category": "other",
+    "cells": {
+      "navy": {
+        "name": "Seaman Apprentice",
+        "file": "PLANF-0701-PVT.png",
+        "native": "海军列兵",
+        "id": "cn-other-8-navy"
+      },
+      "army": {
+        "name": "Private",
+        "file": "PLAGF-0701-PVT.png",
+        "native": "列兵",
+        "id": "cn-other-8-army"
+      },
+      "air": {
+        "name": "Airman",
+        "file": "PLAAF-0701-PVT.png",
+        "native": "空军列兵",
+        "id": "cn-other-8-air"
+      }
+    },
+    "sources": [
+      "cn-reform",
+      "cn-army",
+      "cn-navy",
+      "cn-air"
+    ],
+    "note": "Chinese titles reflect the 2022 reform. English translations vary; equivalence follows the shared Chinese grade."
+  },
+  {
+    "id": "ncc-cadets-senior",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Senior Cadet Captain",
+        "file": "NCC_Navy_SCC.png",
+        "id": "ncc-cadets-senior-navy"
+      },
+      "army": {
+        "name": "Cadet Senior Under Officer",
+        "file": "NCC_Army_SUO.svg",
+        "id": "ncc-cadets-senior-army"
+      },
+      "air": {
+        "name": "Cadet Senior Under Officer",
+        "file": "NCC_Air_SUO.png",
+        "id": "ncc-cadets-senior-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-cadets-under",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Cadet Captain",
+        "file": "NCC_Navy_CC.png",
+        "note": "Also called Junior Cadet Captain in institutional equivalence tables.",
+        "id": "ncc-cadets-under-navy"
+      },
+      "army": {
+        "name": "Cadet Under Officer",
+        "file": "NCC_Army_JUO.svg",
+        "note": "Also called Cadet Junior Under Officer.",
+        "id": "ncc-cadets-under-army"
+      },
+      "air": {
+        "name": "Cadet Under Officer",
+        "file": "NCC_Air_JUO.png",
+        "id": "ncc-cadets-under-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-cadets-csm",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Company Sergeant Major",
+        "file": "Arm_Band_CSM.jpg",
+        "id": "ncc-cadets-csm-army"
+      },
+      "air": null
+    },
+    "sources": [
+      "ncc"
+    ],
+    "note": "No direct counterpart is established for this Army-wing appointment."
+  },
+  {
+    "id": "ncc-cadets-cqms",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Company Quartermaster Sergeant",
+        "file": "CQMS_Army_Wing.jpg",
+        "id": "ncc-cadets-cqms-army"
+      },
+      "air": {
+        "name": "Cadet Warrant Officer",
+        "file": "CWO_rank_NCC_air_wing.png",
+        "id": "ncc-cadets-cqms-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": "Institutional charts use “Petty Officer Sergeant Major”; the contemporary naval badge is labelled “Petty Officer Cadet”. The unconfirmed naval mapping is left empty."
+  },
+  {
+    "id": "ncc-cadets-po",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Petty Officer Cadet",
+        "file": "Ncc-navy-cadets-po-_-petty-officer-badge_3_1.jpg",
+        "id": "ncc-cadets-po-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "ncc"
+    ],
+    "note": "Naval middle-grade equivalents conflict between published charts; this rank is shown independently."
+  },
+  {
+    "id": "ncc-cadets-sgt",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Sergeant",
+        "file": "NCC_Army_SGT.svg",
+        "id": "ncc-cadets-sgt-army"
+      },
+      "air": {
+        "name": "Cadet Sergeant",
+        "file": "NCC_Air_Force_Sgt.svg",
+        "id": "ncc-cadets-sgt-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-cadets-lc",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Leading Cadet",
+        "file": "Ncc-navy-cadets-LC-Leading_Cadet-_badge.jpg",
+        "id": "ncc-cadets-lc-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "ncc"
+    ],
+    "note": "Institutional and general-reference charts disagree on alignment; no equivalence is asserted."
+  },
+  {
+    "id": "ncc-cadets-cpl",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Corporal",
+        "file": "NCC_Army_CPL.svg",
+        "id": "ncc-cadets-cpl-army"
+      },
+      "air": {
+        "name": "Cadet Corporal",
+        "file": "NCC_Air_Force_Cpl.svg",
+        "id": "ncc-cadets-cpl-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-cadets-lcpl",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": null,
+      "army": {
+        "name": "Lance Corporal",
+        "file": "NCC_Army_LCPL.svg",
+        "id": "ncc-cadets-lcpl-army"
+      },
+      "air": {
+        "name": "Leading Flight Cadet",
+        "file": "NCC_Army_LCPL.svg",
+        "id": "ncc-cadets-lcpl-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence",
+      "ncc"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-cadets-naval-1",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Naval Cadet I",
+        "noInsignia": true,
+        "id": "ncc-cadets-naval-1-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "ncc"
+    ],
+    "note": "Naval cadet naming and alignment differ between references; no cross-wing mapping is asserted."
+  },
+  {
+    "id": "ncc-cadets-naval-2",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Naval Cadet II",
+        "noInsignia": true,
+        "id": "ncc-cadets-naval-2-navy"
+      },
+      "army": null,
+      "air": null
+    },
+    "sources": [
+      "ncc"
+    ],
+    "note": "Naval cadet naming and alignment differ between references; no cross-wing mapping is asserted."
+  },
+  {
+    "id": "ncc-cadets-cadet",
+    "country": "NCC",
+    "category": "cadets",
+    "cells": {
+      "navy": {
+        "name": "Cadet",
+        "note": "Entry-level designation used by the institutional equivalence chart.",
+        "noInsignia": true,
+        "id": "ncc-cadets-cadet-navy"
+      },
+      "army": {
+        "name": "Cadet",
+        "noInsignia": true,
+        "id": "ncc-cadets-cadet-army"
+      },
+      "air": {
+        "name": "Flight Cadet",
+        "noInsignia": true,
+        "id": "ncc-cadets-cadet-air"
+      }
+    },
+    "sources": [
+      "ncc-equivalence"
+    ],
+    "note": null
+  },
+  {
+    "id": "ncc-ano-0",
+    "country": "NCC",
+    "category": "ano",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant Commander",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-0-navy"
+      },
+      "army": {
+        "name": "Major",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-0-army"
+      },
+      "air": {
+        "name": "Squadron Leader",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-0-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Senior Division / Senior Wing ANOs. Legacy entry ranks in the original Rules are not presented as current ranks. These are NCC commissions, not regular-service commissions."
+  },
+  {
+    "id": "ncc-ano-1",
+    "country": "NCC",
+    "category": "ano",
+    "cells": {
+      "navy": {
+        "name": "Lieutenant",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-1-navy"
+      },
+      "army": {
+        "name": "Captain",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-1-army"
+      },
+      "air": {
+        "name": "Flight Lieutenant",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-1-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Senior Division / Senior Wing ANOs. Legacy entry ranks in the original Rules are not presented as current ranks. These are NCC commissions, not regular-service commissions."
+  },
+  {
+    "id": "ncc-ano-2",
+    "country": "NCC",
+    "category": "ano",
+    "cells": {
+      "navy": {
+        "name": "Sub Lieutenant",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-2-navy"
+      },
+      "army": {
+        "name": "Lieutenant",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-2-army"
+      },
+      "air": {
+        "name": "Flying Officer",
+        "note": "NCC-specific insignia artwork has not been verified.",
+        "id": "ncc-ano-2-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Senior Division / Senior Wing ANOs. Legacy entry ranks in the original Rules are not presented as current ranks. These are NCC commissions, not regular-service commissions."
+  },
+  {
+    "id": "ncc-ano-junior-0",
+    "country": "NCC",
+    "category": "ano-junior",
+    "cells": {
+      "navy": {
+        "name": "Chief Officer",
+        "id": "ncc-ano-junior-0-navy"
+      },
+      "army": {
+        "name": "Chief Officer",
+        "id": "ncc-ano-junior-0-army"
+      },
+      "air": {
+        "name": "Chief Officer",
+        "id": "ncc-ano-junior-0-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Junior Division / Junior Wing ANO ladder in Schedule III. NCC-specific insignia artwork has not been verified."
+  },
+  {
+    "id": "ncc-ano-junior-1",
+    "country": "NCC",
+    "category": "ano-junior",
+    "cells": {
+      "navy": {
+        "name": "First Officer",
+        "id": "ncc-ano-junior-1-navy"
+      },
+      "army": {
+        "name": "First Officer",
+        "id": "ncc-ano-junior-1-army"
+      },
+      "air": {
+        "name": "First Officer",
+        "id": "ncc-ano-junior-1-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Junior Division / Junior Wing ANO ladder in Schedule III. NCC-specific insignia artwork has not been verified."
+  },
+  {
+    "id": "ncc-ano-junior-2",
+    "country": "NCC",
+    "category": "ano-junior",
+    "cells": {
+      "navy": {
+        "name": "Second Officer",
+        "id": "ncc-ano-junior-2-navy"
+      },
+      "army": {
+        "name": "Second Officer",
+        "id": "ncc-ano-junior-2-army"
+      },
+      "air": {
+        "name": "Second Officer",
+        "id": "ncc-ano-junior-2-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Junior Division / Junior Wing ANO ladder in Schedule III. NCC-specific insignia artwork has not been verified."
+  },
+  {
+    "id": "ncc-ano-junior-3",
+    "country": "NCC",
+    "category": "ano-junior",
+    "cells": {
+      "navy": {
+        "name": "Third Officer",
+        "id": "ncc-ano-junior-3-navy"
+      },
+      "army": {
+        "name": "Third Officer",
+        "id": "ncc-ano-junior-3-army"
+      },
+      "air": {
+        "name": "Third Officer",
+        "id": "ncc-ano-junior-3-air"
+      }
+    },
+    "sources": [
+      "ncc-rules",
+      "ncc-current-ano"
+    ],
+    "note": "Junior Division / Junior Wing ANO ladder in Schedule III. NCC-specific insignia artwork has not been verified."
+  }
+]

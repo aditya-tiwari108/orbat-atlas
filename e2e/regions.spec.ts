@@ -104,7 +104,8 @@ test('Central Command never detaches from Lucknow during wheel and button zoom',
 test('4 Kar Eng Coy is discoverable, sourced and linked to Mangaluru Group', async ({
   page,
 }) => {
-  await page.goto('/');
+  await page.goto('/atlas');
+  await expect(page.getByRole('button', { name: 'Search the atlas', exact: true })).toBeVisible();
   await page.keyboard.press('Control+k');
   await page.getByRole('combobox', { name: 'Search organizations' }).fill('4 Kar Eng Coy');
   await page.getByRole('listbox', { name: 'Organizations' }).getByRole('option').first().click();

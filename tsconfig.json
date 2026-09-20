@@ -34,7 +34,9 @@
     "data/**/*.ts",
     "tests/**/*.ts",
     "vite.app.config.ts",
-    "vite-env.d.ts"
+    "vite-env.d.ts",
+    "components/platform/**/*.tsx",
+    "components/ranks/**/*.tsx"
   ],
   "exclude": [
     "node_modules",

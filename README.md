@@ -85,3 +85,13 @@ The [Pakistan audit](docs/pakistan-audit.md) describes 117 organizations: field 
 ### China
 
 The [China audit](docs/china-audit.md) documents five joint theaters, linked service components, all thirteen group armies, selected commissioned ships and twenty published aviation-brigade/base associations. Leadership is dated individually; unresolved current appointments and portraits are withheld. Aircraft/base coverage is partial and underlying evidence is sometimes older than the review date. `jointCommandId` preserves operational theater links independently of administrative `parentId` trees. China uses a documented Natural Earth/SOI-clipped overview; it does not merge Aksai Chin or Arunachal Pradesh into its outline. Pakistan's de facto geography and India's separate SOI presentation are retained.
+
+## Platform hub and rank explorer
+
+The same application and Vercel project now serve a broader reference hub at `/`, the map at `/atlas`, and rank comparisons at `/ranks`. Existing root query links such as `/?org=in-army-northern` remain supported.
+
+**To rename the platform, edit `data/platform.ts`.** The header, homepage, Atlas home link, footers, page titles and generated HTML metadata read this single configuration. Product names such as ORBAT Atlas and the existing repository/domain do not need to change. Design and route decisions are documented in [the platform design notes](docs/ranks-design.md).
+
+The rank explorer compares Navy, Army and Air Force within India, Pakistan or China. India NCC has separate cadet and ANO categories for its three wings. Hover and keyboard focus highlight a comparison row; selecting a rank opens enlarged insignia and a shareable URL. Search covers all categories within the selected country. Unknown equivalents are empty cells, and missing artwork is distinguished from ranks without insignia.
+
+`data/ranks/rows.json` contains rank comparisons; `sources.json` stores references; `assets.json` records the author, license and source of every locally hosted insignia. [Coverage and known gaps](public/ranks-coverage.md) describe disputed NCC mappings, Pakistan's unmatched technical grades and unverified ANO-specific artwork. Rank data is independent of the ORBAT organization schema. The hub and rank page do not load MapLibre until Atlas is opened.

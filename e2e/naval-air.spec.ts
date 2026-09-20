@@ -71,6 +71,7 @@ test('search discovers aircraft and training ships; joint installations retain t
   page,
 }) => {
   await page.goto('/?service=airforce');
+  await expect(page.getByRole('button', { name: 'Search the atlas', exact: true })).toBeVisible();
   await page.keyboard.press('Control+k');
   await page.getByRole('combobox', { name: 'Search organizations' }).fill('Golden Arrows');
   await page.keyboard.press('Enter');

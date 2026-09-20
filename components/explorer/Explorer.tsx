@@ -20,6 +20,8 @@ import {
   Shield,
   X,
 } from 'lucide-react';
+import { platform } from '../../data/platform';
+import { BookOpen } from 'lucide-react';
 import { organizations, rootFor } from '../../data/catalog';
 import { countries, serviceMeta } from '../../data/model';
 import type { Organization, Service } from '../../data/model';
@@ -189,6 +191,14 @@ export default function Explorer() {
         )}
       </div>
       <div className="bottom-controls">
+        <a
+          className="floating-button platform-return"
+          href="/"
+          aria-label={`${platform.name} home`}
+        >
+          <BookOpen size={16} />
+          <span>{platform.name}</span>
+        </a>
         <button
           id="browse-button"
           className={'floating-button ' + (browse ? 'active' : '')}

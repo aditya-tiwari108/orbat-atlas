@@ -5,7 +5,7 @@ test('service home panels show the correct chiefs, large loaded portraits and a 
   page,
 }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/');
+  await page.goto('/atlas');
   for (const [service, label, title, chief] of [
     ['army', 'Army', 'Indian Army', 'General Dhiraj Seth'],
     ['navy', 'Navy', 'Indian Navy', 'Admiral Krishna Swaminathan'],
