@@ -43,3 +43,9 @@ The Xi Jinping portrait uses an existing Wikimedia Commons derivative of Simon D
 `public/rank-insignia/` contains unchanged artwork from Wikimedia Commons. Exact source pages, creators and per-file reuse licenses are recorded in `data/ranks/assets.json` and accessible from each rank comparison's **References & image credits** section. These artwork licenses are separate from the application's code license. Insignia illustrations may represent shoulder boards, sleeve braid or arm badges as identified in the service reference, rather than one standardized uniform.
 
 Rank names and equivalence references are in `data/ranks/sources.json`. Research notes and unresolved mappings are documented in `public/ranks-coverage.md`. No ANO-specific insignia has been fabricated from regular-service badges.
+
+## NATO symbols learning module
+
+NATO/OTAN is the publisher of APP-06, *NATO Joint Military Symbology*, Edition E Version 1 (October 2023), used as the reference for formation functions and amplifiers. References and scope are detailed in [symbols and quizzes](docs/symbols-and-quizzes.md).
+
+Symbol drawings, including the three homepage previews, are generated with [milsymbol](https://github.com/spatialillusions/milsymbol), copyright Måns Beckman, MIT license. The [renderer license](public/licenses/milsymbol.txt) is included with the published site. This site is an independent educational reference, not a NATO product.

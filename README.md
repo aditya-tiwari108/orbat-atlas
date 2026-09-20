@@ -95,3 +95,7 @@ The same application and Vercel project now serve a broader reference hub at `/`
 The rank explorer compares Navy, Army and Air Force within India, Pakistan or China. India NCC has separate cadet and ANO categories for its three wings. Hover and keyboard focus highlight a comparison row; selecting a rank opens enlarged insignia and a shareable URL. Search covers all categories within the selected country. Unknown equivalents are empty cells, and missing artwork is distinguished from ranks without insignia.
 
 `data/ranks/rows.json` contains rank comparisons; `sources.json` stores references; `assets.json` records the author, license and source of every locally hosted insignia. [Coverage and known gaps](public/ranks-coverage.md) describe disputed NCC mappings, Pakistan's unmatched technical grades and unverified ANO-specific artwork. Rank data is independent of the ORBAT organization schema. The hub and rank page do not load MapLibre until Atlas is opened.
+
+## NATO symbols and practice
+
+Open `/symbols` for the formation library, live symbol builder, anatomy explanations, shared configurations and SVG downloads. The small **Quiz yourself** button on `/ranks` and `/symbols` creates a session from the underlying records: image and description prompts, six choices, feedback and a review. Rank quizzes can be scoped by country and/or service; symbols can be scoped by topic. See [scope, references and architecture](docs/symbols-and-quizzes.md).

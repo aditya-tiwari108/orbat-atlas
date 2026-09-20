@@ -12,6 +12,8 @@ import {
   X,
 } from 'lucide-react';
 import Header from '../platform/Header';
+import Quiz from '../quiz/Quiz';
+import { describeRank, rankQuizItems } from '../../data/ranks/learning';
 import { platform } from '../../data/platform';
 import {
   categoriesFor,
@@ -120,6 +122,7 @@ function RankDetails({ row, onClose }: { row: RankRow; onClose: () => void }) {
                   <Insignia rank={c} large />
                   <strong>{c.name}</strong>
                   {c.native && <span lang="zh">{c.native}</span>}
+                  <p>{describeRank(row, service)}</p>
                   {c.note && <p>{c.note}</p>}
                 </>
               ) : (
@@ -188,6 +191,7 @@ export default function Ranks() {
   const [location, setLocation] = useState(readRankLocation);
   const [hovered, setHovered] = useState<string | null>(null);
   const [focused, setFocused] = useState<string | null>(null);
+  const [quiz, setQuiz] = useState(false);
   const [about, setAbout] = useState(false);
   const search = useRef<HTMLInputElement>(null);
   const { country, category, query } = location;
@@ -236,6 +240,14 @@ export default function Ranks() {
         Skip to rank comparison
       </a>
       <Header section="ranks" />
+      {quiz && (
+        <Quiz
+          mode="ranks"
+          items={rankQuizItems}
+          initialCountry={country}
+          onClose={() => setQuiz(false)}
+        />
+      )}
       <main className="rank-main">
         <section className="rank-intro">
           <div>
@@ -247,13 +259,18 @@ export default function Ranks() {
               Different services. Corresponding ranks. See how they line up.
             </p>
           </div>
-          <button
-            className="reading-guide"
-            onClick={() => setAbout((v) => !v)}
-            aria-expanded={about}
-          >
-            How to read this <ArrowUpRight size={14} />
-          </button>
+          <div className="study-tools">
+            <button className="quiz-launch" onClick={() => setQuiz(true)}>
+              <GraduationCap size={17} /> Quiz yourself
+            </button>
+            <button
+              className="reading-guide"
+              onClick={() => setAbout((v) => !v)}
+              aria-expanded={about}
+            >
+              How to read this <ArrowUpRight size={14} />
+            </button>
+          </div>
         </section>
         {about && (
           <section className="rank-guide">

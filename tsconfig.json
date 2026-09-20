@@ -36,7 +36,10 @@
     "vite.app.config.ts",
     "vite-env.d.ts",
     "components/platform/**/*.tsx",
-    "components/ranks/**/*.tsx"
+    "components/ranks/**/*.tsx",
+    "components/symbols/**/*.ts",
+    "components/symbols/**/*.tsx",
+    "components/quiz/**/*.tsx"
   ],
   "exclude": [
     "node_modules",

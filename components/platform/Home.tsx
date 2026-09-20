@@ -1,4 +1,10 @@
-import { ArrowUpRight, ArrowRight, Compass, Layers3 } from 'lucide-react';
+import {
+  ArrowUpRight,
+  ArrowRight,
+  Compass,
+  Layers3,
+  ScanLine,
+} from 'lucide-react';
 import { platform } from '../../data/platform';
 import Header from './Header';
 import { rankAssets } from '../../data/ranks/model';
@@ -24,7 +30,7 @@ export default function Home() {
             For the curious. For those preparing.
             <br />
             Explore how forces are organized, and learn the insignia behind the
-            ranks.
+            ranks and symbols.
           </p>
         </div>
         <section
@@ -39,15 +45,6 @@ export default function Home() {
             <div className="collection-art map-art" aria-hidden="true">
               <div className="map-grid" />
               <img src="/geography/india-context.svg" alt="" />
-              <span className="map-note note-one">
-                NORTHERN <i>COMMAND</i>
-              </span>
-              <span className="map-note note-two">
-                EASTERN <i>COMMAND</i>
-              </span>
-              <span className="map-note note-three">
-                SOUTHERN <i>COMMAND</i>
-              </span>
               <span className="art-caption">
                 ORGANIZATIONS / GEOGRAPHY / CONNECTIONS
               </span>
@@ -98,6 +95,35 @@ export default function Home() {
               </p>
               <span className="collection-link">
                 Explore the ranks <ArrowRight size={16} />
+              </span>
+            </div>
+          </a>
+          <a
+            aria-label="Explore NATO symbols"
+            href="/symbols"
+            className="collection-card symbols-collection"
+          >
+            <div className="collection-art symbols-art" aria-hidden="true">
+              <div className="home-symbols">
+                <img src="/symbol-previews/infantry.svg" alt="" />
+                <img src="/symbol-previews/corps.svg" alt="" />
+                <img src="/symbol-previews/armour.svg" alt="" />
+              </div>
+              <span className="art-caption">IDENTITY / FUNCTION / ECHELON</span>
+            </div>
+            <div className="collection-copy">
+              <span className="collection-index">
+                <ScanLine size={16} /> 03 / DECODE
+              </span>
+              <h2>
+                NATO symbols <ArrowUpRight />
+              </h2>
+              <p>
+                Read the language of military maps. Explore formations, build a
+                symbol, and test what you know.
+              </p>
+              <span className="collection-link">
+                Explore the symbols <ArrowRight size={16} />
               </span>
             </div>
           </a>
