@@ -23,3 +23,11 @@ For Navy/Air Force expansion records, use `data/india-naval-air.json` and its so
 - Keep armed-forces, NCC cadet and NCC ANO ladders separate. Chinese native grades, not English translations, anchor China comparisons.
 - Every insignia file needs a creator, reuse license, source page and checked date in `data/ranks/assets.json`. Preserve the distinction between `noInsignia: true` and an unverified image.
 - Run `npm test`, `npm run lint`, `npm run build` and `npx playwright test`. Rank UI tests cover hover, keyboard focus, direct links, empty cells, image failures and narrow layouts; Atlas tests retain legacy root query URLs.
+
+## Arms and cartridges
+
+- Add records in `data/armoury/catalog.ts` and primary references in `sources.ts`. Name the exact variant, country association and source for each technical field. A manufacturer's product listing does not establish service adoption.
+- Retain loading, stock and accessory configuration with measurements. Do not substitute civilian/export-variant specifications for a military variant without explicit supporting evidence. Leave conflicting or unverified fields unset and explain the gap.
+- Attribute any community model with its exact model page, creator and reuse license. Visually inspect the named pattern and check public license metadata. Do not substitute a visually similar weapon or conceal production-variant differences. Never relabel original simplified geometry as a verified replica.
+- Keep public data separate from visual drawing proportions. Cartridge illustrations are not engineering dimensions. Update `docs/armoury-coverage.md` with substantive additions or corrections.
+- Check the local and external views, keyboard controls, comparison, shared URLs and unavailable-WebGL fallback when changing the viewer. Run the existing checks before publishing to the same Vercel project.

@@ -4,6 +4,7 @@ import {
   Compass,
   Layers3,
   ScanLine,
+  Box,
 } from 'lucide-react';
 import { platform } from '../../data/platform';
 import Header from './Header';
@@ -30,7 +31,7 @@ export default function Home() {
             For the curious. For those preparing.
             <br />
             Explore how forces are organized, and learn the insignia behind the
-            ranks and symbols.
+            ranks, symbols and equipment.
           </p>
         </div>
         <section
@@ -127,9 +128,78 @@ export default function Home() {
               </span>
             </div>
           </a>
+          <a
+            aria-label="Explore arms and cartridges"
+            href="/armoury"
+            className="collection-card armoury-collection"
+          >
+            <div className="collection-art armoury-art" aria-hidden="true">
+              <svg viewBox="0 0 460 200">
+                <defs>
+                  <linearGradient id="cartridge-brass">
+                    <stop stopColor="#806e4c" />
+                    <stop offset=".45" stopColor="#d9c59c" />
+                    <stop offset="1" stopColor="#867450" />
+                  </linearGradient>
+                </defs>
+                <g
+                  fill="url(#cartridge-brass)"
+                  stroke="#cfbb8e"
+                  strokeWidth=".7"
+                >
+                  <path d="M101 159V134H113V159Z" />
+                  <path d="M168 159V91L174 80V71H186V80L192 91V159Z" />
+                  <path d="M248 159V72L255 59V46H269V59L276 72V159Z" />
+                  <path d="M334 159V61L342 47V31H356V47L364 61V159Z" />
+                </g>
+                <g fill="#ab7755">
+                  <path d="M101 134Q101 121 107 119Q113 121 113 134Z" />
+                  <path d="M174 71Q174 52 180 41Q186 52 186 71Z" />
+                  <path d="M255 46Q257 22 262 12Q267 22 269 46Z" />
+                  <path d="M342 31Q343 13 349 0Q355 13 356 31Z" />
+                </g>
+                <path d="M62 164H407" stroke="#789192" strokeOpacity=".5" />
+                <g
+                  fill="#b7c6c3"
+                  fontSize="8"
+                  fontFamily="monospace"
+                  textAnchor="middle"
+                >
+                  <text x="107" y="184">
+                    .22 LR
+                  </text>
+                  <text x="180" y="184">
+                    5.56
+                  </text>
+                  <text x="262" y="184">
+                    7.62
+                  </text>
+                  <text x="349" y="184">
+                    7.62R
+                  </text>
+                </g>
+              </svg>
+              <span className="art-caption">FORM / FUNCTION / CARTRIDGES</span>
+            </div>
+            <div className="collection-copy">
+              <span className="collection-index">
+                <Box size={16} /> 04 / INSPECT
+              </span>
+              <h2>
+                Arms &amp; cartridges <ArrowUpRight />
+              </h2>
+              <p>
+                Get closer to the equipment. Explore weapons in 3D, compare
+                their specifications, and understand the cartridges.
+              </p>
+              <span className="collection-link">
+                Open the armoury <ArrowRight size={16} />
+              </span>
+            </div>
+          </a>
         </section>
         <div className="home-footnote">
-          <span>INDIA / PAKISTAN / CHINA</span>
+          <span>A GROWING GLOBAL COLLECTION</span>
           <p>
             A growing collection of tools for defence enthusiasts and aspirants.
           </p>

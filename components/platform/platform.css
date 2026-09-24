@@ -1228,3 +1228,62 @@
     width: 19px;
   }
 }
+/* Four sibling collections share the same platform and deployment. */
+.field-collections {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.symbols-collection {
+  grid-column: auto;
+  display: block;
+}
+.symbols-collection .collection-art {
+  height: 240px;
+  min-height: 0;
+  border-right: 0;
+  border-bottom: 1px solid #344146;
+}
+.armoury-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #324038, #17262c 72%);
+}
+.armoury-art > svg {
+  height: 180px;
+  max-width: 85%;
+  width: 400px;
+  filter: drop-shadow(3px 12px 6px #0004);
+}
+@media (max-width: 760px) {
+  .field-collections {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .field-header {
+    gap: 14px;
+  }
+  .field-header nav {
+    gap: 10px;
+    font-size: 10px;
+    flex-wrap: wrap;
+    justify-content: end;
+    max-width: 265px;
+  }
+  .field-brand {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .field-header {
+    padding-inline: 14px;
+  }
+  .field-header nav a {
+    min-height: 24px;
+  }
+  .field-brand > svg {
+    width: 18px;
+  }
+  .field-header nav a[href='/ranks'] {
+    max-width: 85px;
+  }
+}

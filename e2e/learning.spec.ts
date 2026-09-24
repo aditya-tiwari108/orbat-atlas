@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { symbolCatalog, symbolCategories } from '../data/symbology/catalog';
 
-test('home offers three modules and India artwork without invented labels', async ({
+test('home offers four modules and India artwork without invented labels', async ({
   page,
 }) => {
   await page.goto('/');
-  await expect(page.locator('.collection-card')).toHaveCount(3);
+  await expect(page.locator('.collection-card')).toHaveCount(4);
   await expect(page.locator('.map-note')).toHaveCount(0);
   await expect(page.locator('.map-art img')).toHaveAttribute(
     'src',

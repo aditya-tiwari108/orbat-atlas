@@ -99,3 +99,9 @@ The rank explorer compares Navy, Army and Air Force within India, Pakistan or Ch
 ## NATO symbols and practice
 
 Open `/symbols` for the formation library, live symbol builder, anatomy explanations, shared configurations and SVG downloads. The small **Quiz yourself** button on `/ranks` and `/symbols` creates a session from the underlying records: image and description prompts, six choices, feedback and a review. Rank quizzes can be scoped by country and/or service; symbols can be scoped by topic. See [scope, references and architecture](docs/symbols-and-quizzes.md).
+
+## Arms and cartridges
+
+Open `/armoury` for the interactive equipment collection: 27 weapon records across India, Pakistan, China, Russia and the United States, linked to 10 cartridge profiles. Search by name/calibre, filter by country and category, rotate external studies, inspect exterior parts and compare up to three weapons. India includes INSAS, AK-203 and three separately documented NCC .22 trainer variants.
+
+Licensed community models retain creator attribution; original simplified studies and a flat fallback support the rest of the collection. Measurements retain configuration and field-level sources. Missing or conflicting specifications are kept explicit. See [coverage, visual provenance and limitations](docs/armoury-coverage.md). The module is part of the same application and deployment, with its catalogue in `data/armoury/`.

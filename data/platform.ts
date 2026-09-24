@@ -3,5 +3,5 @@ export const platform = {
   name: 'Fieldbook',
   tagline: 'A closer look at the armed forces.',
   description:
-    'Explore military organizations, ranks and insignia across India, Pakistan and China, plus NATO formation symbols. An open reference for the curious.',
+    'Explore military organizations, ranks and insignia across India, Pakistan and China, plus NATO formation symbols and a global arms and cartridges reference. An open reference for the curious.',
 } as const;

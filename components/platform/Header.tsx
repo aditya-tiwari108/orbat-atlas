@@ -1,6 +1,10 @@
 import { BookOpen, ArrowUpRight } from 'lucide-react';
 import { platform } from '../../data/platform';
-export default function Header({ section }: { section?: 'ranks' | 'symbols' }) {
+export default function Header({
+  section,
+}: {
+  section?: 'ranks' | 'symbols' | 'armoury';
+}) {
   return (
     <header className="field-header">
       <a className="field-brand" href="/" aria-label={`${platform.name} home`}>
@@ -25,6 +29,12 @@ export default function Header({ section }: { section?: 'ranks' | 'symbols' }) {
           aria-current={section === 'symbols' ? 'page' : undefined}
         >
           NATO symbols
+        </a>
+        <a
+          href="/armoury"
+          aria-current={section === 'armoury' ? 'page' : undefined}
+        >
+          Armoury
         </a>
       </nav>
     </header>

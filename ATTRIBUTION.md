@@ -49,3 +49,11 @@ Rank names and equivalence references are in `data/ranks/sources.json`. Research
 NATO/OTAN is the publisher of APP-06, *NATO Joint Military Symbology*, Edition E Version 1 (October 2023), used as the reference for formation functions and amplifiers. References and scope are detailed in [symbols and quizzes](docs/symbols-and-quizzes.md).
 
 Symbol drawings, including the three homepage previews, are generated with [milsymbol](https://github.com/spatialillusions/milsymbol), copyright Måns Beckman, MIT license. The [renderer license](public/licenses/milsymbol.txt) is included with the published site. This site is an independent educational reference, not a NATO product.
+
+## Armoury
+
+The equipment references and page locators are recorded in `data/armoury/sources.ts`. Descriptions are original concise summaries; factual measurements preserve their source configuration. [Coverage notes](docs/armoury-coverage.md) document conflicts and excluded specifications.
+
+Three.js and its OrbitControls use the MIT license. The procedural exterior studies, silhouettes and cartridge drawings are original illustrations, explicitly labeled as simplified. They are not manufacturer CAD or scans.
+
+Embedded Sketchfab community models retain **CC BY 4.0** attribution immediately below the viewer, including model title, creator and source link. Exact asset IDs and credits are in `data/armoury/assets.ts` and `data/armoury/catalog.ts`. Creators include notcplkerry, Aldensin, Kaan, TastyTony, Brahian SG, creationwasteland, neyr, TORI106, Dmitriy Korotkov, CloudyRain and D_U. Models remain hosted by their creators; no model binaries are redistributed. The creator's license does not certify technical accuracy or a particular military production variant.

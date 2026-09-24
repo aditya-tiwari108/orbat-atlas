@@ -4,6 +4,7 @@ import Home from './Home';
 import './platform.css';
 const Explorer = lazy(() => import('../explorer/Explorer'));
 const Symbols = lazy(() => import('../symbols/Symbols'));
+const Armoury = lazy(() => import('../armoury/Armoury'));
 const Ranks = lazy(() => import('../ranks/Ranks'));
 export default function App() {
   const path = window.location.pathname.replace(/\/$/, '') || '/';
@@ -13,10 +14,11 @@ export default function App() {
     (path === '/' && ['org', 'service', 'country'].some((k) => q.has(k)));
   const ranks = path === '/ranks';
   const symbols = path === '/symbols';
+  const armoury = path === '/armoury';
   useEffect(() => {
-    document.title = `${atlas ? 'ORBAT Atlas' : ranks ? 'Ranks & insignia' : symbols ? 'NATO symbols' : platform.tagline} · ${platform.name}`;
-  }, [atlas, ranks, symbols]);
-  if (!atlas && !ranks && !symbols && path !== '/')
+    document.title = `${atlas ? 'ORBAT Atlas' : ranks ? 'Ranks & insignia' : symbols ? 'NATO symbols' : armoury ? 'Arms & cartridges' : platform.tagline} · ${platform.name}`;
+  }, [atlas, ranks, symbols, armoury]);
+  if (!atlas && !ranks && !symbols && !armoury && path !== '/')
     return (
       <div className="field-not-found">
         <h1>Page not found</h1>
@@ -32,7 +34,9 @@ export default function App() {
             ? 'the atlas'
             : symbols
               ? 'the symbol collection'
-              : 'the rank collection'}
+              : armoury
+                ? 'the equipment collection'
+                : 'the rank collection'}
           …
         </div>
       }
@@ -41,6 +45,8 @@ export default function App() {
         <Explorer />
       ) : ranks ? (
         <Ranks />
+      ) : armoury ? (
+        <Armoury />
       ) : symbols ? (
         <Symbols />
       ) : (

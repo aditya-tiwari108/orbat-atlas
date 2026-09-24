@@ -39,7 +39,9 @@
     "components/ranks/**/*.tsx",
     "components/symbols/**/*.ts",
     "components/symbols/**/*.tsx",
-    "components/quiz/**/*.tsx"
+    "components/quiz/**/*.tsx",
+    "components/armoury/**/*.ts",
+    "components/armoury/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
